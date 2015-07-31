@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.3.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="HEADER_36X3">
+<pad name="P$1" x="-45.72" y="2.54" drill="0.8" diameter="1.7" shape="square" rot="R90"/>
+<pad name="P$2" x="-43.18" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$3" x="-40.64" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$4" x="-38.1" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$5" x="-35.56" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$6" x="-33.02" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$7" x="-30.48" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$8" x="-27.94" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$9" x="-25.4" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$10" x="-22.86" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$11" x="-20.32" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$12" x="-17.78" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$13" x="-15.24" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$14" x="-12.7" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$15" x="-10.16" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$16" x="-7.62" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$17" x="-5.08" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$18" x="-2.54" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$19" x="0" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$20" x="2.54" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$21" x="5.08" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$22" x="7.62" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$23" x="10.16" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$24" x="12.7" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$25" x="15.24" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$26" x="17.78" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$27" x="20.32" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$28" x="22.86" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$29" x="25.4" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$30" x="27.94" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$31" x="30.48" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$32" x="33.02" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$33" x="35.56" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$34" x="38.1" y="2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$35" x="40.64" y="2.54" drill="0.8" diameter="1.7" shape="square" rot="R90"/>
+<pad name="P$36" x="-45.72" y="0" drill="0.8" diameter="1.7" shape="square"/>
+<pad name="P$37" x="-43.18" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$38" x="-40.64" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$39" x="-38.1" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$40" x="-35.56" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$41" x="-33.02" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$42" x="-30.48" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$43" x="-27.94" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$44" x="-25.4" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$45" x="-22.86" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$46" x="-20.32" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$47" x="-17.78" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$48" x="-15.24" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$49" x="-12.7" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$50" x="-10.16" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$51" x="-7.62" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$52" x="-5.08" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$53" x="-2.54" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$54" x="0" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$55" x="2.54" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$56" x="5.08" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$57" x="7.62" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$58" x="10.16" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$59" x="12.7" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$60" x="15.24" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$61" x="17.78" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$62" x="20.32" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$63" x="22.86" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$64" x="25.4" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$65" x="27.94" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$66" x="30.48" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$67" x="33.02" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$68" x="35.56" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$69" x="38.1" y="0" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$70" x="40.64" y="0" drill="0.8" diameter="1.7" shape="square" rot="R90"/>
+<pad name="P$71" x="-45.72" y="-2.54" drill="0.8" diameter="1.7" shape="square"/>
+<pad name="P$72" x="-43.18" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$73" x="-40.64" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$74" x="-38.1" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$75" x="-35.56" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$76" x="-33.02" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$77" x="-30.48" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$78" x="-27.94" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$79" x="-25.4" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$80" x="-22.86" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$81" x="-20.32" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$82" x="-17.78" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$83" x="-15.24" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$84" x="-12.7" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$85" x="-10.16" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$86" x="-7.62" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$87" x="-5.08" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$88" x="-2.54" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$89" x="0" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$90" x="2.54" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$91" x="5.08" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$92" x="7.62" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$93" x="10.16" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$94" x="12.7" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$95" x="15.24" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$96" x="17.78" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$97" x="20.32" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$98" x="22.86" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$99" x="25.4" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$100" x="27.94" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$101" x="30.48" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$102" x="33.02" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$103" x="35.56" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$104" x="38.1" y="-2.54" drill="0.8" diameter="1.7" rot="R90"/>
+<pad name="P$105" x="40.64" y="-2.54" drill="0.8" diameter="1.7" shape="square" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="HEADER_36X3">
+<description>A 35x3 prototyping area.</description>
+<pin name="P$1" x="-15.24" y="63.5" length="middle"/>
+<pin name="P$2" x="-15.24" y="60.96" length="middle"/>
+<pin name="P$3" x="-15.24" y="58.42" length="middle"/>
+<pin name="P$4" x="-15.24" y="55.88" length="middle"/>
+<pin name="P$5" x="-15.24" y="53.34" length="middle"/>
+<pin name="P$6" x="-15.24" y="50.8" length="middle"/>
+<pin name="P$7" x="-15.24" y="48.26" length="middle"/>
+<pin name="P$8" x="-15.24" y="45.72" length="middle"/>
+<pin name="P$9" x="-15.24" y="43.18" length="middle"/>
+<pin name="P$10" x="-15.24" y="40.64" length="middle"/>
+<pin name="P$11" x="-15.24" y="38.1" length="middle"/>
+<pin name="P$12" x="-15.24" y="35.56" length="middle"/>
+<pin name="P$13" x="-15.24" y="33.02" length="middle"/>
+<pin name="P$14" x="-15.24" y="30.48" length="middle"/>
+<pin name="P$15" x="-15.24" y="27.94" length="middle"/>
+<pin name="P$16" x="-15.24" y="25.4" length="middle"/>
+<pin name="P$17" x="-15.24" y="22.86" length="middle"/>
+<pin name="P$18" x="-15.24" y="20.32" length="middle"/>
+<pin name="P$19" x="-15.24" y="17.78" length="middle"/>
+<pin name="P$20" x="-15.24" y="15.24" length="middle"/>
+<pin name="P$21" x="-15.24" y="12.7" length="middle"/>
+<pin name="P$22" x="-15.24" y="10.16" length="middle"/>
+<pin name="P$23" x="-15.24" y="7.62" length="middle"/>
+<pin name="P$24" x="-15.24" y="5.08" length="middle"/>
+<pin name="P$25" x="-15.24" y="2.54" length="middle"/>
+<pin name="P$26" x="-15.24" y="0" length="middle"/>
+<pin name="P$27" x="-15.24" y="-2.54" length="middle"/>
+<pin name="P$28" x="-15.24" y="-5.08" length="middle"/>
+<pin name="P$29" x="-15.24" y="-7.62" length="middle"/>
+<pin name="P$30" x="-15.24" y="-10.16" length="middle"/>
+<pin name="P$31" x="-15.24" y="-12.7" length="middle"/>
+<pin name="P$32" x="-15.24" y="-15.24" length="middle"/>
+<pin name="P$33" x="-15.24" y="-17.78" length="middle"/>
+<pin name="P$34" x="-15.24" y="-20.32" length="middle"/>
+<pin name="P$35" x="-15.24" y="-22.86" length="middle"/>
+<pin name="P$36" x="-15.24" y="-25.4" length="middle"/>
+<pin name="P$37" x="-15.24" y="-27.94" length="middle"/>
+<pin name="P$38" x="-15.24" y="-30.48" length="middle"/>
+<pin name="P$39" x="-15.24" y="-33.02" length="middle"/>
+<pin name="P$40" x="-15.24" y="-35.56" length="middle"/>
+<pin name="P$41" x="-15.24" y="-38.1" length="middle"/>
+<pin name="P$42" x="-15.24" y="-40.64" length="middle"/>
+<pin name="P$43" x="-15.24" y="-43.18" length="middle"/>
+<pin name="P$44" x="-15.24" y="-45.72" length="middle"/>
+<pin name="P$45" x="-15.24" y="-48.26" length="middle"/>
+<pin name="P$46" x="-15.24" y="-50.8" length="middle"/>
+<pin name="P$47" x="-15.24" y="-53.34" length="middle"/>
+<pin name="P$48" x="-15.24" y="-55.88" length="middle"/>
+<pin name="P$49" x="-15.24" y="-58.42" length="middle"/>
+<pin name="P$50" x="-15.24" y="-60.96" length="middle"/>
+<pin name="P$51" x="-15.24" y="-63.5" length="middle"/>
+<pin name="P$52" x="-15.24" y="-66.04" length="middle"/>
+<pin name="P$53" x="15.24" y="63.5" length="middle" rot="R180"/>
+<pin name="P$54" x="15.24" y="60.96" length="middle" rot="R180"/>
+<pin name="P$55" x="15.24" y="58.42" length="middle" rot="R180"/>
+<pin name="P$56" x="15.24" y="55.88" length="middle" rot="R180"/>
+<pin name="P$57" x="15.24" y="53.34" length="middle" rot="R180"/>
+<pin name="P$58" x="15.24" y="50.8" length="middle" rot="R180"/>
+<pin name="P$59" x="15.24" y="48.26" length="middle" rot="R180"/>
+<pin name="P$60" x="15.24" y="45.72" length="middle" rot="R180"/>
+<pin name="P$61" x="15.24" y="43.18" length="middle" rot="R180"/>
+<pin name="P$62" x="15.24" y="40.64" length="middle" rot="R180"/>
+<pin name="P$63" x="15.24" y="38.1" length="middle" rot="R180"/>
+<pin name="P$64" x="15.24" y="35.56" length="middle" rot="R180"/>
+<pin name="P$65" x="15.24" y="33.02" length="middle" rot="R180"/>
+<pin name="P$66" x="15.24" y="30.48" length="middle" rot="R180"/>
+<pin name="P$67" x="15.24" y="27.94" length="middle" rot="R180"/>
+<pin name="P$68" x="15.24" y="25.4" length="middle" rot="R180"/>
+<pin name="P$69" x="15.24" y="22.86" length="middle" rot="R180"/>
+<pin name="P$70" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="P$71" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="P$72" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="P$73" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="P$74" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="P$75" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="P$76" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="P$77" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="P$78" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="P$79" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="P$80" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="P$81" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="P$82" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="P$83" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="P$84" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="P$85" x="15.24" y="-17.78" length="middle" rot="R180"/>
+<pin name="P$86" x="15.24" y="-20.32" length="middle" rot="R180"/>
+<pin name="P$87" x="15.24" y="-22.86" length="middle" rot="R180"/>
+<pin name="P$88" x="15.24" y="-25.4" length="middle" rot="R180"/>
+<pin name="P$89" x="15.24" y="-27.94" length="middle" rot="R180"/>
+<pin name="P$90" x="15.24" y="-30.48" length="middle" rot="R180"/>
+<pin name="P$91" x="15.24" y="-33.02" length="middle" rot="R180"/>
+<pin name="P$92" x="15.24" y="-35.56" length="middle" rot="R180"/>
+<pin name="P$93" x="15.24" y="-38.1" length="middle" rot="R180"/>
+<pin name="P$94" x="15.24" y="-40.64" length="middle" rot="R180"/>
+<pin name="P$95" x="15.24" y="-43.18" length="middle" rot="R180"/>
+<pin name="P$96" x="15.24" y="-45.72" length="middle" rot="R180"/>
+<pin name="P$97" x="15.24" y="-48.26" length="middle" rot="R180"/>
+<pin name="P$98" x="15.24" y="-50.8" length="middle" rot="R180"/>
+<pin name="P$99" x="15.24" y="-53.34" length="middle" rot="R180"/>
+<pin name="P$100" x="15.24" y="-55.88" length="middle" rot="R180"/>
+<pin name="P$101" x="15.24" y="-58.42" length="middle" rot="R180"/>
+<pin name="P$102" x="15.24" y="-60.96" length="middle" rot="R180"/>
+<pin name="P$103" x="15.24" y="-63.5" length="middle" rot="R180"/>
+<pin name="P$104" x="15.24" y="-66.04" length="middle" rot="R180"/>
+<pin name="P$105" x="0" y="68.58" length="middle" rot="R270"/>
+<polygon width="0.254" layer="94">
+<vertex x="-10.16" y="63.5"/>
+<vertex x="10.16" y="63.5"/>
+<vertex x="10.16" y="-66.04"/>
+<vertex x="-10.16" y="-66.04"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="HEADER_36X3">
+<gates>
+<gate name="G$1" symbol="HEADER_36X3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HEADER_36X3">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$10" pad="P$10"/>
+<connect gate="G$1" pin="P$100" pad="P$100"/>
+<connect gate="G$1" pin="P$101" pad="P$101"/>
+<connect gate="G$1" pin="P$102" pad="P$102"/>
+<connect gate="G$1" pin="P$103" pad="P$103"/>
+<connect gate="G$1" pin="P$104" pad="P$104"/>
+<connect gate="G$1" pin="P$105" pad="P$105"/>
+<connect gate="G$1" pin="P$11" pad="P$11"/>
+<connect gate="G$1" pin="P$12" pad="P$12"/>
+<connect gate="G$1" pin="P$13" pad="P$13"/>
+<connect gate="G$1" pin="P$14" pad="P$14"/>
+<connect gate="G$1" pin="P$15" pad="P$15"/>
+<connect gate="G$1" pin="P$16" pad="P$16"/>
+<connect gate="G$1" pin="P$17" pad="P$17"/>
+<connect gate="G$1" pin="P$18" pad="P$18"/>
+<connect gate="G$1" pin="P$19" pad="P$19"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$20" pad="P$20"/>
+<connect gate="G$1" pin="P$21" pad="P$21"/>
+<connect gate="G$1" pin="P$22" pad="P$22"/>
+<connect gate="G$1" pin="P$23" pad="P$23"/>
+<connect gate="G$1" pin="P$24" pad="P$24"/>
+<connect gate="G$1" pin="P$25" pad="P$25"/>
+<connect gate="G$1" pin="P$26" pad="P$26"/>
+<connect gate="G$1" pin="P$27" pad="P$27"/>
+<connect gate="G$1" pin="P$28" pad="P$28"/>
+<connect gate="G$1" pin="P$29" pad="P$29"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$30" pad="P$30"/>
+<connect gate="G$1" pin="P$31" pad="P$31"/>
+<connect gate="G$1" pin="P$32" pad="P$32"/>
+<connect gate="G$1" pin="P$33" pad="P$33"/>
+<connect gate="G$1" pin="P$34" pad="P$34"/>
+<connect gate="G$1" pin="P$35" pad="P$35"/>
+<connect gate="G$1" pin="P$36" pad="P$36"/>
+<connect gate="G$1" pin="P$37" pad="P$37"/>
+<connect gate="G$1" pin="P$38" pad="P$38"/>
+<connect gate="G$1" pin="P$39" pad="P$39"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+<connect gate="G$1" pin="P$40" pad="P$40"/>
+<connect gate="G$1" pin="P$41" pad="P$41"/>
+<connect gate="G$1" pin="P$42" pad="P$42"/>
+<connect gate="G$1" pin="P$43" pad="P$43"/>
+<connect gate="G$1" pin="P$44" pad="P$44"/>
+<connect gate="G$1" pin="P$45" pad="P$45"/>
+<connect gate="G$1" pin="P$46" pad="P$46"/>
+<connect gate="G$1" pin="P$47" pad="P$47"/>
+<connect gate="G$1" pin="P$48" pad="P$48"/>
+<connect gate="G$1" pin="P$49" pad="P$49"/>
+<connect gate="G$1" pin="P$5" pad="P$5"/>
+<connect gate="G$1" pin="P$50" pad="P$50"/>
+<connect gate="G$1" pin="P$51" pad="P$51"/>
+<connect gate="G$1" pin="P$52" pad="P$52"/>
+<connect gate="G$1" pin="P$53" pad="P$53"/>
+<connect gate="G$1" pin="P$54" pad="P$54"/>
+<connect gate="G$1" pin="P$55" pad="P$55"/>
+<connect gate="G$1" pin="P$56" pad="P$56"/>
+<connect gate="G$1" pin="P$57" pad="P$57"/>
+<connect gate="G$1" pin="P$58" pad="P$58"/>
+<connect gate="G$1" pin="P$59" pad="P$59"/>
+<connect gate="G$1" pin="P$6" pad="P$6"/>
+<connect gate="G$1" pin="P$60" pad="P$60"/>
+<connect gate="G$1" pin="P$61" pad="P$61"/>
+<connect gate="G$1" pin="P$62" pad="P$62"/>
+<connect gate="G$1" pin="P$63" pad="P$63"/>
+<connect gate="G$1" pin="P$64" pad="P$64"/>
+<connect gate="G$1" pin="P$65" pad="P$65"/>
+<connect gate="G$1" pin="P$66" pad="P$66"/>
+<connect gate="G$1" pin="P$67" pad="P$67"/>
+<connect gate="G$1" pin="P$68" pad="P$68"/>
+<connect gate="G$1" pin="P$69" pad="P$69"/>
+<connect gate="G$1" pin="P$7" pad="P$7"/>
+<connect gate="G$1" pin="P$70" pad="P$70"/>
+<connect gate="G$1" pin="P$71" pad="P$71"/>
+<connect gate="G$1" pin="P$72" pad="P$72"/>
+<connect gate="G$1" pin="P$73" pad="P$73"/>
+<connect gate="G$1" pin="P$74" pad="P$74"/>
+<connect gate="G$1" pin="P$75" pad="P$75"/>
+<connect gate="G$1" pin="P$76" pad="P$76"/>
+<connect gate="G$1" pin="P$77" pad="P$77"/>
+<connect gate="G$1" pin="P$78" pad="P$78"/>
+<connect gate="G$1" pin="P$79" pad="P$79"/>
+<connect gate="G$1" pin="P$8" pad="P$8"/>
+<connect gate="G$1" pin="P$80" pad="P$80"/>
+<connect gate="G$1" pin="P$81" pad="P$81"/>
+<connect gate="G$1" pin="P$82" pad="P$82"/>
+<connect gate="G$1" pin="P$83" pad="P$83"/>
+<connect gate="G$1" pin="P$84" pad="P$84"/>
+<connect gate="G$1" pin="P$85" pad="P$85"/>
+<connect gate="G$1" pin="P$86" pad="P$86"/>
+<connect gate="G$1" pin="P$87" pad="P$87"/>
+<connect gate="G$1" pin="P$88" pad="P$88"/>
+<connect gate="G$1" pin="P$89" pad="P$89"/>
+<connect gate="G$1" pin="P$9" pad="P$9"/>
+<connect gate="G$1" pin="P$90" pad="P$90"/>
+<connect gate="G$1" pin="P$91" pad="P$91"/>
+<connect gate="G$1" pin="P$92" pad="P$92"/>
+<connect gate="G$1" pin="P$93" pad="P$93"/>
+<connect gate="G$1" pin="P$94" pad="P$94"/>
+<connect gate="G$1" pin="P$95" pad="P$95"/>
+<connect gate="G$1" pin="P$96" pad="P$96"/>
+<connect gate="G$1" pin="P$97" pad="P$97"/>
+<connect gate="G$1" pin="P$98" pad="P$98"/>
+<connect gate="G$1" pin="P$99" pad="P$99"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
