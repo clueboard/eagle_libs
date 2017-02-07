@@ -212,7 +212,6 @@ for device in sorted(devices):
             elif devices[device]['led'] == 'single':
                 connections.append({'gate': 'G$1', 'pin': 'LED+', 'pad': 'LED+'})
                 connections.append({'gate': 'G$1', 'pin': 'LED-', 'pad': 'LED-'})
-                footprint_name = footprint_name + '-LED'
             elif devices[device]['led'] == 'rgb':
                 connections.append({'gate': 'G$1', 'pin': 'LED+', 'pad': 'LED+'})
                 connections.append({'gate': 'G$1', 'pin': 'R-', 'pad': 'R-'})
