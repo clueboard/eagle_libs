@@ -37,13 +37,13 @@ package_holes = {
     'ALPS': [],
     'ALPSMX': [
         {'x': '0', 'y': '0', 'diameter': '4'},
-        {'x': '-5.08', 'y': '0', 'diameter': '1.6'},
-        {'x': '5.08', 'y': '0', 'diameter': '1.6'},
+        {'x': '-5.08', 'y': '0', 'diameter': '1.7'},
+        {'x': '5.08', 'y': '0', 'diameter': '1.7'},
     ],
     'MX': [
         {'x': '0', 'y': '0', 'diameter': '4'},
-        {'x': '-5.08', 'y': '0', 'diameter': '1.6'},
-        {'x': '5.08', 'y': '0', 'diameter': '1.6'},
+        {'x': '-5.08', 'y': '0', 'diameter': '1.7'},
+        {'x': '5.08', 'y': '0', 'diameter': '1.7'},
     ]
 }
 package_pads = {
@@ -163,6 +163,30 @@ devices = {
             ]
         },
     },
+    'SMDLED': {
+        'switch_types': ['ALPSMX', 'MX'],
+        'led': 'single-tht-smd',  # 2 pins, single color LED, THT or SMD
+        'diode': False,
+        'symbol': {
+            'name': 'KEYSWITCH-SMDLED',
+            'description': 'A simple keyboard key switch with THT and SMD LED support.',
+            'wires': [
+                {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
+                {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
+                {'x1': '5', 'y1': '-5', 'x2': '-5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
+                {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
+            ],
+            'labels': [
+                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
+            ],
+            'pins': [
+                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short'},
+                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270'},
+                {'name': 'LED-', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
+                {'name': 'LED+', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
+            ]
+        },
+    },
     'DIODE': {
         'switch_types': ['MX'],
         'led': None,
@@ -206,17 +230,22 @@ for device in sorted(devices):
             connections = copy(connects[switch_type])
             footprint_name = '-%s-%sU' % (switch_type, key_size)
             if devices[device]['diode']:
-                connections.append({'gate': 'G$1', 'pin': 'D+', 'pad': 'D+'})
-                connections.append({'gate': 'G$1', 'pin': 'D-', 'pad': 'D-'})
+                connections.insert(0, {'gate': 'G$1', 'pin': 'D-', 'pad': 'D-'})
+                connections.insert(0, {'gate': 'G$1', 'pin': 'D+', 'pad': 'D+'})
                 footprint_name = footprint_name + '-DIODE'
             elif devices[device]['led'] == 'single':
-                connections.append({'gate': 'G$1', 'pin': 'LED+', 'pad': 'LED+'})
-                connections.append({'gate': 'G$1', 'pin': 'LED-', 'pad': 'LED-'})
+                connections.insert(0, {'gate': 'G$1', 'pin': 'LED-', 'pad': 'LED-'})
+                connections.insert(0, {'gate': 'G$1', 'pin': 'LED+', 'pad': 'LED+'})
+                footprint_name = footprint_name + '-LED'
+            elif devices[device]['led'] == 'single-tht-smd':
+                connections.insert(0, {'gate': 'G$1', 'pin': 'LED-', 'pad': 'LED- SMDLED-'})
+                connections.insert(0, {'gate': 'G$1', 'pin': 'LED+', 'pad': 'LED+ SMDLED+'})
+                footprint_name = footprint_name + '-SMDLED'
             elif devices[device]['led'] == 'rgb':
-                connections.append({'gate': 'G$1', 'pin': 'LED+', 'pad': 'LED+'})
-                connections.append({'gate': 'G$1', 'pin': 'R-', 'pad': 'R-'})
-                connections.append({'gate': 'G$1', 'pin': 'G-', 'pad': 'G-'})
-                connections.append({'gate': 'G$1', 'pin': 'B-', 'pad': 'B-'})
+                connections.insert(0, {'gate': 'G$1', 'pin': 'R-', 'pad': 'R-'})
+                connections.insert(0, {'gate': 'G$1', 'pin': 'LED+', 'pad': 'LED+'})
+                connections.insert(0, {'gate': 'G$1', 'pin': 'G-', 'pad': 'G-'})
+                connections.insert(0, {'gate': 'G$1', 'pin': 'B-', 'pad': 'B-'})
                 footprint_name = footprint_name + '-RGB'
             package_name = footprint_name[1:]
             packages[package_name] = copy(devices[device])
@@ -274,25 +303,50 @@ for package in packages:
         'wires': copy(package_wires[pkg['switch_type']]),
         'holes': copy(package_holes[pkg['switch_type']]),
         'pads': copy(package_pads[pkg['switch_type']]),
+        'smds': [],
         'labels': [
             {'value': '&gt;NAME', 'x': '0', 'y': '-3.175', 'size': '1.27', 'layer': '21', 'align': 'center'},
-            {'value': '&gt;NAME', 'x': '0', 'y': '-3.175', 'size': '1.27', 'layer': '22', 'align': 'center'}
+            {'value': '&gt;NAME', 'x': '0', 'y': '-3.175', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'}
         ]
     })
     if pkg['diode']:
         template['packages'][-1]['pads'].append({'name': 'D+', 'x': '-3.81', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-1.905', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-1.905', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
         template['packages'][-1]['pads'].append({'name': 'D-', 'x': '3.81', 'y': '-5.08', 'drill': '1', 'diameter': '2', 'shape': 'square'})
-        # FIXME: Add labels
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '1.905', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '1.905', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
     elif pkg['led'] == 'single':
         template['packages'][-1]['pads'].append({'name': 'LED+', 'x': '-1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
         template['packages'][-1]['pads'].append({'name': 'LED-', 'x': '1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2', 'shape': 'square'})
-        # FIXME: Add labels
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+    elif pkg['led'] == 'single-tht-smd':
+        template['packages'][-1]['pads'].append({'name': 'LED+', 'x': '-1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['pads'].append({'name': 'LED-', 'x': '1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2', 'shape': 'square'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['smds'].append({'name': 'SMDLED+', 'x': '-1.3', 'y': '-7.42', 'dx': '2', 'dy': '1.3', 'layer': '1'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-7.42', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['smds'].append({'name': 'SMDLED-', 'x': '1.3', 'y': '-7.42', 'dx': '2', 'dy': '1.3', 'layer': '1'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-7.42', 'size': '1.27', 'layer': '21', 'align': 'center'})
     elif pkg['led'] == 'rgb':
         template['packages'][-1]['pads'].append({'name': 'R-', 'x': '-3.81', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
-        template['packages'][-1]['pads'].append({'name': 'G-', 'x': '1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
-        template['packages'][-1]['pads'].append({'name': 'B-', 'x': '3.81', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
+        template['packages'][-1]['labels'].append({'value': 'R-', 'x': '-3.955', 'y': '-6.985', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': 'R-', 'x': '-3.955', 'y': '-6.985', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
         template['packages'][-1]['pads'].append({'name': 'LED+', 'x': '-1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2', 'shape': 'square'})
-        # FIXME: Add labels
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-1.125', 'y': '-6.985', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-1.125', 'y': '-6.985', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['pads'].append({'name': 'G-', 'x': '1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
+        template['packages'][-1]['labels'].append({'value': 'G-', 'x': '1.125', 'y': '-6.985', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': 'G-', 'x': '1.125', 'y': '-6.985', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['pads'].append({'name': 'B-', 'x': '3.81', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
+        template['packages'][-1]['labels'].append({'value': 'B-', 'x': '3.955', 'y': '-6.985', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': 'B-', 'x': '3.955', 'y': '-6.985', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
 
     if pkg['size'] != '1':
         c = switch_sizes[pkg['size']]
@@ -307,10 +361,8 @@ if __name__ == '__main__':
         fd.seek(0, 0)
         fd.write(t.render(**template))
 
+    print('*** You can use this script to add every single footprint to a schematic:')
     print('\n'.join(schematic_script))
-    print()
-    print()
-    print()
-    print()
-    print()
+    print('\n\n\n\n\n')
+    print('*** You can use this script to place every single footprint on a board:')
     print('\n'.join(board_script))
