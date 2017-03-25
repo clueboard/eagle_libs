@@ -2,19 +2,32 @@
 
 Eagle device library used by Clueboard
 
-## [Keyboard.lbr](Keyboard.lbr) 
+## [Controller.lbr(Controller.lbr)
+
+Footprints for Diodes, Resistors, Headers, Crystals, MCU's, and all the other
+parts you need to put a keyboard together.
+
+## [Keyboard.lbr](Keyboard.lbr)
 
 Switch footprints that support various Cherry MX and/or Alps switches.
 
+### Switch Devices
 
+When putting together your schematic there are 5 basic types of switches to choose
+from:
 
-## [Headers.lbr](Headers.lbr)
-
-Various custom headers I've put on my boards
-
-## [Prototyping.lbr](Prototyping.lbr)
-
-Some footprints useful for prototyping
+* KEYSWITCH-DIODE
+ * Cherry MX and/or Alps switches with in-switch diode support.
+* KEYSWITCH-LED
+ * Cherry MX and/or Alps switches with throughhole single-color LED support
+* KEYSWITCH-PLAIN
+ * Cherry MX and/or Alps switches
+* KEYSWITCH-RGBLED
+ * Cherry MX switches with throughhole RGB LED support
+* KEYSWITCH-SMDLED
+ * Cherry MX and/or Alps switches with SMD single-color LED support
+* KEYSWITCH-SMDTHTLED
+ * Cherry MX and/or Alps switches with both throughhole and SMD single-color LED support
 
 # License
 

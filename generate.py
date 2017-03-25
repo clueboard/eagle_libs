@@ -165,10 +165,34 @@ devices = {
     },
     'SMDLED': {
         'switch_types': ['ALPSMX', 'MX'],
-        'led': 'single-tht-smd',  # 2 pins, single color LED, THT or SMD
+        'led': 'single-smd',  # 2 pins, single color SMD LED
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-SMDLED',
+            'description': 'A simple keyboard key switch with SMD LED support.',
+            'wires': [
+                {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
+                {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
+                {'x1': '5', 'y1': '-5', 'x2': '-5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
+                {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
+            ],
+            'labels': [
+                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
+            ],
+            'pins': [
+                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short'},
+                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270'},
+                {'name': 'LED-', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
+                {'name': 'LED+', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
+            ]
+        },
+    },
+    'THTSMDLED': {
+        'switch_types': ['ALPSMX', 'MX'],
+        'led': 'single-tht-smd',  # 2 pins, single color LED, THT or SMD
+        'diode': False,
+        'symbol': {
+            'name': 'KEYSWITCH-THTSMDLED',
             'description': 'A simple keyboard key switch with THT and SMD LED support.',
             'wires': [
                 {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
@@ -237,10 +261,14 @@ for device in sorted(devices):
                 connections.insert(0, {'gate': 'G$1', 'pin': 'LED-', 'pad': 'LED-'})
                 connections.insert(0, {'gate': 'G$1', 'pin': 'LED+', 'pad': 'LED+'})
                 footprint_name = footprint_name + '-LED'
+            elif devices[device]['led'] == 'single-smd':
+                connections.insert(0, {'gate': 'G$1', 'pin': 'LED-', 'pad': 'SMDLED-'})
+                connections.insert(0, {'gate': 'G$1', 'pin': 'LED+', 'pad': 'SMDLED+'})
+                footprint_name = footprint_name + '-SMDLED'
             elif devices[device]['led'] == 'single-tht-smd':
                 connections.insert(0, {'gate': 'G$1', 'pin': 'LED-', 'pad': 'LED- SMDLED-'})
                 connections.insert(0, {'gate': 'G$1', 'pin': 'LED+', 'pad': 'LED+ SMDLED+'})
-                footprint_name = footprint_name + '-SMDLED'
+                footprint_name = footprint_name + '-THTSMDLED'
             elif devices[device]['led'] == 'rgb':
                 connections.insert(0, {'gate': 'G$1', 'pin': 'R-', 'pad': 'R-'})
                 connections.insert(0, {'gate': 'G$1', 'pin': 'LED+', 'pad': 'LED+'})
@@ -323,6 +351,11 @@ for package in packages:
         template['packages'][-1]['pads'].append({'name': 'LED-', 'x': '1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2', 'shape': 'square'})
         template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
         template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+    elif pkg['led'] == 'single-smd':
+        template['packages'][-1]['smds'].append({'name': 'SMDLED+', 'x': '-1.3', 'y': '-7.42', 'dx': '2', 'dy': '1.3', 'layer': '1'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-7.42', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['smds'].append({'name': 'SMDLED-', 'x': '1.3', 'y': '-7.42', 'dx': '2', 'dy': '1.3', 'layer': '1'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-7.42', 'size': '1.27', 'layer': '21', 'align': 'center'})
     elif pkg['led'] == 'single-tht-smd':
         template['packages'][-1]['pads'].append({'name': 'LED+', 'x': '-1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
         template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
