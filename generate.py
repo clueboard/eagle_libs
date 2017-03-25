@@ -15,6 +15,7 @@ switch_sizes = {
     '1': {},
     '2': {'lstab': -11.9, 'rstab': 11.9, 'tstab': 7, 'bstab': -8.24},
     '4': {'lstab': -28.625, 'rstab': 28.625, 'tstab': 7, 'bstab': -8.24},
+    '6': {'lstab': -57.15, 'rstab': 38.1, 'tstab': 7, 'bstab': -8.24},
     '6.25': {'lstab': -50, 'rstab': 50, 'tstab': 7, 'bstab': -8.24},
     '6.5': {'lstab': -52.5, 'rstab': 52.5, 'tstab': 7, 'bstab': -8.24},
     '7': {'lstab': -57.15, 'rstab': 57.15, 'tstab': 7, 'bstab': -8.24}
