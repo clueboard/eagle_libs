@@ -16,18 +16,13 @@ Switch footprints that support various Cherry MX and/or Alps switches.
 When putting together your schematic there are 5 basic types of switches to choose
 from:
 
-* KEYSWITCH-DIODE
- * Cherry MX and/or Alps switches with in-switch diode support.
-* KEYSWITCH-LED
- * Cherry MX and/or Alps switches with throughhole single-color LED support
-* KEYSWITCH-PLAIN
- * Cherry MX and/or Alps switches
-* KEYSWITCH-RGBLED
- * Cherry MX switches with throughhole RGB LED support
-* KEYSWITCH-SMDLED
- * Cherry MX and/or Alps switches with SMD single-color LED support
-* KEYSWITCH-SMDTHTLED
- * Cherry MX and/or Alps switches with both throughhole and SMD single-color LED support
+* KEYSWITCH-DIODE: Cherry MX and/or Alps switches with in-switch diode support.
+* KEYSWITCH-LED: Cherry MX and/or Alps switches with throughhole single-color LED support
+* KEYSWITCH-PLAIN: Cherry MX and/or Alps switches
+* KEYSWITCH-RGBLED: Cherry MX switches with throughhole RGB LED support
+* KEYSWITCH-RGBSMDLED: Cherry MX and/or Alps switches with SMD RGB LED support
+* KEYSWITCH-SMDLED: Cherry MX and/or Alps switches with SMD single-color LED support
+* KEYSWITCH-SMDTHTLED: Cherry MX and/or Alps switches with both throughhole and SMD single-color LED support
 
 # License
 
