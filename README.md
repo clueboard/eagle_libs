@@ -7,7 +7,7 @@ Eagle device library used by Clueboard
 Footprints for Diodes, Resistors, Headers, Crystals, MCU's, and all the other
 parts you need to put a keyboard together.
 
-## [Keyboard.lbr](Keyboard.lbr)
+## [Keyboard.lbr](Keyboard.lbr)]
 
 Switch footprints that support various Cherry MX and/or Alps switches.
 
