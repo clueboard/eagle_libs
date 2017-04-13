@@ -33,6 +33,10 @@ connects = {
     'MX': [
         {'gate': 'G$1', 'pin': 'P0', 'pad': 'MX1'},
         {'gate': 'G$1', 'pin': 'P1', 'pad': 'MX2'}
+    ],
+    'MXHS': [
+        {'gate': 'G$1', 'pin': 'P0', 'pad': 'MX1'},
+        {'gate': 'G$1', 'pin': 'P1', 'pad': 'MX2'}
     ]
 }
 package_holes = {
@@ -77,7 +81,7 @@ package_smds = {
     'ALPSMX': [],
     'MX': [],
     'MXHS': [
-        {'name': 'MX1', 'x': '-7.36', 'y': '-2.54', 'dx': '2.55', 'dy': '2.5', 'layer': '16'},
+        {'name': 'MX1', 'x': '-7.36', 'y': '2.54', 'dx': '2.55', 'dy': '2.5', 'layer': '16'},
         {'name': 'MX2', 'x': '6.09', 'y': '5.08', 'dx': '2.55', 'dy': '2.5', 'layer': '16'}
     ],
 }
@@ -108,10 +112,16 @@ package_wires = {
         {'x1': '7', 'y1': '-7', 'x2': '-7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
         {'x1': '-7', 'y1': '-7', 'x2': '-7', 'y2': '7', 'width': '0.127', 'layer': '47'},
     ],
+    'MXHS': [
+        {'x1': '-7', 'y1': '7', 'x2': '7', 'y2': '7', 'width': '0.127', 'layer': '47'},
+        {'x1': '7', 'y1': '7', 'x2': '7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
+        {'x1': '7', 'y1': '-7', 'x2': '-7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
+        {'x1': '-7', 'y1': '-7', 'x2': '-7', 'y2': '7', 'width': '0.127', 'layer': '47'},
+    ],
 }
 devices = {
     'PLAIN': {
-        'switch_types': ['ALPS', 'ALPSMX', 'MX'],
+        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS'],
         'led': None,
         'diode': False,
         'symbol': {
@@ -183,7 +193,7 @@ devices = {
         },
     },
     'RGBSMDLED': {
-        'switch_types': ['ALPSMX', 'MX'],
+        'switch_types': ['ALPSMX', 'MX', 'MXHS'],
         'led': 'rgb-smd',  # 4 pins, RGB LED, SMD shining through PCB
         'diode': False,
         'symbol': {
@@ -209,7 +219,7 @@ devices = {
         },
     },
     'SMDLED': {
-        'switch_types': ['ALPSMX', 'MX'],
+        'switch_types': ['ALPSMX', 'MX', 'MXHS'],
         'led': 'single-smd',  # 2 pins, single color SMD LED
         'diode': False,
         'symbol': {

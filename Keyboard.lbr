@@ -2283,6 +2283,302 @@
 <text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
 <text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
+<package name="MXHS-REVERSED-6U">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-38.1" y="7" drill="3.05"/>
+<hole x="57.15" y="7" drill="3.05"/>
+<hole x="-38.1" y="-8.24" drill="4"/>
+<hole x="57.15" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-REVERSED-6U-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-38.1" y="-7" drill="3.05"/>
+<hole x="57.15" y="-7" drill="3.05"/>
+<hole x="-38.1" y="8.24" drill="4"/>
+<hole x="57.15" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-1U">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-2U">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-11.9" y="7" drill="3.05"/>
+<hole x="11.9" y="7" drill="3.05"/>
+<hole x="-11.9" y="-8.24" drill="4"/>
+<hole x="11.9" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-2U-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-11.9" y="-7" drill="3.05"/>
+<hole x="11.9" y="-7" drill="3.05"/>
+<hole x="-11.9" y="8.24" drill="4"/>
+<hole x="11.9" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-4U">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-28.625" y="7" drill="3.05"/>
+<hole x="28.625" y="7" drill="3.05"/>
+<hole x="-28.625" y="-8.24" drill="4"/>
+<hole x="28.625" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-4U-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-28.625" y="-7" drill="3.05"/>
+<hole x="28.625" y="-7" drill="3.05"/>
+<hole x="-28.625" y="8.24" drill="4"/>
+<hole x="28.625" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-6U">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-57.15" y="7" drill="3.05"/>
+<hole x="38.1" y="7" drill="3.05"/>
+<hole x="-57.15" y="-8.24" drill="4"/>
+<hole x="38.1" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-6U-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-57.15" y="-7" drill="3.05"/>
+<hole x="38.1" y="-7" drill="3.05"/>
+<hole x="-57.15" y="8.24" drill="4"/>
+<hole x="38.1" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-6.25U">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-50" y="7" drill="3.05"/>
+<hole x="50" y="7" drill="3.05"/>
+<hole x="-50" y="-8.24" drill="4"/>
+<hole x="50" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-6.25U-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-50" y="-7" drill="3.05"/>
+<hole x="50" y="-7" drill="3.05"/>
+<hole x="-50" y="8.24" drill="4"/>
+<hole x="50" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-6.5U">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-52.5" y="7" drill="3.05"/>
+<hole x="52.5" y="7" drill="3.05"/>
+<hole x="-52.5" y="-8.24" drill="4"/>
+<hole x="52.5" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-6.5U-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-52.5" y="-7" drill="3.05"/>
+<hole x="52.5" y="-7" drill="3.05"/>
+<hole x="-52.5" y="8.24" drill="4"/>
+<hole x="52.5" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-7U">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-57.15" y="7" drill="3.05"/>
+<hole x="57.15" y="7" drill="3.05"/>
+<hole x="-57.15" y="-8.24" drill="4"/>
+<hole x="57.15" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-7U-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-57.15" y="-7" drill="3.05"/>
+<hole x="57.15" y="-7" drill="3.05"/>
+<hole x="-57.15" y="8.24" drill="4"/>
+<hole x="57.15" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
 <package name="ALPSMX-REVERSED-6U-RGB">
 <description>Keyboard switch package!</description>
 <wire x1="-7" y1="8" x2="7" y2="8" width="0.127" layer="47"/>
@@ -4307,6 +4603,452 @@
 <text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
 <text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
+<package name="MXHS-REVERSED-6U-SMDRGB">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-38.1" y="7" drill="3.05"/>
+<hole x="57.15" y="7" drill="3.05"/>
+<hole x="-38.1" y="-8.24" drill="4"/>
+<hole x="57.15" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-REVERSED-6U-SMDRGB-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-38.1" y="-7" drill="3.05"/>
+<hole x="57.15" y="-7" drill="3.05"/>
+<hole x="-38.1" y="8.24" drill="4"/>
+<hole x="57.15" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-1U-SMDRGB">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-2U-SMDRGB">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-11.9" y="7" drill="3.05"/>
+<hole x="11.9" y="7" drill="3.05"/>
+<hole x="-11.9" y="-8.24" drill="4"/>
+<hole x="11.9" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-2U-SMDRGB-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-11.9" y="-7" drill="3.05"/>
+<hole x="11.9" y="-7" drill="3.05"/>
+<hole x="-11.9" y="8.24" drill="4"/>
+<hole x="11.9" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-4U-SMDRGB">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-28.625" y="7" drill="3.05"/>
+<hole x="28.625" y="7" drill="3.05"/>
+<hole x="-28.625" y="-8.24" drill="4"/>
+<hole x="28.625" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-4U-SMDRGB-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-28.625" y="-7" drill="3.05"/>
+<hole x="28.625" y="-7" drill="3.05"/>
+<hole x="-28.625" y="8.24" drill="4"/>
+<hole x="28.625" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-6U-SMDRGB">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-57.15" y="7" drill="3.05"/>
+<hole x="38.1" y="7" drill="3.05"/>
+<hole x="-57.15" y="-8.24" drill="4"/>
+<hole x="38.1" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-6U-SMDRGB-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-57.15" y="-7" drill="3.05"/>
+<hole x="38.1" y="-7" drill="3.05"/>
+<hole x="-57.15" y="8.24" drill="4"/>
+<hole x="38.1" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-6.25U-SMDRGB">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-50" y="7" drill="3.05"/>
+<hole x="50" y="7" drill="3.05"/>
+<hole x="-50" y="-8.24" drill="4"/>
+<hole x="50" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-6.25U-SMDRGB-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-50" y="-7" drill="3.05"/>
+<hole x="50" y="-7" drill="3.05"/>
+<hole x="-50" y="8.24" drill="4"/>
+<hole x="50" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-6.5U-SMDRGB">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-52.5" y="7" drill="3.05"/>
+<hole x="52.5" y="7" drill="3.05"/>
+<hole x="-52.5" y="-8.24" drill="4"/>
+<hole x="52.5" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-6.5U-SMDRGB-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-52.5" y="-7" drill="3.05"/>
+<hole x="52.5" y="-7" drill="3.05"/>
+<hole x="-52.5" y="8.24" drill="4"/>
+<hole x="52.5" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-7U-SMDRGB">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-57.15" y="7" drill="3.05"/>
+<hole x="57.15" y="7" drill="3.05"/>
+<hole x="-57.15" y="-8.24" drill="4"/>
+<hole x="57.15" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
+<package name="MXHS-7U-SMDRGB-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<wire x1="-1.6" y1="-5.9" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="-1.6" y2="-3.9" width="0.127" layer="22"/>
+<wire x1="-0.8" y1="-3.1" x2="1.6" y2="-3.1" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-3.1" x2="1.6" y2="-5.9" width="0.127" layer="22"/>
+<wire x1="1.6" y1="-5.9" x2="-1.6" y2="-5.9" width="0.127" layer="22"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="0" y="-4.5" drill="2.4"/>
+<hole x="-57.15" y="-7" drill="3.05"/>
+<hole x="57.15" y="-7" drill="3.05"/>
+<hole x="-57.15" y="8.24" drill="4"/>
+<hole x="57.15" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="LED+" x="2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="R-" x="-2.1" y="-3.775" dx="1" dy="0.75" layer="16"/>
+<smd name="G-" x="-2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<smd name="B-" x="2.1" y="-5.225" dx="1" dy="0.75" layer="16"/>
+<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+</package>
 <package name="ALPSMX-REVERSED-6U-SMDLED">
 <description>Keyboard switch package!</description>
 <wire x1="-7" y1="8" x2="7" y2="8" width="0.127" layer="47"/>
@@ -5102,6 +5844,362 @@
 <hole x="57.15" y="8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-REVERSED-6U-SMDLED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-38.1" y="7" drill="3.05"/>
+<hole x="57.15" y="7" drill="3.05"/>
+<hole x="-38.1" y="-8.24" drill="4"/>
+<hole x="57.15" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-REVERSED-6U-SMDLED-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-38.1" y="-7" drill="3.05"/>
+<hole x="57.15" y="-7" drill="3.05"/>
+<hole x="-38.1" y="8.24" drill="4"/>
+<hole x="57.15" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-1U-SMDLED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-2U-SMDLED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-11.9" y="7" drill="3.05"/>
+<hole x="11.9" y="7" drill="3.05"/>
+<hole x="-11.9" y="-8.24" drill="4"/>
+<hole x="11.9" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-2U-SMDLED-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-11.9" y="-7" drill="3.05"/>
+<hole x="11.9" y="-7" drill="3.05"/>
+<hole x="-11.9" y="8.24" drill="4"/>
+<hole x="11.9" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-4U-SMDLED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-28.625" y="7" drill="3.05"/>
+<hole x="28.625" y="7" drill="3.05"/>
+<hole x="-28.625" y="-8.24" drill="4"/>
+<hole x="28.625" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-4U-SMDLED-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-28.625" y="-7" drill="3.05"/>
+<hole x="28.625" y="-7" drill="3.05"/>
+<hole x="-28.625" y="8.24" drill="4"/>
+<hole x="28.625" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-6U-SMDLED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-57.15" y="7" drill="3.05"/>
+<hole x="38.1" y="7" drill="3.05"/>
+<hole x="-57.15" y="-8.24" drill="4"/>
+<hole x="38.1" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-6U-SMDLED-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-57.15" y="-7" drill="3.05"/>
+<hole x="38.1" y="-7" drill="3.05"/>
+<hole x="-57.15" y="8.24" drill="4"/>
+<hole x="38.1" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-6.25U-SMDLED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-50" y="7" drill="3.05"/>
+<hole x="50" y="7" drill="3.05"/>
+<hole x="-50" y="-8.24" drill="4"/>
+<hole x="50" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-6.25U-SMDLED-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-50" y="-7" drill="3.05"/>
+<hole x="50" y="-7" drill="3.05"/>
+<hole x="-50" y="8.24" drill="4"/>
+<hole x="50" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-6.5U-SMDLED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-52.5" y="7" drill="3.05"/>
+<hole x="52.5" y="7" drill="3.05"/>
+<hole x="-52.5" y="-8.24" drill="4"/>
+<hole x="52.5" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-6.5U-SMDLED-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-52.5" y="-7" drill="3.05"/>
+<hole x="52.5" y="-7" drill="3.05"/>
+<hole x="-52.5" y="8.24" drill="4"/>
+<hole x="52.5" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-7U-SMDLED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-57.15" y="7" drill="3.05"/>
+<hole x="57.15" y="7" drill="3.05"/>
+<hole x="-57.15" y="-8.24" drill="4"/>
+<hole x="57.15" y="-8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
+<smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
+<text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-3.175" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="-3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">+</text>
+<text x="3.175" y="-5.75" size="1.27" layer="21" font="vector" align="center">-</text>
+</package>
+<package name="MXHS-7U-SMDLED-FLIPPED">
+<description>Keyboard switch package!</description>
+<wire x1="-7" y1="7" x2="7" y2="7" width="0.127" layer="47"/>
+<wire x1="7" y1="7" x2="7" y2="-7" width="0.127" layer="47"/>
+<wire x1="7" y1="-7" x2="-7" y2="-7" width="0.127" layer="47"/>
+<wire x1="-7" y1="-7" x2="-7" y2="7" width="0.127" layer="47"/>
+<hole x="0" y="0" drill="4"/>
+<hole x="-5.08" y="0" drill="1.7"/>
+<hole x="5.08" y="0" drill="1.7"/>
+<hole x="-3.81" y="2.54" drill="3"/>
+<hole x="2.54" y="5.08" drill="3"/>
+<hole x="-57.15" y="-7" drill="3.05"/>
+<hole x="57.15" y="-7" drill="3.05"/>
+<hole x="-57.15" y="8.24" drill="4"/>
+<hole x="57.15" y="8.24" drill="4"/>
+<smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
+<smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
 <smd name="SMDLED+" x="-1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
 <smd name="SMDLED-" x="1.3" y="-5.75" dx="2" dy="1.75" layer="1"/>
 <text x="0" y="-3.175" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
@@ -7100,6 +8198,141 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="-MXHS--6U" package="MXHS-REVERSED-6U">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS--6U-FLIPPED" package="MXHS-REVERSED-6U-FLIPPED">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-1U" package="MXHS-1U">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-2U" package="MXHS-2U">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-2U-FLIPPED" package="MXHS-2U-FLIPPED">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-4U" package="MXHS-4U">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-4U-FLIPPED" package="MXHS-4U-FLIPPED">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6U" package="MXHS-6U">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6U-FLIPPED" package="MXHS-6U-FLIPPED">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6.25U" package="MXHS-6.25U">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6.25U-FLIPPED" package="MXHS-6.25U-FLIPPED">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6.5U" package="MXHS-6.5U">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6.5U-FLIPPED" package="MXHS-6.5U-FLIPPED">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-7U" package="MXHS-7U">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-7U-FLIPPED" package="MXHS-7U-FLIPPED">
+<connects>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="KEYSWITCH-RGBLED">
@@ -7894,6 +9127,201 @@
 <technology name=""/>
 </technologies>
 </device>
+<device name="-MXHS--6U-SMDRGB" package="MXHS-REVERSED-6U-SMDRGB">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS--6U-SMDRGB-FLIPPED" package="MXHS-REVERSED-6U-SMDRGB-FLIPPED">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-1U-SMDRGB" package="MXHS-1U-SMDRGB">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-2U-SMDRGB" package="MXHS-2U-SMDRGB">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-2U-SMDRGB-FLIPPED" package="MXHS-2U-SMDRGB-FLIPPED">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-4U-SMDRGB" package="MXHS-4U-SMDRGB">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-4U-SMDRGB-FLIPPED" package="MXHS-4U-SMDRGB-FLIPPED">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6U-SMDRGB" package="MXHS-6U-SMDRGB">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6U-SMDRGB-FLIPPED" package="MXHS-6U-SMDRGB-FLIPPED">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6.25U-SMDRGB" package="MXHS-6.25U-SMDRGB">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6.25U-SMDRGB-FLIPPED" package="MXHS-6.25U-SMDRGB-FLIPPED">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6.5U-SMDRGB" package="MXHS-6.5U-SMDRGB">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6.5U-SMDRGB-FLIPPED" package="MXHS-6.5U-SMDRGB-FLIPPED">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-7U-SMDRGB" package="MXHS-7U-SMDRGB">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-7U-SMDRGB-FLIPPED" package="MXHS-7U-SMDRGB-FLIPPED">
+<connects>
+<connect gate="G$1" pin="B-" pad="B-"/>
+<connect gate="G$1" pin="G-" pad="G-"/>
+<connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="KEYSWITCH-SMDLED">
@@ -8221,6 +9649,171 @@
 </technologies>
 </device>
 <device name="-MX-7U-SMDLED-FLIPPED" package="MX-7U-SMDLED-FLIPPED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS--6U-SMDLED" package="MXHS-REVERSED-6U-SMDLED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS--6U-SMDLED-FLIPPED" package="MXHS-REVERSED-6U-SMDLED-FLIPPED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-1U-SMDLED" package="MXHS-1U-SMDLED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-2U-SMDLED" package="MXHS-2U-SMDLED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-2U-SMDLED-FLIPPED" package="MXHS-2U-SMDLED-FLIPPED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-4U-SMDLED" package="MXHS-4U-SMDLED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-4U-SMDLED-FLIPPED" package="MXHS-4U-SMDLED-FLIPPED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6U-SMDLED" package="MXHS-6U-SMDLED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6U-SMDLED-FLIPPED" package="MXHS-6U-SMDLED-FLIPPED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6.25U-SMDLED" package="MXHS-6.25U-SMDLED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6.25U-SMDLED-FLIPPED" package="MXHS-6.25U-SMDLED-FLIPPED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6.5U-SMDLED" package="MXHS-6.5U-SMDLED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-6.5U-SMDLED-FLIPPED" package="MXHS-6.5U-SMDLED-FLIPPED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-7U-SMDLED" package="MXHS-7U-SMDLED">
+<connects>
+<connect gate="G$1" pin="LED+" pad="SMDLED+"/>
+<connect gate="G$1" pin="LED-" pad="SMDLED-"/>
+<connect gate="G$1" pin="P0" pad="MX1"/>
+<connect gate="G$1" pin="P1" pad="MX2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-MXHS-7U-SMDLED-FLIPPED" package="MXHS-7U-SMDLED-FLIPPED">
 <connects>
 <connect gate="G$1" pin="LED+" pad="SMDLED+"/>
 <connect gate="G$1" pin="LED-" pad="SMDLED-"/>
