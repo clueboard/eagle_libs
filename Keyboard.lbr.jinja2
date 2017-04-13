@@ -166,7 +166,7 @@
 <package name="{{package['name']}}">
 <description>{{package['description']}}</description>
 {% for wire in package['wires'] -%}
-<wire x1="{{wire['x1']}}" y1="{{wire['y1']}}" x2="{{wire['x2']}}" y2="{{wire['y2']}}" width="{{wire['width']}}" layer="{{wire['layer']}}"/>
+<wire x1="{{wire['x1']}}" y1="{{wire['y1']}}" x2="{{wire['x2']}}" y2="{{wire['y2']}}" width="{{wire['width']}}" layer="{{wire['layer']}}"{% if 'curve' in wire %} curve="{{wire['curve']}}"{% endif %}/>
 {% endfor -%}
 {% for hole in package['holes'] -%}
 <hole x="{{hole['x']}}" y="{{hole['y']}}" drill="{{hole['diameter']}}"/>
