@@ -188,7 +188,7 @@
 <symbol name="{{symbol['name']}}">
 <description>{{symbol['description']}}</description>
 {% for wire in symbol['wires'] -%}
-<wire x1="{{wire['x1']}}" y1="{{wire['y1']}}" x2="{{wire['x2']}}" y2="{{wire['y2']}}" width="{{wire['width']}}" layer="{{wire['layer']}}"/>
+<wire x1="{{wire['x1']}}" y1="{{wire['y1']}}" x2="{{wire['x2']}}" y2="{{wire['y2']}}" width="{{wire['width']}}" layer="{{wire['layer']}}"{% if 'curve' in wire %} curve="{{wire['curve']}}"{% endif %}/>
 {% endfor -%}
 {% for label in symbol['labels'] -%}
 <text x="{{label['x']}}" y="{{label['y']}}" size="{{label['size']}}" layer="{{label['layer']}}">{{label['value']}}</text>
