@@ -46,6 +46,13 @@ package_holes = {
         {'x': '0', 'y': '0', 'diameter': '4'},
         {'x': '-5.08', 'y': '0', 'diameter': '1.7'},
         {'x': '5.08', 'y': '0', 'diameter': '1.7'},
+    ],
+    'MXHS': [
+        {'x': '0', 'y': '0', 'diameter': '4'},
+        {'x': '-5.08', 'y': '0', 'diameter': '1.7'},
+        {'x': '5.08', 'y': '0', 'diameter': '1.7'},
+        {'x': '-3.81', 'y': '2.54', 'diameter': '3'},
+        {'x': '2.54', 'y': '5.08', 'diameter': '3'},
     ]
 }
 package_pads = {
@@ -62,7 +69,17 @@ package_pads = {
     'MX': [
         {'name': 'MX1', 'x': '-3.81', 'y': '2.54', 'drill': '1.3', 'diameter': '2.54'},
         {'name': 'MX2', 'x': '2.54', 'y': '5.08', 'drill': '1.3', 'diameter': '2.54'}
-    ]
+    ],
+    'MXHS': []
+}
+package_smds = {
+    'ALPS': [],
+    'ALPSMX': [],
+    'MX': [],
+    'MXHS': [
+        {'name': 'MX1', 'x': '-7.36', 'y': '-2.54', 'dx': '2.55', 'dy': '2.5', 'layer': '16'},
+        {'name': 'MX2', 'x': '6.09', 'y': '5.08', 'dx': '2.55', 'dy': '2.5', 'layer': '16'}
+    ],
 }
 package_wires = {
     'ALPS': [
@@ -367,7 +384,7 @@ for package in packages:
         'wires': copy(package_wires[pkg['switch_type']]),
         'holes': copy(package_holes[pkg['switch_type']]),
         'pads': copy(package_pads[pkg['switch_type']]),
-        'smds': [],
+        'smds': copy(package_smds[pkg['switch_type']]),
         'labels': []
     })
     if pkg['led'] in ['rgb-smd']:
@@ -392,10 +409,10 @@ for package in packages:
         template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
         template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
     elif pkg['led'] == 'single-smd':
-        template['packages'][-1]['smds'].append({'name': 'SMDLED+', 'x': '-1.3', 'y': '-7.42', 'dx': '2', 'dy': '1.3', 'layer': '1'})
-        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-7.42', 'size': '1.27', 'layer': '21', 'align': 'center'})
-        template['packages'][-1]['smds'].append({'name': 'SMDLED-', 'x': '1.3', 'y': '-7.42', 'dx': '2', 'dy': '1.3', 'layer': '1'})
-        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-7.42', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['smds'].append({'name': 'SMDLED+', 'x': '-1.3', 'y': '-5.75', 'dx': '2', 'dy': '1.75', 'layer': '1'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.75', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['smds'].append({'name': 'SMDLED-', 'x': '1.3', 'y': '-5.75', 'dx': '2', 'dy': '1.75', 'layer': '1'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.75', 'size': '1.27', 'layer': '21', 'align': 'center'})
     elif pkg['led'] == 'single-tht-smd':
         template['packages'][-1]['pads'].append({'name': 'LED+', 'x': '-1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
         template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
@@ -403,10 +420,10 @@ for package in packages:
         template['packages'][-1]['pads'].append({'name': 'LED-', 'x': '1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2', 'shape': 'square'})
         template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
         template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
-        template['packages'][-1]['smds'].append({'name': 'SMDLED+', 'x': '-1.3', 'y': '-7.42', 'dx': '2', 'dy': '1.3', 'layer': '1'})
-        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-7.42', 'size': '1.27', 'layer': '21', 'align': 'center'})
-        template['packages'][-1]['smds'].append({'name': 'SMDLED-', 'x': '1.3', 'y': '-7.42', 'dx': '2', 'dy': '1.3', 'layer': '1'})
-        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-7.42', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['smds'].append({'name': 'SMDLED+', 'x': '-1.3', 'y': '-6.785', 'dx': '2', 'dy': '1.3', 'layer': '1'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-6.785', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['smds'].append({'name': 'SMDLED-', 'x': '1.3', 'y': '-6.785', 'dx': '2', 'dy': '1.3', 'layer': '1'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-6.785', 'size': '1.27', 'layer': '21', 'align': 'center'})
     elif pkg['led'] == 'rgb-smd':
         template['packages'][-1]['holes'].append({'x': '0', 'y': '-4.5', 'diameter': '2.4'})
         template['packages'][-1]['smds'].append({'name': 'LED+', 'x': '2.1', 'y': '-3.775', 'dx': '1', 'dy': '0.75', 'layer': '16'})
