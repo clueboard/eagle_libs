@@ -24,6 +24,13 @@ from:
 * KEYSWITCH-SMDLED: Cherry MX and/or Alps switches with SMD single-color LED support
 * KEYSWITCH-SMDTHTLED: Cherry MX and/or Alps switches with both throughhole and SMD single-color LED support
 
+Each one may have one or more switch footprints available:
+
+* ALPS: Alps switch
+* ALPSMX: Footprint that supports both Alps and MX switches
+* MX: Cherry MX Switches, both Plate and PCB mount
+* MXHS: Footprint that supports the Kailh PCB Sockets for switch hot swapping
+
 # License
 
 These files are released under a [Creative Commons Attribution-NonCommercial](LICENSE.md) license. You are free to include and distribute them in your project, but if you are selling a board please contact me for a more permissive license. Gratis (no-cost) licenses are available to community run group buys.
