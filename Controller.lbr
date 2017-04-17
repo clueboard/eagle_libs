@@ -162,7 +162,7 @@
 <library>
 <description>Footprints used for the controller and other supporting hardware</description>
 <packages>
-<package name="SWITCH-SMD-EVQP">
+<package name="SWITCH-SMD-EVQP-P2602W">
 <description>Panasonic EVQ-P2602W SMD pushbutton</description>
 <polygon width="0.127" layer="39">
 <vertex x="-2.75" y="1.75"/>
@@ -1658,6 +1658,42 @@ Note- Available clearance varies from computer to computer. This distance has be
 <wire x1="5.08" y1="-1.27" x2="-5.08" y2="-1.27" width="0.127" layer="22"/>
 <wire x1="-5.08" y1="-1.27" x2="-5.08" y2="1.27" width="0.127" layer="22"/>
 </package>
+<package name="SWITCH-SMD-SCHURTER-1241.1612.11">
+<description>Panasonic EVQ-P2602W SMD pushbutton</description>
+<polygon width="0.127" layer="39">
+<vertex x="-5.925" y="4.925"/>
+<vertex x="-5.925" y="-4.925"/>
+<vertex x="5.925" y="-4.925"/>
+<vertex x="5.925" y="4.925"/>
+</polygon>
+<wire x1="-5.925" y1="4.925" x2="-5.925" y2="-4.925" width="0.127" layer="21"/>
+<wire x1="-5.925" y1="-4.925" x2="5.925" y2="-4.925" width="0.127" layer="21"/>
+<wire x1="5.925" y1="-4.925" x2="5.925" y2="4.925" width="0.127" layer="21"/>
+<wire x1="5.925" y1="4.925" x2="-5.925" y2="4.925" width="0.127" layer="21"/>
+<text x="0" y="-6.375" size="1.27" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<smd name="2A" x="-7" y="3.75" dx="3" dy="2" layer="1"/>
+<smd name="1A" x="-7" y="-3.75" dx="3" dy="2" layer="1"/>
+<smd name="1B" x="7" y="-3.75" dx="3" dy="2" layer="1"/>
+<smd name="2B" x="7" y="3.75" dx="3" dy="2" layer="1"/>
+</package>
+<package name="SWITCH-SMD-EVP-BB2A9B00">
+<description>Panasonic EVQ-P2602W SMD pushbutton</description>
+<polygon width="0.127" layer="39">
+<vertex x="-1" y="0.8"/>
+<vertex x="-1" y="-0.8"/>
+<vertex x="1" y="-0.8"/>
+<vertex x="1" y="0.8"/>
+</polygon>
+<wire x1="-1.05" y1="0.8" x2="-1.05" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.05" y1="-0.8" x2="1.05" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.05" y1="-0.8" x2="1.05" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.05" y1="0.8" x2="-1.05" y2="0.8" width="0.127" layer="21"/>
+<text x="0" y="-2.4" size="1.27" layer="21" font="vector" align="bottom-center">&gt;NAME</text>
+<smd name="2A" x="-1.6" y="0.6" dx="0.95" dy="0.55" layer="1"/>
+<smd name="1A" x="-1.6" y="-0.6" dx="0.95" dy="0.55" layer="1"/>
+<smd name="1B" x="1.6" y="-0.6" dx="0.95" dy="0.55" layer="1"/>
+<smd name="2B" x="1.6" y="0.6" dx="0.95" dy="0.55" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="SWITCH">
@@ -2421,7 +2457,25 @@ Note- Available clearance varies from computer to computer. This distance has be
 <gate name="G$1" symbol="SWITCH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SWITCH-SMD-EVQP">
+<device name="-EVQP-P2602W" package="SWITCH-SMD-EVQP-P2602W">
+<connects>
+<connect gate="G$1" pin="1" pad="1A 1B"/>
+<connect gate="G$1" pin="2" pad="2A 2B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SCHURTER-1241.1612.11" package="SWITCH-SMD-SCHURTER-1241.1612.11">
+<connects>
+<connect gate="G$1" pin="1" pad="1A 1B"/>
+<connect gate="G$1" pin="2" pad="2A 2B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-EVP-BB2A9B00" package="SWITCH-SMD-EVP-BB2A9B00">
 <connects>
 <connect gate="G$1" pin="1" pad="1A 1B"/>
 <connect gate="G$1" pin="2" pad="2A 2B"/>
