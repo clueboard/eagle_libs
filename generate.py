@@ -277,7 +277,7 @@ devices = {
         },
     },
     'DIODE': {
-        'switch_types': ['MX'],
+        'switch_types': ['ALPSMX', 'MX'],
         'led': None,
         'diode': True,
         'symbol': {
