@@ -176,6 +176,32 @@ devices = {
             ]
         },
     },
+    'LEDHOLE': {
+        'switch_types': ['ALPSMX', 'MX', 'MXHS'],
+        'led': 'hole',  # A single 5.1x5.1mm hole for an add-on board to shine through
+        'diode': False,
+        'symbol': {
+            'name': 'KEYSWITCH-LEDHOLE',
+            'description': 'A simple keyboard key switch with a hole for an LED to shine through.',
+            'wires': [
+                {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
+                {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
+                {'x1': '5', 'y1': '-5', 'x2': '-5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
+                {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
+            ],
+            'labels': [
+                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
+            ],
+            'pins': [
+                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short'},
+                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270'},
+                {'name': 'LED+', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
+                {'name': 'R-', 'x': '-2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'},
+                {'name': 'G-', 'x': '0', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'},
+                {'name': 'B-', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
+            ]
+        },
+    },
     'RGBLED': {
         'switch_types': ['ALPSMX', 'MX'],
         'led': 'rgb',  # 4 pins, RGB LED
@@ -410,6 +436,9 @@ for package in packages:
     if pkg['led'] in ['rgb-smd']:
         template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-7', 'size': '1.27', 'layer': '21', 'align': 'center'}),
         template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-7', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+    if pkg['led'] in ['hole']:
+        template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-7.5', 'size': '1.27', 'layer': '21', 'align': 'center'}),
+        template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-7.5', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
     else:
         template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-3.175', 'size': '1.27', 'layer': '21', 'align': 'center'}),
         template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-3.175', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
@@ -468,6 +497,11 @@ for package in packages:
         template['packages'][-1]['pads'].append({'name': 'B-', 'x': '3.81', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
         template['packages'][-1]['labels'].append({'value': 'B-', 'x': '3.955', 'y': '-6.985', 'size': '1.27', 'layer': '21', 'align': 'center'})
         template['packages'][-1]['labels'].append({'value': 'B-', 'x': '3.955', 'y': '-6.985', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+    elif pkg['led'] == 'hole':
+        template['packages'][-1]['wires'].append({'x1': '-2', 'y1': '-2.5', 'x2': '-2', 'y2': '-6.5', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '-2', 'y1': '-2.5', 'x2': '2', 'y2': '-2.5', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '2', 'y1': '-2.5', 'x2': '2', 'y2': '-6.5', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '2', 'y1': '-6.5', 'x2': '-2', 'y2': '-6.5', 'width': '0', 'layer': '20'})
 
     if pkg['size'] != '1':
         c = switch_sizes[pkg['size']]
