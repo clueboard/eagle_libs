@@ -178,7 +178,7 @@ devices = {
     },
     'LEDHOLE': {
         'switch_types': ['ALPSMX', 'MX', 'MXHS'],
-        'led': 'hole',  # A single 5.1x5.1mm hole for an add-on board to shine through
+        'led': 'hole',  # A single 4mm x 4mmmm hole for an add-on board to shine through
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-LEDHOLE',
@@ -194,11 +194,7 @@ devices = {
             ],
             'pins': [
                 {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270'},
-                {'name': 'LED+', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
-                {'name': 'R-', 'x': '-2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'},
-                {'name': 'G-', 'x': '0', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'},
-                {'name': 'B-', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
+                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270'}
             ]
         },
     },
@@ -348,6 +344,8 @@ for device in sorted(devices):
                 connections.insert(0, {'gate': 'G$1', 'pin': 'D-', 'pad': 'D-'})
                 connections.insert(0, {'gate': 'G$1', 'pin': 'D+', 'pad': 'D+'})
                 footprint_name = footprint_name + '-DIODE'
+            elif devices[device]['led'] == 'hole':
+                footprint_name = footprint_name + '-LEDHOLE'
             elif devices[device]['led'] == 'rgb':
                 connections.insert(0, {'gate': 'G$1', 'pin': 'R-', 'pad': 'R-'})
                 connections.insert(0, {'gate': 'G$1', 'pin': 'LED+', 'pad': 'LED+'})
@@ -433,12 +431,9 @@ for package in packages:
         'smds': copy(package_smds[pkg['switch_type']]),
         'labels': []
     })
-    if pkg['led'] in ['rgb-smd']:
+    if pkg['led'] in ['hole', 'rgb-smd']:
         template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-7', 'size': '1.27', 'layer': '21', 'align': 'center'}),
         template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-7', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
-    if pkg['led'] in ['hole']:
-        template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-7.5', 'size': '1.27', 'layer': '21', 'align': 'center'}),
-        template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-7.5', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
     else:
         template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-3.175', 'size': '1.27', 'layer': '21', 'align': 'center'}),
         template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-3.175', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
@@ -498,10 +493,10 @@ for package in packages:
         template['packages'][-1]['labels'].append({'value': 'B-', 'x': '3.955', 'y': '-6.985', 'size': '1.27', 'layer': '21', 'align': 'center'})
         template['packages'][-1]['labels'].append({'value': 'B-', 'x': '3.955', 'y': '-6.985', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
     elif pkg['led'] == 'hole':
-        template['packages'][-1]['wires'].append({'x1': '-2', 'y1': '-2.5', 'x2': '-2', 'y2': '-6.5', 'width': '0', 'layer': '20'})
-        template['packages'][-1]['wires'].append({'x1': '-2', 'y1': '-2.5', 'x2': '2', 'y2': '-2.5', 'width': '0', 'layer': '20'})
-        template['packages'][-1]['wires'].append({'x1': '2', 'y1': '-2.5', 'x2': '2', 'y2': '-6.5', 'width': '0', 'layer': '20'})
-        template['packages'][-1]['wires'].append({'x1': '2', 'y1': '-6.5', 'x2': '-2', 'y2': '-6.5', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '-2.5', 'y1': '-3.5', 'x2': '-2.5', 'y2': '-4.75', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '-2.5', 'y1': '-3.5', 'x2': '2.5', 'y2': '-3.5', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '2.5', 'y1': '-3.5', 'x2': '2.5', 'y2': '-4.75', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '2.5', 'y1': '-4.75', 'x2': '-2.5', 'y2': '-4.75', 'width': '0', 'layer': '20'})
 
     if pkg['size'] != '1':
         c = switch_sizes[pkg['size']]
