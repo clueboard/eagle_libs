@@ -9462,8 +9462,8 @@
 <wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
 <wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
 <text x="-4.27" y="2.778" size="1.27" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
+<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270" swaplevel="1"/>
 <pin name="D-" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="D+" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
 </symbol>
@@ -9474,8 +9474,8 @@
 <wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
 <wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
 <text x="-4.27" y="2.778" size="1.27" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
+<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270" swaplevel="1"/>
 <pin name="LED-" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="LED+" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
 </symbol>
@@ -9486,8 +9486,8 @@
 <wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
 <wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
 <text x="-4.27" y="2.778" size="1.27" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
+<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270" swaplevel="1"/>
 </symbol>
 <symbol name="KEYSWITCH-PLAIN">
 <description>A simple keyboard key switch.</description>
@@ -9496,8 +9496,8 @@
 <wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
 <wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
 <text x="-4.27" y="2.778" size="1.27" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
+<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270" swaplevel="1"/>
 </symbol>
 <symbol name="KEYSWITCH-RGBLED">
 <description>A simple keyboard key switch with LED support.</description>
@@ -9506,8 +9506,8 @@
 <wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
 <wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
 <text x="-4.27" y="2.778" size="1.27" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
+<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270" swaplevel="1"/>
 <pin name="LED+" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="R-" x="-2.54" y="-7.62" visible="off" length="short" rot="R90"/>
 <pin name="G-" x="0" y="-7.62" visible="off" length="short" rot="R90"/>
@@ -9520,8 +9520,8 @@
 <wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
 <wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
 <text x="-4.27" y="2.778" size="1.27" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
+<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270" swaplevel="1"/>
 <pin name="LED+" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="R-" x="-2.54" y="-7.62" visible="off" length="short" rot="R90"/>
 <pin name="G-" x="0" y="-7.62" visible="off" length="short" rot="R90"/>
@@ -9534,8 +9534,8 @@
 <wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
 <wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
 <text x="-4.27" y="2.778" size="1.27" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
+<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270" swaplevel="1"/>
 <pin name="LED-" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="LED+" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
 </symbol>
@@ -9546,8 +9546,8 @@
 <wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
 <wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
 <text x="-4.27" y="2.778" size="1.27" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270"/>
+<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
+<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" rot="R270" swaplevel="1"/>
 <pin name="LED-" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="LED+" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
 </symbol>

@@ -194,7 +194,7 @@
 <text x="{{label['x']}}" y="{{label['y']}}" size="{{label['size']}}" layer="{{label['layer']}}">{{label['value']}}</text>
 {% endfor -%}
 {% for pin in symbol['pins'] -%}
-<pin name="{{pin['name']}}" x="{{pin['x']}}" y="{{pin['y']}}" visible="{{pin['visible']}}" length="{{pin['length']}}"{{' rot="%s"' % pin['rot'] if 'rot' in pin else ''}}/>
+<pin name="{{pin['name']}}" x="{{pin['x']}}" y="{{pin['y']}}" visible="{{pin['visible']}}" length="{{pin['length']}}"{{' rot="%s"' % pin['rot'] if 'rot' in pin else ''}}{{' swaplevel="%s"' % pin['swaplevel'] if 'swaplevel' in pin else ''}}/>
 {% endfor -%}
 </symbol>
 {% endfor -%}

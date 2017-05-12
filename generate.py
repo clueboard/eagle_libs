@@ -147,8 +147,8 @@ devices = {
                 {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
             ],
             'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270'}
+                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
+                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'}
             ]
         },
     },
@@ -169,8 +169,8 @@ devices = {
                 {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
             ],
             'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270'},
+                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
+                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
                 {'name': 'LED-', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
                 {'name': 'LED+', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
             ]
@@ -193,8 +193,8 @@ devices = {
                 {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
             ],
             'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270'}
+                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
+                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'}
             ]
         },
     },
@@ -215,8 +215,8 @@ devices = {
                 {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
             ],
             'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270'},
+                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
+                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
                 {'name': 'LED+', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
                 {'name': 'R-', 'x': '-2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'},
                 {'name': 'G-', 'x': '0', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'},
@@ -241,8 +241,8 @@ devices = {
                 {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
             ],
             'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270'},
+                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
+                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
                 {'name': 'LED+', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
                 {'name': 'R-', 'x': '-2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'},
                 {'name': 'G-', 'x': '0', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'},
@@ -267,8 +267,8 @@ devices = {
                 {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
             ],
             'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270'},
+                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
+                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
                 {'name': 'LED-', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
                 {'name': 'LED+', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
             ]
@@ -291,8 +291,8 @@ devices = {
                 {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
             ],
             'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270'},
+                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
+                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
                 {'name': 'LED-', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
                 {'name': 'LED+', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
             ]
@@ -315,8 +315,8 @@ devices = {
                 {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
             ],
             'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270'},
+                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
+                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
                 {'name': 'D-', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
                 {'name': 'D+', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
             ]
