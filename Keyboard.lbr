@@ -1915,8 +1915,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-REVERSED-6U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -1947,8 +1947,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-1U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -1975,8 +1975,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-2U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2007,8 +2007,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-2U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2039,8 +2039,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-4U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2071,8 +2071,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-4U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2103,8 +2103,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-6U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2135,8 +2135,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-6U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2167,8 +2167,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-6.25U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2199,8 +2199,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-6.25U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2231,8 +2231,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-6.5U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2263,8 +2263,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-6.5U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2295,8 +2295,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-7U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2327,8 +2327,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPSMX-7U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2359,8 +2359,8 @@
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
 <pad name="ALPS1" x="-2.5" y="4" drill="1.3" diameter="2.54"/>
 <pad name="ALPS2" x="2.5" y="4.5" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-REVERSED-6U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2381,8 +2381,8 @@
 <hole x="57.15" y="-8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-REVERSED-6U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2403,8 +2403,8 @@
 <hole x="57.15" y="8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-1U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2421,8 +2421,8 @@
 <hole x="5.08" y="0" drill="1.7"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-2U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2443,8 +2443,8 @@
 <hole x="11.9" y="-8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-2U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2465,8 +2465,8 @@
 <hole x="11.9" y="8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-4U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2487,8 +2487,8 @@
 <hole x="28.625" y="-8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-4U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2509,8 +2509,8 @@
 <hole x="28.625" y="8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-6U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2531,8 +2531,8 @@
 <hole x="38.1" y="-8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-6U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2553,8 +2553,8 @@
 <hole x="38.1" y="8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-6.25U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2575,8 +2575,8 @@
 <hole x="50" y="-8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-6.25U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2597,8 +2597,8 @@
 <hole x="50" y="8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-6.5U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2619,8 +2619,8 @@
 <hole x="52.5" y="-8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-6.5U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2641,8 +2641,8 @@
 <hole x="52.5" y="8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-7U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2663,8 +2663,8 @@
 <hole x="57.15" y="-8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MX-7U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2685,8 +2685,8 @@
 <hole x="57.15" y="8.24" drill="4"/>
 <pad name="MX1" x="-3.81" y="2.54" drill="1.3" diameter="2.54"/>
 <pad name="MX2" x="2.54" y="5.08" drill="1.3" diameter="2.54"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-REVERSED-6U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2719,8 +2719,8 @@
 <hole x="57.15" y="-8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-REVERSED-6U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2753,8 +2753,8 @@
 <hole x="57.15" y="8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-1U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2783,8 +2783,8 @@
 <hole x="2.54" y="5.08" drill="3"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-2U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2817,8 +2817,8 @@
 <hole x="11.9" y="-8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-2U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2851,8 +2851,8 @@
 <hole x="11.9" y="8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-4U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2885,8 +2885,8 @@
 <hole x="28.625" y="-8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-4U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2919,8 +2919,8 @@
 <hole x="28.625" y="8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-6U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -2953,8 +2953,8 @@
 <hole x="38.1" y="-8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-6U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -2987,8 +2987,8 @@
 <hole x="38.1" y="8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-6.25U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -3021,8 +3021,8 @@
 <hole x="50" y="-8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-6.25U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -3055,8 +3055,8 @@
 <hole x="50" y="8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-6.5U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -3089,8 +3089,8 @@
 <hole x="52.5" y="-8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-6.5U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -3123,8 +3123,8 @@
 <hole x="52.5" y="8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-7U-LEDHOLE">
 <description>Keyboard switch package!</description>
@@ -3157,8 +3157,8 @@
 <hole x="57.15" y="-8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="MXHS-7U-LEDHOLE-FLIPPED">
 <description>Keyboard switch package!</description>
@@ -3191,8 +3191,8 @@
 <hole x="57.15" y="8.24" drill="4"/>
 <smd name="MX1" x="-7.36" y="2.54" dx="2.55" dy="2.5" layer="16"/>
 <smd name="MX2" x="6.09" y="5.08" dx="2.55" dy="2.5" layer="16"/>
-<text x="0" y="-7" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-7" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;NAME</text>
 </package>
 <package name="ALPS-REVERSED-6U">
 <description>Keyboard switch package!</description>
