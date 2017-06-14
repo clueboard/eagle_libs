@@ -177,7 +177,7 @@ devices = {
         },
     },
     'LEDHOLE': {
-        'switch_types': ['ALPSMX', 'MX', 'MXHS'],
+        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS'],
         'led': 'hole',  # A single 4mm x 4mmmm hole for an add-on board to shine through
         'diode': False,
         'symbol': {
@@ -225,7 +225,7 @@ devices = {
         },
     },
     'RGBSMDLED': {
-        'switch_types': ['ALPSMX', 'MX', 'MXHS'],
+        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS'],
         'led': 'rgb-smd',  # 4 pins, RGB LED, SMD shining through PCB
         'diode': False,
         'symbol': {
@@ -374,22 +374,22 @@ for device in sorted(devices):
             if '--' in package_name:
                 package_name = package_name.replace('--', '-REVERSED-')
             packages[package_name] = copy(devices[device])
-            packages[package_name].update({'name': package_name, 'device': device, 'switch_type': switch_type, 'size': key_size, 'flipped': 1})
+            packages[package_name].update({'name': package_name, 'device': device, 'switch_type': switch_type, 'size': key_size, 'style': 'NORMAL'})
             footprints.append({
                 'name': footprint_name,
                 'package': package_name,
                 'connects': connections
             })
             if key_size != '1':
-                footprint_name = footprint_name + '-FLIPPED'
-                package_name = package_name + '-FLIPPED'
-                packages[package_name] = copy(devices[device])
-                packages[package_name].update({'name': package_name, 'device': device, 'switch_type': switch_type, 'size': key_size, 'flipped': -1})
-                footprints.append({
-                    'name': footprint_name,
-                    'package': package_name,
-                    'connects': connections
-                })
+                for style in ('FLIPPED', 'FLIPPED-ROTATED', 'ROTATED'):
+                    package = '-'.join((package_name, style))
+                    packages[package] = copy(devices[device])
+                    packages[package].update({'name': package, 'device': device, 'switch_type': switch_type, 'size': key_size, 'style': style})
+                    footprints.append({
+                        'name': '-'.join((footprint_name, style)),
+                        'package': package,
+                        'connects': connections
+                    })
     template['devicesets'].append({
         'name': 'KEYSWITCH-' + device,
         'devices': footprints
@@ -431,12 +431,13 @@ for package in packages:
         'smds': copy(package_smds[pkg['switch_type']]),
         'labels': []
     })
-    if pkg['led'] in ['hole', 'rgb-smd']:
-        template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-7', 'size': '1.27', 'layer': '21', 'align': 'center'}),
-        template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-7', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
-    else:
-        template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-3.175', 'size': '1.27', 'layer': '21', 'align': 'center'}),
-        template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': '-3.175', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+    label_offset = '-3.175'
+    if pkg['led'] in ['rgb-smd']:
+        label_offset = '-7'
+    elif pkg['led'] in ['hole']:
+        label_offset = '-5.715'
+    template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': label_offset, 'size': '1.27', 'layer': '21', 'align': 'center'}),
+    template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': label_offset, 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
 
     if pkg['diode']:
         template['packages'][-1]['pads'].append({'name': 'D+', 'x': '-3.81', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
@@ -500,10 +501,26 @@ for package in packages:
 
     if pkg['size'] != '1':
         c = switch_sizes[pkg['size']]
-        template['packages'][-1]['holes'].append({'x': c['lstab'], 'y': c['tstab']*pkg['flipped'], 'diameter': '3.05'})
-        template['packages'][-1]['holes'].append({'x': c['rstab'], 'y': c['tstab']*pkg['flipped'], 'diameter': '3.05'})
-        template['packages'][-1]['holes'].append({'x': c['lstab'], 'y': c['bstab']*pkg['flipped'], 'diameter': '4'})
-        template['packages'][-1]['holes'].append({'x': c['rstab'], 'y': c['bstab']*pkg['flipped'], 'diameter': '4'})
+        if pkg['style'] == 'FLIPPED':
+            template['packages'][-1]['holes'].append({'x': c['lstab'], 'y': -c['tstab'], 'diameter': '3.05'})
+            template['packages'][-1]['holes'].append({'x': c['rstab'], 'y': -c['tstab'], 'diameter': '3.05'})
+            template['packages'][-1]['holes'].append({'x': c['lstab'], 'y': -c['bstab'], 'diameter': '4'})
+            template['packages'][-1]['holes'].append({'x': c['rstab'], 'y': -c['bstab'], 'diameter': '4'})
+        elif pkg['style'] == 'FLIPPED-ROTATED':
+            template['packages'][-1]['holes'].append({'y': c['lstab'], 'x': -c['tstab'], 'diameter': '3.05'})
+            template['packages'][-1]['holes'].append({'y': c['rstab'], 'x': -c['tstab'], 'diameter': '3.05'})
+            template['packages'][-1]['holes'].append({'y': c['lstab'], 'x': -c['bstab'], 'diameter': '4'})
+            template['packages'][-1]['holes'].append({'y': c['rstab'], 'x': -c['bstab'], 'diameter': '4'})
+        elif pkg['style'] == 'ROTATED':
+            template['packages'][-1]['holes'].append({'y': c['lstab'], 'x': c['tstab'], 'diameter': '3.05'})
+            template['packages'][-1]['holes'].append({'y': c['rstab'], 'x': c['tstab'], 'diameter': '3.05'})
+            template['packages'][-1]['holes'].append({'y': c['lstab'], 'x': c['bstab'], 'diameter': '4'})
+            template['packages'][-1]['holes'].append({'y': c['rstab'], 'x': c['bstab'], 'diameter': '4'})
+        else:
+            template['packages'][-1]['holes'].append({'x': c['lstab'], 'y': c['tstab'], 'diameter': '3.05'})
+            template['packages'][-1]['holes'].append({'x': c['rstab'], 'y': c['tstab'], 'diameter': '3.05'})
+            template['packages'][-1]['holes'].append({'x': c['lstab'], 'y': c['bstab'], 'diameter': '4'})
+            template['packages'][-1]['holes'].append({'x': c['rstab'], 'y': c['bstab'], 'diameter': '4'})
 
 if __name__ == '__main__':
     t = Template(open('Keyboard.lbr.jinja2').read())
