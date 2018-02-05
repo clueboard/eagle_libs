@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.125" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -543,10 +543,10 @@
 </package>
 <package name="SOD-123">
 <description>SOD-123 footprint</description>
-<wire x1="-1.143" y1="-0.635" x2="-1.143" y2="0.635" width="0.127" layer="51"/>
-<wire x1="1.143" y1="0.635" x2="1.143" y2="-0.635" width="0.127" layer="51"/>
-<wire x1="-1.143" y1="0.889" x2="1.143" y2="0.889" width="0.127" layer="21"/>
-<wire x1="1.143" y1="-0.889" x2="-1.143" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="-1.325" y1="-1" x2="-1.325" y2="1" width="0.127" layer="51"/>
+<wire x1="1.325" y1="1" x2="1.325" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1.325" y1="1.5" x2="1.325" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.325" y1="-1.5" x2="-1.325" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="0.381" y1="0" x2="-0.381" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="-0.381" y1="-0.635" x2="-0.381" y2="-0.508" width="0.127" layer="21"/>
 <wire x1="-0.381" y1="-0.508" x2="-0.381" y2="-0.381" width="0.127" layer="21"/>
@@ -566,13 +566,13 @@
 <wire x1="0" y1="0" x2="-0.254" y2="-0.127" width="0.127" layer="21"/>
 <wire x1="-0.254" y1="-0.127" x2="-0.127" y2="0.127" width="0.127" layer="21"/>
 <wire x1="-0.127" y1="0.127" x2="-0.127" y2="0" width="0.127" layer="21"/>
-<smd name="C" x="1.651" y="0" dx="1.397" dy="1.397" layer="1" rot="R180"/>
-<smd name="A" x="-1.651" y="0" dx="1.397" dy="1.397" layer="1" rot="R180"/>
+<smd name="C" x="1.55" y="0" dx="0.9" dy="0.95" layer="1" rot="R270"/>
+<smd name="A" x="-1.55" y="0" dx="0.9" dy="0.95" layer="1" rot="R270"/>
 <rectangle x1="1.2" y1="-0.4" x2="1.95" y2="0.45" layer="51" rot="R180"/>
 <rectangle x1="-1.95" y1="-0.4" x2="-1.2" y2="0.45" layer="51" rot="R180"/>
-<text x="0" y="1.27" size="1" layer="21" font="vector" ratio="13" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.27" size="1" layer="21" font="vector" ratio="13" align="top-center">&gt;VALUE</text>
-<text x="2.75" y="0" size="0.75" layer="21" align="center-left">K</text>
+<text x="0" y="1.77" size="1" layer="21" font="vector" ratio="13" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.77" size="1" layer="21" font="vector" ratio="13" align="top-center">&gt;VALUE</text>
+<text x="2.25" y="0" size="0.75" layer="21" align="center-left">K</text>
 </package>
 <package name="WS2812B">
 <wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
@@ -1714,8 +1714,8 @@ Note- Available clearance varies from computer to computer. This distance has be
 <smd name="B@3" x="1.6" y="0.6" dx="0.95" dy="0.55" layer="1"/>
 </package>
 <package name="STABILIZER">
-<hole x="0" y="7" drill="3.05"/>
-<hole x="0" y="-8.24" drill="4"/>
+<hole x="0" y="7" drill="3.5"/>
+<hole x="0" y="-8.24" drill="4.5"/>
 <text x="0" y="3.81" size="1.27" layer="21" font="vector" align="center">&gt;VALUE</text>
 <text x="0" y="3.81" size="1.27" layer="22" font="vector" rot="MR0" align="center">&gt;VALUE</text>
 </package>
@@ -1780,12 +1780,12 @@ Note- Available clearance varies from computer to computer. This distance has be
 </polygon>
 <text x="0" y="1.67" size="1.016" layer="21" font="vector" align="center">&gt;NAME</text>
 <text x="0" y="-2.55" size="1.016" layer="21" font="vector" align="center">&gt;VALUE</text>
-<wire x1="-1" y1="0.9" x2="-2.84" y2="0.9" width="0.127" layer="22"/>
-<wire x1="-2.84" y1="0.9" x2="-2.84" y2="-0.9" width="0.127" layer="22"/>
-<wire x1="-2.84" y1="-0.9" x2="-1" y2="-0.9" width="0.127" layer="22"/>
-<wire x1="1" y1="0.9" x2="2.84" y2="0.9" width="0.127" layer="22"/>
-<wire x1="2.84" y1="0.9" x2="2.84" y2="-0.9" width="0.127" layer="22"/>
-<wire x1="2.84" y1="-0.9" x2="1" y2="-0.9" width="0.127" layer="22"/>
+<wire x1="-1" y1="0.9" x2="-2.84" y2="0.9" width="0.127" layer="21"/>
+<wire x1="-2.84" y1="0.9" x2="-2.84" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="-2.84" y1="-0.9" x2="-1" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="1" y1="0.9" x2="2.84" y2="0.9" width="0.127" layer="21"/>
+<wire x1="2.84" y1="0.9" x2="2.84" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="2.84" y1="-0.9" x2="1" y2="-0.9" width="0.127" layer="21"/>
 <text x="3.835" y="0" size="1.27" layer="21" font="vector" align="center">+</text>
 <text x="-3.535" y="0" size="1.27" layer="21" font="vector" align="center">-</text>
 <wire x1="0.2" y1="-1.27" x2="0.2" y2="-1.87" width="0.127" layer="21"/>
@@ -1998,7 +1998,7 @@ Note- Available clearance varies from computer to computer. This distance has be
 <smd name="DOUT" x="-0.89" y="1.49" dx="1.2" dy="0.8" layer="1" rot="R270"/>
 <smd name="DIN" x="0.89" y="-1.49" dx="1.2" dy="0.8" layer="1" rot="R270"/>
 <smd name="GND" x="-0.89" y="-1.49" dx="1.2" dy="0.8" layer="1" rot="R270"/>
-<text x="0" y="-3.0625" size="0.8128" layer="25" ratio="10" rot="R180" align="center">&gt;NAME</text>
+<text x="2.3125" y="0" size="1" layer="25" ratio="13" rot="R270" align="center">&gt;NAME</text>
 <circle x="0" y="0" radius="1" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="0.45" width="0.1" layer="21"/>
 <wire x1="-1.74" y1="1.74" x2="1.74" y2="1.74" width="0.1" layer="21"/>
@@ -2291,8 +2291,8 @@ Note- Available clearance varies from computer to computer. This distance has be
 <smd name="B12" x="-3" y="-1.04" dx="0.3" dy="0.7" layer="1" rot="R180"/>
 <pad name="SHIELD@2" x="-4.49" y="-7.2" drill="0.25" diameter="0.8" shape="long" rot="R270"/>
 <pad name="SHIELD@1" x="4.49" y="-7.2" drill="0.25" diameter="0.8" shape="long" rot="R270"/>
-<pad name="SHIELD@3" x="4.02" y="-1.25" drill="0.25" diameter="0.8" shape="long" rot="R270"/>
-<pad name="SHIELD@4" x="-4.02" y="-1.25" drill="0.25" diameter="0.8" shape="long" rot="R270"/>
+<pad name="SHIELD@3" x="4.13" y="-1.25" drill="0.25" diameter="0.8" shape="long" rot="R270"/>
+<pad name="SHIELD@4" x="-4.13" y="-1.25" drill="0.25" diameter="0.8" shape="long" rot="R270"/>
 <text x="0" y="-9.75" size="1.27" layer="25" font="vector" align="top-center">&gt;NAME</text>
 <wire x1="-4.6" y1="1.4" x2="4.6" y2="1.4" width="0.127" layer="21"/>
 <wire x1="4.6" y1="1.4" x2="4.6" y2="-2.4" width="0.127" layer="21"/>
@@ -2326,18 +2326,18 @@ Note- Available clearance varies from computer to computer. This distance has be
 <wire x1="4.5" y1="-7.9" x2="4.25" y2="-7.65" width="0.01" layer="46" curve="-90"/>
 <wire x1="4.25" y1="-7.65" x2="4.25" y2="-6.75" width="0.01" layer="46"/>
 <wire x1="4.25" y1="-6.75" x2="4.5" y2="-6.5" width="0.01" layer="46" curve="-90"/>
-<wire x1="4.02" y1="-0.55" x2="4.27" y2="-0.8" width="0.01" layer="46" curve="-90"/>
-<wire x1="4.27" y1="-0.8" x2="4.27" y2="-1.7" width="0.01" layer="46"/>
-<wire x1="4.27" y1="-1.7" x2="4.02" y2="-1.95" width="0.01" layer="46" curve="-90"/>
-<wire x1="4.02" y1="-1.95" x2="3.77" y2="-1.7" width="0.01" layer="46" curve="-90"/>
-<wire x1="3.77" y1="-1.7" x2="3.77" y2="-0.8" width="0.01" layer="46"/>
-<wire x1="3.77" y1="-0.8" x2="4.02" y2="-0.55" width="0.01" layer="46" curve="-90"/>
-<wire x1="-4.02" y1="-0.55" x2="-3.77" y2="-0.8" width="0.01" layer="46" curve="-90"/>
-<wire x1="-3.77" y1="-0.8" x2="-3.77" y2="-1.7" width="0.01" layer="46"/>
-<wire x1="-3.77" y1="-1.7" x2="-4.02" y2="-1.95" width="0.01" layer="46" curve="-90"/>
-<wire x1="-4.02" y1="-1.95" x2="-4.27" y2="-1.7" width="0.01" layer="46" curve="-90"/>
-<wire x1="-4.27" y1="-1.7" x2="-4.27" y2="-0.8" width="0.01" layer="46"/>
-<wire x1="-4.27" y1="-0.8" x2="-4.02" y2="-0.55" width="0.01" layer="46" curve="-90"/>
+<wire x1="4.13" y1="-0.55" x2="4.38" y2="-0.8" width="0.01" layer="46" curve="-90"/>
+<wire x1="4.38" y1="-0.8" x2="4.38" y2="-1.7" width="0.01" layer="46"/>
+<wire x1="4.38" y1="-1.7" x2="4.13" y2="-1.95" width="0.01" layer="46" curve="-90"/>
+<wire x1="4.13" y1="-1.95" x2="3.88" y2="-1.7" width="0.01" layer="46" curve="-90"/>
+<wire x1="3.88" y1="-1.7" x2="3.88" y2="-0.8" width="0.01" layer="46"/>
+<wire x1="3.88" y1="-0.8" x2="4.13" y2="-0.55" width="0.01" layer="46" curve="-90"/>
+<wire x1="-4.13" y1="-0.55" x2="-3.88" y2="-0.8" width="0.01" layer="46" curve="-90"/>
+<wire x1="-3.88" y1="-0.8" x2="-3.88" y2="-1.7" width="0.01" layer="46"/>
+<wire x1="-3.88" y1="-1.7" x2="-4.13" y2="-1.95" width="0.01" layer="46" curve="-90"/>
+<wire x1="-4.13" y1="-1.95" x2="-4.38" y2="-1.7" width="0.01" layer="46" curve="-90"/>
+<wire x1="-4.38" y1="-1.7" x2="-4.38" y2="-0.8" width="0.01" layer="46"/>
+<wire x1="-4.38" y1="-0.8" x2="-4.13" y2="-0.55" width="0.01" layer="46" curve="-90"/>
 <wire x1="4.075" y1="0" x2="3.775" y2="-0.325" width="0.01" layer="46" curve="-90"/>
 <wire x1="3.775" y1="-0.325" x2="3.425" y2="-0.325" width="0.01" layer="46"/>
 <wire x1="3.425" y1="-0.325" x2="3.125" y2="0" width="0.01" layer="46" curve="-90"/>
@@ -2375,27 +2375,26 @@ Note- Available clearance varies from computer to computer. This distance has be
 <package name="C0402">
 <wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
 <wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
-<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1" y1="0.483" x2="1" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1" y1="0.483" x2="1" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="1" y1="-0.483" x2="-1" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1" y1="-0.483" x2="-1" y2="0.483" width="0.0508" layer="39"/>
+<smd name="1" x="-0.5" y="0" dx="0.6" dy="0.7" layer="1"/>
+<smd name="2" x="0.5" y="0" dx="0.6" dy="0.7" layer="1"/>
+<text x="-0.635" y="-0.635" size="0.9" layer="25" ratio="13" align="top-left">&gt;NAME</text>
 <rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-<package name="R0405">
+<package name="R0402">
 <wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
 <wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
-<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
-<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
-<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<wire x1="-1" y1="0.483" x2="1" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1" y1="0.483" x2="1" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="1" y1="-0.483" x2="-1" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1" y1="-0.483" x2="-1" y2="0.483" width="0.0508" layer="39"/>
+<smd name="1" x="-0.5" y="0" dx="0.6" dy="0.7" layer="1"/>
+<smd name="2" x="0.5" y="0" dx="0.6" dy="0.7" layer="1"/>
 <text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
@@ -2823,6 +2822,39 @@ Note- Available clearance varies from computer to computer. This distance has be
 <rectangle x1="-1.1" y1="-4.6" x2="1.1" y2="-2.9" layer="39"/>
 <rectangle x1="-1.1" y1="2.9" x2="1.1" y2="4.6" layer="39"/>
 <rectangle x1="-1.1" y1="2.9" x2="1.1" y2="4.6" layer="40"/>
+</package>
+<package name="SOD-323">
+<description>SOD-123 footprint</description>
+<wire x1="-1.143" y1="-0.635" x2="-1.143" y2="0.635" width="0.127" layer="51"/>
+<wire x1="1.143" y1="0.635" x2="1.143" y2="-0.635" width="0.127" layer="51"/>
+<wire x1="-1.143" y1="0.889" x2="1.143" y2="0.889" width="0.127" layer="21"/>
+<wire x1="1.143" y1="-0.889" x2="-1.143" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="0.381" y1="0" x2="-0.381" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="-0.381" y1="-0.508" x2="-0.381" y2="-0.381" width="0.127" layer="21"/>
+<wire x1="-0.381" y1="-0.381" x2="-0.381" y2="0.635" width="0.127" layer="21"/>
+<wire x1="-0.381" y1="0.635" x2="0.381" y2="0" width="0.127" layer="21"/>
+<wire x1="0.381" y1="0" x2="-0.381" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="-0.381" y1="-0.508" x2="-0.254" y2="0.508" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="0.508" x2="0.254" y2="0" width="0.127" layer="21"/>
+<wire x1="0.254" y1="0" x2="-0.381" y2="-0.381" width="0.127" layer="21"/>
+<wire x1="-0.381" y1="-0.381" x2="-0.254" y2="0.381" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="0.381" x2="0.127" y2="0" width="0.127" layer="21"/>
+<wire x1="0.127" y1="0" x2="-0.254" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="-0.254" x2="-0.254" y2="-0.127" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.254" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="0.254" x2="-0.127" y2="0.127" width="0.127" layer="21"/>
+<wire x1="-0.127" y1="0.127" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="-0.254" y2="-0.127" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="-0.127" x2="-0.127" y2="0.127" width="0.127" layer="21"/>
+<wire x1="-0.127" y1="0.127" x2="-0.127" y2="0" width="0.127" layer="21"/>
+<smd name="C" x="1.651" y="0" dx="1.397" dy="1.397" layer="1" rot="R180"/>
+<smd name="A" x="-1.651" y="0" dx="1.397" dy="1.397" layer="1" rot="R180"/>
+<rectangle x1="1.2" y1="-0.4" x2="1.95" y2="0.45" layer="51" rot="R180"/>
+<rectangle x1="-1.95" y1="-0.4" x2="-1.2" y2="0.45" layer="51" rot="R180"/>
+<text x="0" y="1.27" size="1" layer="21" font="vector" ratio="13" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="1" layer="21" font="vector" ratio="13" align="top-center">&gt;VALUE</text>
+<text x="2.75" y="0" size="0.75" layer="21" align="center-left">K</text>
 </package>
 </packages>
 <symbols>
@@ -4951,7 +4983,7 @@ Screen</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-0405" package="R0405">
+<device name="-0405" package="R0402">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

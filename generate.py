@@ -37,6 +37,10 @@ connects = {
     'MXHS': [
         {'gate': 'G$1', 'pin': 'P0', 'pad': 'MX1'},
         {'gate': 'G$1', 'pin': 'P1', 'pad': 'MX2'}
+    ],
+    'MXHSPCB': [
+        {'gate': 'G$1', 'pin': 'P0', 'pad': 'MX1'},
+        {'gate': 'G$1', 'pin': 'P1', 'pad': 'MX2'}
     ]
 }
 package_holes = {
@@ -53,10 +57,15 @@ package_holes = {
     ],
     'MXHS': [
         {'x': '0', 'y': '0', 'diameter': '4'},
-        {'x': '-5.08', 'y': '0', 'diameter': '1.7'},
+        {'x': '3.81', 'y': '2.54', 'diameter': '3'},
+        {'x': '-2.54', 'y': '5.08', 'diameter': '3'},
+    ],
+    'MXHSPCB': [
+        {'x': '0', 'y': '0', 'diameter': '4'},
         {'x': '5.08', 'y': '0', 'diameter': '1.7'},
-        {'x': '-3.81', 'y': '2.54', 'diameter': '3'},
-        {'x': '2.54', 'y': '5.08', 'diameter': '3'},
+        {'x': '-5.08', 'y': '0', 'diameter': '1.7'},
+        {'x': '3.81', 'y': '2.54', 'diameter': '3'},
+        {'x': '-2.54', 'y': '5.08', 'diameter': '3'},
     ]
 }
 package_pads = {
@@ -74,15 +83,20 @@ package_pads = {
         {'name': 'MX1', 'x': '-3.81', 'y': '2.54', 'drill': '1.3', 'diameter': '2.54'},
         {'name': 'MX2', 'x': '2.54', 'y': '5.08', 'drill': '1.3', 'diameter': '2.54'}
     ],
-    'MXHS': []
+    'MXHS': [],
+    'MXHSPCB': []
 }
 package_smds = {
     'ALPS': [],
     'ALPSMX': [],
     'MX': [],
     'MXHS': [
-        {'name': 'MX1', 'x': '-7.36', 'y': '2.54', 'dx': '2.55', 'dy': '2.5', 'layer': '16'},
-        {'name': 'MX2', 'x': '6.09', 'y': '5.08', 'dx': '2.55', 'dy': '2.5', 'layer': '16'}
+        {'name': 'MX1', 'x': '7.36', 'y': '2.54', 'dx': '2.55', 'dy': '2.5', 'layer': '1'},
+        {'name': 'MX2', 'x': '-6.09', 'y': '5.08', 'dx': '2.55', 'dy': '2.5', 'layer': '1'}
+    ],
+    'MXHSPCB': [
+        {'name': 'MX1', 'x': '7.36', 'y': '2.54', 'dx': '2.55', 'dy': '2.5', 'layer': '1'},
+        {'name': 'MX2', 'x': '-6.09', 'y': '5.08', 'dx': '2.55', 'dy': '2.5', 'layer': '1'}
     ],
 }
 package_wires = {
@@ -113,25 +127,41 @@ package_wires = {
         {'x1': '-7', 'y1': '-7', 'x2': '-7', 'y2': '7', 'width': '0.127', 'layer': '47'},
     ],
     'MXHS': [
-        {'x1': '-7', 'y1': '7', 'x2': '7', 'y2': '7', 'width': '0.127', 'layer': '47'},
-        {'x1': '7', 'y1': '7', 'x2': '7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
-        {'x1': '7', 'y1': '-7', 'x2': '-7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7', 'y1': '-7', 'x2': '-7', 'y2': '7', 'width': '0.127', 'layer': '47'},
-        {'x1': '-5.5', 'y1': '0.8', 'x2': '-5.5', 'y2': '4.6', 'width': '0.127', 'layer': '22'},
-        {'x1': '-5.5', 'y1': '4.6', 'x2': '-3.3', 'y2': '6.8', 'width': '0.127', 'layer': '22', 'curve': '-90'},
-        {'x1': '-3.3', 'y1': '6.8', 'x2': '4.3', 'y2': '6.8', 'width': '0.127', 'layer': '22'},
-        {'x1': '4.3', 'y1': '6.8', 'x2': '4.3', 'y2': '3.85', 'width': '0.127', 'layer': '22'},
-        {'x1': '4.3', 'y1': '3.85', 'x2': '3.7', 'y2': '3.3', 'width': '0.127', 'layer': '22', 'curve': '-90'},
-        {'x1': '3.7', 'y1': '3.3', 'x2': '-0.3', 'y2': '3.3', 'width': '0.127', 'layer': '22'},
-        {'x1': '-0.3', 'y1': '3.3', 'x2': '-2.3', 'y2': '1.5', 'width': '0.127', 'layer': '22', 'curve': '90'},
-        {'x1': '-2.3', 'y1': '1.5', 'x2': '-2.3', 'y2': '1.35', 'width': '0.127', 'layer': '22'},
-        {'x1': '-2.3', 'y1': '1.35', 'x2': '-2.65', 'y2': '0.8', 'width': '0.127', 'layer': '22', 'curve': '-90'},
-        {'x1': '-2.65', 'y1': '0.8', 'x2': '-5.5', 'y2': '0.8', 'width': '0.127', 'layer': '22'},
+        {'x1': '-7', 'y1': '7', 'x2': '7', 'y2': '7', 'width': '0.15', 'layer': '47'},
+        {'x1': '7', 'y1': '7', 'x2': '7', 'y2': '-7', 'width': '0.15', 'layer': '47'},
+        {'x1': '7', 'y1': '-7', 'x2': '-7', 'y2': '-7', 'width': '0.15', 'layer': '47'},
+        {'x1': '-7', 'y1': '-7', 'x2': '-7', 'y2': '7', 'width': '0.15', 'layer': '47'},
+        {'x1': '5.5', 'y1': '0.8', 'x2': '5.5', 'y2': '4.6', 'width': '0.15', 'layer': '21'},
+        {'x1': '5.5', 'y1': '4.6', 'x2': '3.3', 'y2': '6.8', 'width': '0.15', 'layer': '21', 'curve': '90'},
+        {'x1': '3.3', 'y1': '6.8', 'x2': '-4.3', 'y2': '6.8', 'width': '0.15', 'layer': '21'},
+        {'x1': '-4.3', 'y1': '6.8', 'x2': '-4.3', 'y2': '3.85', 'width': '0.15', 'layer': '21'},
+        {'x1': '-4.3', 'y1': '3.85', 'x2': '-3.7', 'y2': '3.3', 'width': '0.15', 'layer': '21', 'curve': '90'},
+        {'x1': '-3.7', 'y1': '3.3', 'x2': '0.3', 'y2': '3.3', 'width': '0.15', 'layer': '21'},
+        {'x1': '0.3', 'y1': '3.3', 'x2': '2.3', 'y2': '1.5', 'width': '0.15', 'layer': '21', 'curve': '-90'},
+        {'x1': '2.3', 'y1': '1.5', 'x2': '2.3', 'y2': '1.35', 'width': '0.15', 'layer': '21'},
+        {'x1': '2.3', 'y1': '1.35', 'x2': '2.65', 'y2': '0.8', 'width': '0.15', 'layer': '21', 'curve': '90'},
+        {'x1': '2.65', 'y1': '0.8', 'x2': '5.5', 'y2': '0.8', 'width': '0.15', 'layer': '21'},
+    ],
+    'MXHSPCB': [
+        {'x1': '-7', 'y1': '7', 'x2': '7', 'y2': '7', 'width': '0.15', 'layer': '47'},
+        {'x1': '7', 'y1': '7', 'x2': '7', 'y2': '-7', 'width': '0.15', 'layer': '47'},
+        {'x1': '7', 'y1': '-7', 'x2': '-7', 'y2': '-7', 'width': '0.15', 'layer': '47'},
+        {'x1': '-7', 'y1': '-7', 'x2': '-7', 'y2': '7', 'width': '0.15', 'layer': '47'},
+        {'x1': '5.5', 'y1': '0.8', 'x2': '5.5', 'y2': '4.6', 'width': '0.15', 'layer': '21'},
+        {'x1': '5.5', 'y1': '4.6', 'x2': '3.3', 'y2': '6.8', 'width': '0.15', 'layer': '21', 'curve': '90'},
+        {'x1': '3.3', 'y1': '6.8', 'x2': '-4.3', 'y2': '6.8', 'width': '0.15', 'layer': '21'},
+        {'x1': '-4.3', 'y1': '6.8', 'x2': '-4.3', 'y2': '3.85', 'width': '0.15', 'layer': '21'},
+        {'x1': '-4.3', 'y1': '3.85', 'x2': '-3.7', 'y2': '3.3', 'width': '0.15', 'layer': '21', 'curve': '90'},
+        {'x1': '-3.7', 'y1': '3.3', 'x2': '0.3', 'y2': '3.3', 'width': '0.15', 'layer': '21'},
+        {'x1': '0.3', 'y1': '3.3', 'x2': '2.3', 'y2': '1.5', 'width': '0.15', 'layer': '21', 'curve': '-90'},
+        {'x1': '2.3', 'y1': '1.5', 'x2': '2.3', 'y2': '1.35', 'width': '0.15', 'layer': '21'},
+        {'x1': '2.3', 'y1': '1.35', 'x2': '2.65', 'y2': '0.8', 'width': '0.15', 'layer': '21', 'curve': '90'},
+        {'x1': '2.65', 'y1': '0.8', 'x2': '5.5', 'y2': '0.8', 'width': '0.15', 'layer': '21'},
     ],
 }
 devices = {
     'PLAIN': {
-        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS'],
+        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS', 'MXHSPCB'],
         'led': None,
         'diode': False,
         'symbol': {
@@ -144,7 +174,7 @@ devices = {
                 {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
             ],
             'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
+                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
             ],
             'pins': [
                 {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
@@ -166,7 +196,7 @@ devices = {
                 {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
             ],
             'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
+                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
             ],
             'pins': [
                 {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
@@ -177,8 +207,8 @@ devices = {
         },
     },
     'LEDHOLE': {
-        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS'],
-        'led': 'hole',  # A single 4mm x 4mmmm hole for an add-on board to shine through
+        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS', 'MXHSPCB'],
+        'led': 'hole',  # A single slot for an add-on board to shine through
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-LEDHOLE',
@@ -190,7 +220,7 @@ devices = {
                 {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
             ],
             'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
+                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
             ],
             'pins': [
                 {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
@@ -212,7 +242,7 @@ devices = {
                 {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
             ],
             'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
+                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
             ],
             'pins': [
                 {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
@@ -225,7 +255,7 @@ devices = {
         },
     },
     'RGBSMDLED': {
-        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS'],
+        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS', 'MXHSPCB'],
         'led': 'rgb-smd',  # 4 pins, RGB LED, SMD shining through PCB
         'diode': False,
         'symbol': {
@@ -238,7 +268,7 @@ devices = {
                 {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
             ],
             'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
+                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
             ],
             'pins': [
                 {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
@@ -251,7 +281,7 @@ devices = {
         },
     },
     'SMDLED': {
-        'switch_types': ['ALPSMX', 'MX', 'MXHS'],
+        'switch_types': ['ALPSMX', 'MX', 'MXHS', 'MXHSPCB'],
         'led': 'single-smd',  # 2 pins, single color SMD LED
         'diode': False,
         'symbol': {
@@ -264,7 +294,7 @@ devices = {
                 {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
             ],
             'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
+                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
             ],
             'pins': [
                 {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
@@ -288,7 +318,7 @@ devices = {
                 {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
             ],
             'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
+                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
             ],
             'pins': [
                 {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
@@ -312,7 +342,7 @@ devices = {
                 {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
             ],
             'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1.27', 'layer': '95'}
+                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
             ],
             'pins': [
                 {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
@@ -431,44 +461,44 @@ for package in packages:
         'smds': copy(package_smds[pkg['switch_type']]),
         'labels': []
     })
-    label_offset = '-3.175'
+    label_offset = '-2.8'
     if pkg['led'] in ['rgb-smd']:
         label_offset = '-7'
     elif pkg['led'] in ['hole']:
-        label_offset = '-5.715'
-    template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': label_offset, 'size': '1.27', 'layer': '21', 'align': 'center'}),
-    template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': label_offset, 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        label_offset = '-3.215'
+    template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': label_offset, 'size': '1', 'layer': '21', 'align': 'center'}),
+    template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': label_offset, 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
 
     if pkg['diode']:
         template['packages'][-1]['pads'].append({'name': 'D+', 'x': '-3.81', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
-        template['packages'][-1]['labels'].append({'value': '+', 'x': '-1.905', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
-        template['packages'][-1]['labels'].append({'value': '+', 'x': '-1.905', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-1.905', 'y': '-5.08', 'size': '1', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-1.905', 'y': '-5.08', 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
         template['packages'][-1]['pads'].append({'name': 'D-', 'x': '3.81', 'y': '-5.08', 'drill': '1', 'diameter': '2', 'shape': 'square'})
-        template['packages'][-1]['labels'].append({'value': '-', 'x': '1.905', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
-        template['packages'][-1]['labels'].append({'value': '-', 'x': '1.905', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '1.905', 'y': '-5.08', 'size': '1', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '1.905', 'y': '-5.08', 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
     elif pkg['led'] == 'single':
         template['packages'][-1]['pads'].append({'name': 'LED+', 'x': '-1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
-        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
-        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
         template['packages'][-1]['pads'].append({'name': 'LED-', 'x': '1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2', 'shape': 'square'})
-        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
-        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
     elif pkg['led'] == 'single-smd':
         template['packages'][-1]['smds'].append({'name': 'SMDLED+', 'x': '-1.3', 'y': '-5.75', 'dx': '2', 'dy': '1.75', 'layer': '1'})
-        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.75', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.75', 'size': '1', 'layer': '21', 'align': 'center'})
         template['packages'][-1]['smds'].append({'name': 'SMDLED-', 'x': '1.3', 'y': '-5.75', 'dx': '2', 'dy': '1.75', 'layer': '1'})
-        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.75', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.75', 'size': '1', 'layer': '21', 'align': 'center'})
     elif pkg['led'] == 'single-tht-smd':
         template['packages'][-1]['pads'].append({'name': 'LED+', 'x': '-1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
-        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
-        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
         template['packages'][-1]['pads'].append({'name': 'LED-', 'x': '1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2', 'shape': 'square'})
-        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '21', 'align': 'center'})
-        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
         template['packages'][-1]['smds'].append({'name': 'SMDLED+', 'x': '-1.3', 'y': '-6.785', 'dx': '2', 'dy': '1.3', 'layer': '1'})
-        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-6.785', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-6.785', 'size': '1', 'layer': '21', 'align': 'center'})
         template['packages'][-1]['smds'].append({'name': 'SMDLED-', 'x': '1.3', 'y': '-6.785', 'dx': '2', 'dy': '1.3', 'layer': '1'})
-        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-6.785', 'size': '1.27', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-6.785', 'size': '1', 'layer': '21', 'align': 'center'})
     elif pkg['led'] == 'rgb-smd':
         template['packages'][-1]['holes'].append({'x': '0', 'y': '-4.5', 'diameter': '2.4'})
         template['packages'][-1]['smds'].append({'name': 'LED+', 'x': '2.1', 'y': '-3.775', 'dx': '1', 'dy': '0.75', 'layer': '16'})
@@ -482,22 +512,22 @@ for package in packages:
         template['packages'][-1]['wires'].append({'x1': '1.6', 'y1': '-5.9', 'x2': '-1.6', 'y2': '-5.9', 'width': '0.127', 'layer': '22'})
     elif pkg['led'] == 'rgb':
         template['packages'][-1]['pads'].append({'name': 'R-', 'x': '-3.81', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
-        template['packages'][-1]['labels'].append({'value': 'R-', 'x': '-3.955', 'y': '-6.985', 'size': '1.27', 'layer': '21', 'align': 'center'})
-        template['packages'][-1]['labels'].append({'value': 'R-', 'x': '-3.955', 'y': '-6.985', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['labels'].append({'value': 'R-', 'x': '-3.955', 'y': '-6.985', 'size': '1', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': 'R-', 'x': '-3.955', 'y': '-6.985', 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
         template['packages'][-1]['pads'].append({'name': 'LED+', 'x': '-1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2', 'shape': 'square'})
-        template['packages'][-1]['labels'].append({'value': '+', 'x': '-1.125', 'y': '-6.985', 'size': '1.27', 'layer': '21', 'align': 'center'})
-        template['packages'][-1]['labels'].append({'value': '+', 'x': '-1.125', 'y': '-6.985', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-1.125', 'y': '-6.985', 'size': '1', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-1.125', 'y': '-6.985', 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
         template['packages'][-1]['pads'].append({'name': 'G-', 'x': '1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
-        template['packages'][-1]['labels'].append({'value': 'G-', 'x': '1.125', 'y': '-6.985', 'size': '1.27', 'layer': '21', 'align': 'center'})
-        template['packages'][-1]['labels'].append({'value': 'G-', 'x': '1.125', 'y': '-6.985', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['labels'].append({'value': 'G-', 'x': '1.125', 'y': '-6.985', 'size': '1', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': 'G-', 'x': '1.125', 'y': '-6.985', 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
         template['packages'][-1]['pads'].append({'name': 'B-', 'x': '3.81', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
-        template['packages'][-1]['labels'].append({'value': 'B-', 'x': '3.955', 'y': '-6.985', 'size': '1.27', 'layer': '21', 'align': 'center'})
-        template['packages'][-1]['labels'].append({'value': 'B-', 'x': '3.955', 'y': '-6.985', 'size': '1.27', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['labels'].append({'value': 'B-', 'x': '3.955', 'y': '-6.985', 'size': '1', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': 'B-', 'x': '3.955', 'y': '-6.985', 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
     elif pkg['led'] == 'hole':
-        template['packages'][-1]['wires'].append({'x1': '-2.5', 'y1': '-3.5', 'x2': '-2.5', 'y2': '-4.75', 'width': '0', 'layer': '20'})
-        template['packages'][-1]['wires'].append({'x1': '-2.5', 'y1': '-3.5', 'x2': '2.5', 'y2': '-3.5', 'width': '0', 'layer': '20'})
-        template['packages'][-1]['wires'].append({'x1': '2.5', 'y1': '-3.5', 'x2': '2.5', 'y2': '-4.75', 'width': '0', 'layer': '20'})
-        template['packages'][-1]['wires'].append({'x1': '2.5', 'y1': '-4.75', 'x2': '-2.5', 'y2': '-4.75', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '-2.5', 'y1': '-4.25', 'x2': '-2.5', 'y2': '-5.75', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '-2.5', 'y1': '-4.25', 'x2': '2.5', 'y2': '-4.25', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '2.5', 'y1': '-4.25', 'x2': '2.5', 'y2': '-5.75', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '2.5', 'y1': '-5.75', 'x2': '-2.5', 'y2': '-5.75', 'width': '0', 'layer': '20'})
 
     if pkg['size'] != '1':
         c = switch_sizes[pkg['size']]
