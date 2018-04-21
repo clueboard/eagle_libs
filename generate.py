@@ -166,7 +166,7 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-PLAIN',
-            'description': 'A simple keyboard key switch.',
+            'description': 'A keyboard key switch.',
             'wires': [
                 {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
                 {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
@@ -188,7 +188,7 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-LED',
-            'description': 'A simple keyboard key switch with LED support.',
+            'description': 'A keyboard key switch with LED support.',
             'wires': [
                 {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
                 {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
@@ -212,7 +212,7 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-LEDHOLE',
-            'description': 'A simple keyboard key switch with a hole for an LED to shine through.',
+            'description': 'A keyboard key switch with a hole for an LED to shine through.',
             'wires': [
                 {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
                 {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
@@ -228,13 +228,37 @@ devices = {
             ]
         },
     },
+    'LEDTHTHOLE': {
+        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS', 'MXHSPCB'],
+        'led': 'tht-hole',  # A single slot for an add-on board to shine through
+        'diode': False,
+        'symbol': {
+            'name': 'KEYSWITCH-LEDTHTHOLE',
+            'description': 'A keyboard key switch with a hole for an LED to shine through and a slot for shine through.',
+            'wires': [
+                {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
+                {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
+                {'x1': '5', 'y1': '-5', 'x2': '-5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
+                {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
+            ],
+            'labels': [
+                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
+            ],
+            'pins': [
+                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
+                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
+                {'name': 'LED-', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
+                {'name': 'LED+', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
+            ]
+        },
+    },
     'RGBLED': {
         'switch_types': ['ALPSMX', 'MX'],
         'led': 'rgb',  # 4 pins, RGB LED
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-RGBLED',
-            'description': 'A simple keyboard key switch with LED support.',
+            'description': 'A keyboard key switch with LED support.',
             'wires': [
                 {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
                 {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
@@ -260,7 +284,7 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-RGBSMDLED',
-            'description': 'A simple keyboard key switch with SMD RGB LED support.',
+            'description': 'A keyboard key switch with SMD RGB LED support.',
             'wires': [
                 {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
                 {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
@@ -286,7 +310,7 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-SMDLED',
-            'description': 'A simple keyboard key switch with SMD LED support.',
+            'description': 'A keyboard key switch with SMD LED support.',
             'wires': [
                 {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
                 {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
@@ -310,7 +334,7 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-THTSMDLED',
-            'description': 'A simple keyboard key switch with THT and SMD LED support.',
+            'description': 'A keyboard key switch with THT and SMD LED support.',
             'wires': [
                 {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
                 {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
@@ -334,7 +358,7 @@ devices = {
         'diode': True,
         'symbol': {
             'name': 'KEYSWITCH-DIODE',
-            'description': 'A simple keyboard key switch with LED support.',
+            'description': 'A keyboard key switch with LED support.',
             'wires': [
                 {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
                 {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
@@ -386,6 +410,10 @@ for device in sorted(devices):
                 connections.insert(0, {'gate': 'G$1', 'pin': 'LED-', 'pad': 'LED-'})
                 connections.insert(0, {'gate': 'G$1', 'pin': 'LED+', 'pad': 'LED+'})
                 footprint_name = footprint_name + '-LED'
+            elif devices[device]['led'] == 'tht-hole':
+                connections.insert(0, {'gate': 'G$1', 'pin': 'LED-', 'pad': 'LED-'})
+                connections.insert(0, {'gate': 'G$1', 'pin': 'LED+', 'pad': 'LED+'})
+                footprint_name = footprint_name + '-LEDTHTHOLE'
             elif devices[device]['led'] == 'single-smd':
                 connections.insert(0, {'gate': 'G$1', 'pin': 'LED-', 'pad': 'SMDLED-'})
                 connections.insert(0, {'gate': 'G$1', 'pin': 'LED+', 'pad': 'SMDLED+'})
@@ -524,10 +552,29 @@ for package in packages:
         template['packages'][-1]['labels'].append({'value': 'B-', 'x': '3.955', 'y': '-6.985', 'size': '1', 'layer': '21', 'align': 'center'})
         template['packages'][-1]['labels'].append({'value': 'B-', 'x': '3.955', 'y': '-6.985', 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
     elif pkg['led'] == 'hole':
-        template['packages'][-1]['wires'].append({'x1': '-2.5', 'y1': '-4.25', 'x2': '-2.5', 'y2': '-5.75', 'width': '0', 'layer': '20'})
-        template['packages'][-1]['wires'].append({'x1': '-2.5', 'y1': '-4.25', 'x2': '2.5', 'y2': '-4.25', 'width': '0', 'layer': '20'})
-        template['packages'][-1]['wires'].append({'x1': '2.5', 'y1': '-4.25', 'x2': '2.5', 'y2': '-5.75', 'width': '0', 'layer': '20'})
-        template['packages'][-1]['wires'].append({'x1': '2.5', 'y1': '-5.75', 'x2': '-2.5', 'y2': '-5.75', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '-4.31', 'y1': '-4.83', 'x2': '-3.81', 'y2': '-4.33', 'width': '0', 'layer': '20', 'curve': '-90'})
+        template['packages'][-1]['wires'].append({'x1': '-3.81', 'y1': '-4.33', 'x2': '3.81', 'y2': '-4.33', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '3.81', 'y1': '-4.33', 'x2': '4.31', 'y2': '-4.83', 'width': '0', 'layer': '20', 'curve': '-90'})
+        template['packages'][-1]['wires'].append({'x1': '4.31', 'y1': '-4.83', 'x2': '4.31', 'y2': '-5.33', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '4.31', 'y1': '-5.33', 'x2': '3.81', 'y2': '-5.83', 'width': '0', 'layer': '20', 'curve': '-90'})
+        template['packages'][-1]['wires'].append({'x1': '3.81', 'y1': '-5.83', 'x2': '-3.81', 'y2': '-5.83', 'width': '0', 'layer': '20'})
+        template['packages'][-1]['wires'].append({'x1': '-3.81', 'y1': '-5.83', 'x2': '-4.31', 'y2': '-5.33', 'width': '0', 'layer': '20', 'curve': '-90'})
+        template['packages'][-1]['wires'].append({'x1': '-4.31', 'y1': '-5.33', 'x2': '-4.31', 'y2': '-4.83', 'width': '0', 'layer': '20'})
+    elif pkg['led'] == 'tht-hole':
+        template['packages'][-1]['pads'].append({'name': 'LED+', 'x': '-1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '+', 'x': '-3.175', 'y': '-5.08', 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['pads'].append({'name': 'LED-', 'x': '1.27', 'y': '-5.08', 'drill': '1', 'diameter': '2', 'shape': 'square'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1', 'layer': '21', 'align': 'center'})
+        template['packages'][-1]['labels'].append({'value': '-', 'x': '3.175', 'y': '-5.08', 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
+        template['packages'][-1]['wires'].append({'x1':'-0.8', 'y1':'-4.58', 'x2':'-0.3', 'y2':'-4.08', 'width':'0', 'layer':'20', 'curve':'-90'})
+        template['packages'][-1]['wires'].append({'x1':'-0.3', 'y1':'-4.08', 'x2':'0.3', 'y2':'-4.08', 'width':'0', 'layer':'20'})
+        template['packages'][-1]['wires'].append({'x1':'0.3', 'y1':'-4.08', 'x2':'0.8', 'y2':'-4.58', 'width':'0', 'layer':'20', 'curve':'-90'})
+        template['packages'][-1]['wires'].append({'x1':'0.8', 'y1':'-4.58', 'x2':'0.8', 'y2':'-5.58', 'width':'0', 'layer':'20'})
+        template['packages'][-1]['wires'].append({'x1':'0.8', 'y1':'-5.58', 'x2':'0.3', 'y2':'-6.08', 'width':'0', 'layer':'20', 'curve':'-90'})
+        template['packages'][-1]['wires'].append({'x1':'0.3', 'y1':'-6.08', 'x2':'-0.3', 'y2':'-6.08', 'width':'0', 'layer':'20'})
+        template['packages'][-1]['wires'].append({'x1':'-0.3', 'y1':'-6.08', 'x2':'-0.8', 'y2':'-5.58', 'width':'0', 'layer':'20', 'curve':'-90'})
+        template['packages'][-1]['wires'].append({'x1':'-0.8', 'y1':'-5.58', 'x2':'-0.8', 'y2':'-4.58', 'width':'0', 'layer':'20'})
 
     if pkg['size'] != '1':
         c = switch_sizes[pkg['size']]
