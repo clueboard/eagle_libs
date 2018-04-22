@@ -9,7 +9,6 @@ from collections import OrderedDict
 from copy import copy
 from decimal import Decimal
 from jinja2 import Template
-from pprint import pprint
 
 switch_sizes = {
     '1': {},
@@ -30,6 +29,14 @@ connects = {
         {'gate': 'G$1', 'pin': 'P0', 'pad': 'ALPS1 MX1'},
         {'gate': 'G$1', 'pin': 'P1', 'pad': 'ALPS2 MX2'}
     ],
+    'CHOC': [
+        {'gate': 'G$1', 'pin': 'P0', 'pad': 'CHOC1'},
+        {'gate': 'G$1', 'pin': 'P1', 'pad': 'CHOC2'}
+    ],
+    'CHOCX': [
+        {'gate': 'G$1', 'pin': 'P0', 'pad': 'CHOC1 X1'},
+        {'gate': 'G$1', 'pin': 'P1', 'pad': 'CHOC2 X2'}
+    ],
     'MX': [
         {'gate': 'G$1', 'pin': 'P0', 'pad': 'MX1'},
         {'gate': 'G$1', 'pin': 'P1', 'pad': 'MX2'}
@@ -41,7 +48,11 @@ connects = {
     'MXHSPCB': [
         {'gate': 'G$1', 'pin': 'P0', 'pad': 'MX1'},
         {'gate': 'G$1', 'pin': 'P1', 'pad': 'MX2'}
-    ]
+    ],
+    'X': [
+        {'gate': 'G$1', 'pin': 'P0', 'pad': 'X1'},
+        {'gate': 'G$1', 'pin': 'P1', 'pad': 'X2'}
+    ],
 }
 package_holes = {
     'ALPS': [],
@@ -50,6 +61,19 @@ package_holes = {
         {'x': '-5.08', 'y': '0', 'diameter': '1.7'},
         {'x': '5.08', 'y': '0', 'diameter': '1.7'},
     ],
+    'CHOC': [
+        {'x': '0', 'y': '0', 'diameter': '3.4'},
+        {'x': '-5.22', 'y': '-4.2', 'diameter': '0.6'},
+        {'x': '-5.5', 'y': '0', 'diameter': '1.85'},
+        {'x': '5.5', 'y': '0', 'diameter': '1.85'}
+    ],
+    'CHOCX': [
+        {'x': '-5.22', 'y': '-4.2', 'diameter': '0.6'},
+        {'x': '-5.5', 'y': '5.5', 'diameter': '1.3'},
+        {'x': '5.5', 'y': '-5.5', 'diameter': '1.3'},
+        {'x': '-5.5', 'y': '0', 'diameter': '1.85'},
+        {'x': '5.5', 'y': '0', 'diameter': '1.85'}
+    ],
     'MX': [
         {'x': '0', 'y': '0', 'diameter': '4'},
         {'x': '-5.08', 'y': '0', 'diameter': '1.7'},
@@ -66,7 +90,11 @@ package_holes = {
         {'x': '-5.08', 'y': '0', 'diameter': '1.7'},
         {'x': '3.81', 'y': '2.54', 'diameter': '3'},
         {'x': '-2.54', 'y': '5.08', 'diameter': '3'},
-    ]
+    ],
+    'X': [
+        {'x': '-5.5', 'y': '0', 'diameter': '1.85'},
+        {'x': '5.5', 'y': '0', 'diameter': '1.85'}
+    ],
 }
 package_pads = {
     'ALPS': [
@@ -79,16 +107,32 @@ package_pads = {
         {'name': 'ALPS1', 'x': '-2.5', 'y': '4', 'drill': '1.3', 'diameter': '2.54'},
         {'name': 'ALPS2', 'x': '2.5', 'y': '4.5', 'drill': '1.3', 'diameter': '2.54'}
     ],
+    'CHOC': [
+        {'name': 'CHOC1', 'x': '0', 'y': '5.9', 'drill': '1.2', 'diameter': '2.54'},
+        {'name': 'CHOC2', 'x': '5', 'y': '3.8', 'drill': '1.2', 'diameter': '2.54'}
+    ],
+    'CHOCX': [
+        {'name': 'CHOC1', 'x': '0', 'y': '5.9', 'drill': '1.2', 'diameter': '2.54'},
+        {'name': 'CHOC2', 'x': '5', 'y': '3.8', 'drill': '1.2', 'diameter': '2.54'},
+        {'name': 'X1', 'x': '-3.4', 'y': '2.9', 'drill': '1.3', 'diameter': '2.54'},
+        {'name': 'X2', 'x': '-3.4', 'y': '-2', 'drill': '1.3', 'diameter': '2.54'}
+    ],
     'MX': [
         {'name': 'MX1', 'x': '-3.81', 'y': '2.54', 'drill': '1.3', 'diameter': '2.54'},
         {'name': 'MX2', 'x': '2.54', 'y': '5.08', 'drill': '1.3', 'diameter': '2.54'}
     ],
     'MXHS': [],
-    'MXHSPCB': []
+    'MXHSPCB': [],
+    'X': [
+        {'name': 'X1', 'x': '-3.4', 'y': '2.9', 'drill': '1.3', 'diameter': '2.54'},
+        {'name': 'X2', 'x': '-3.4', 'y': '-2', 'drill': '1.3', 'diameter': '2.54'}
+    ],
 }
 package_smds = {
     'ALPS': [],
     'ALPSMX': [],
+    'CHOC': [],
+    'CHOCX': [],
     'MX': [],
     'MXHS': [
         {'name': 'MX1', 'x': '7.36', 'y': '2.54', 'dx': '2.55', 'dy': '2.5', 'layer': '1'},
@@ -98,6 +142,7 @@ package_smds = {
         {'name': 'MX1', 'x': '7.36', 'y': '2.54', 'dx': '2.55', 'dy': '2.5', 'layer': '1'},
         {'name': 'MX2', 'x': '-6.09', 'y': '5.08', 'dx': '2.55', 'dy': '2.5', 'layer': '1'}
     ],
+    'X': []
 }
 package_wires = {
     'ALPS': [
@@ -119,6 +164,36 @@ package_wires = {
         {'x1': '7', 'y1': '-7', 'x2': '7', 'y2': '-8', 'width': '0.127', 'layer': '47'},
         {'x1': '-7', 'y1': '-8', 'x2': '-7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
         {'x1': '-7', 'y1': '-7', 'x2': '-7.75', 'y2': '-7', 'width': '0.127', 'layer': '47'}
+    ],
+    'CHOC': [
+        {'x1': "-7", 'y1': "7", 'x2': "7", 'y2': "7", 'width': "0.127", 'layer': "47"},
+        {'x1': "7", 'y1': "7", 'x2': "7", 'y2': "-7", 'width': "0.127", 'layer': "47"},
+        {'x1': "7", 'y1': "-7", 'x2': "-7", 'y2': "-7", 'width': "0.127", 'layer': "47"},
+        {'x1': "-7", 'y1': "-7", 'x2': "-7", 'y2': "7", 'width': "0.127", 'layer': "47"},
+        {'x1': "-1.7", 'y1': "-4.05", 'x2': "1.7", 'y2': "-4.05", 'width': "0.1", 'layer': "47"},
+        {'x1': "1.7", 'y1': "-4.05", 'x2': "1.7", 'y2': "-5.55", 'width': "0.1", 'layer': "47"},
+        {'x1': "1.7", 'y1': "-5.55", 'x2': "-1.7", 'y2': "-5.55", 'width': "0.1", 'layer': "47"},
+        {'x1': "-1.7", 'y1': "-5.55", 'x2': "-1.7", 'y2': "-4.05", 'width': "0.1", 'layer': "47"}
+    ],
+    'CHOCX': [
+        {'x1': "-7", 'y1': "7", 'x2': "7", 'y2': "7", 'width': "0.127", 'layer': "47"},
+        {'x1': "7", 'y1': "7", 'x2': "7", 'y2': "-7", 'width': "0.127", 'layer': "47"},
+        {'x1': "7", 'y1': "-7", 'x2': "-7", 'y2': "-7", 'width': "0.127", 'layer': "47"},
+        {'x1': "-7", 'y1': "-7", 'x2': "-7", 'y2': "7", 'width': "0.127", 'layer': "47"},
+        {'x1': "-1.7", 'y1': "-4.05", 'x2': "1.7", 'y2': "-4.05", 'width': "0.1", 'layer': "47"},
+        {'x1': "1.7", 'y1': "-4.05", 'x2': "1.7", 'y2': "-5.55", 'width': "0.1", 'layer': "47"},
+        {'x1': "1.7", 'y1': "-5.55", 'x2': "-1.7", 'y2': "-5.55", 'width': "0.1", 'layer': "47"},
+        {'x1': "-1.7", 'y1': "-5.55", 'x2': "-1.7", 'y2': "-4.05", 'width': "0.1", 'layer': "47"},
+        {'x1': "2.3", 'y1': "-2.95", 'x2': "-2.3", 'y2': "-2.95", 'width': "0", 'layer': "20"},
+        {'x1': "-2.3", 'y1': "-2.95", 'x2': "-2.55", 'y2': "-2.7", 'width': "0", 'layer': "20", 'curve': "-90"},
+        {'x1': "-2.55", 'y1': "-2.7", 'x2': "-2.55", 'y2': "0.9", 'width': "0", 'layer': "20"},
+        {'x1': "-2.55", 'y1': "0.9", 'x2': "-2.3", 'y2': "1.15", 'width': "0", 'layer': "20", 'curve': "-90"},
+        {'x1': "-2.3", 'y1': "1.15", 'x2': "-1.39", 'y2': "1.15", 'width': "0", 'layer': "20"},
+        {'x1': "1.39", 'y1': "1.15", 'x2': "2.3", 'y2': "1.15", 'width': "0", 'layer': "20"},
+        {'x1': "2.3", 'y1': "1.15", 'x2': "2.55", 'y2': "0.9", 'width': "0", 'layer': "20", 'curve': "-90"},
+        {'x1': "2.55", 'y1': "0.9", 'x2': "2.55", 'y2': "-2.7", 'width': "0", 'layer': "20"},
+        {'x1': "2.55", 'y1': "-2.7", 'x2': "2.3", 'y2': "-2.95", 'width': "0", 'layer': "20", 'curve': "-90"},
+        {'x1': "-1.39", 'y1': "1.15", 'x2': "1.39", 'y2': "1.15", 'width': "0", 'layer': "20", 'curve': "-100.795498"}
     ],
     'MX': [
         {'x1': '-7', 'y1': '7', 'x2': '7', 'y2': '7', 'width': '0.127', 'layer': '47'},
@@ -158,10 +233,28 @@ package_wires = {
         {'x1': '2.3', 'y1': '1.35', 'x2': '2.65', 'y2': '0.8', 'width': '0.15', 'layer': '21', 'curve': '90'},
         {'x1': '2.65', 'y1': '0.8', 'x2': '5.5', 'y2': '0.8', 'width': '0.15', 'layer': '21'},
     ],
+    'X': [
+        {'x1': "-7", 'y1': "7", 'x2': "7", 'y2': "7", 'width': "0.127", 'layer': "47"},
+        {'x1': "7", 'y1': "7", 'x2': "7", 'y2': "-7", 'width': "0.127", 'layer': "47"},
+        {'x1': "7", 'y1': "-7", 'x2': "-7", 'y2': "-7", 'width': "0.127", 'layer': "47"},
+        {'x1': "-7", 'y1': "-7", 'x2': "-7", 'y2': "7", 'width': "0.127", 'layer': "47"},
+        {'x1': "-1.7", 'y1': "-4.05", 'x2': "1.7", 'y2': "-4.05", 'width': "0.1", 'layer': "47"},
+        {'x1': "1.7", 'y1': "-4.05", 'x2': "1.7", 'y2': "-5.55", 'width': "0.1", 'layer': "47"},
+        {'x1': "1.7", 'y1': "-5.55", 'x2': "-1.7", 'y2': "-5.55", 'width': "0.1", 'layer': "47"},
+        {'x1': "-1.7", 'y1': "-5.55", 'x2': "-1.7", 'y2': "-4.05", 'width': "0.1", 'layer': "47"},
+        {'x1': "2.3", 'y1': "-2.95", 'x2': "-2.3", 'y2': "-2.95", 'width': "0", 'layer': "20"},
+        {'x1': "-2.3", 'y1': "-2.95", 'x2': "-2.55", 'y2': "-2.7", 'width': "0", 'layer': "20", 'curve': "-90"},
+        {'x1': "-2.55", 'y1': "-2.7", 'x2': "-2.55", 'y2': "0.9", 'width': "0", 'layer': "20"},
+        {'x1': "-2.55", 'y1': "0.9", 'x2': "-2.3", 'y2': "1.15", 'width': "0", 'layer': "20", 'curve': "-90"},
+        {'x1': "-2.3", 'y1': "1.15", 'x2': "2.3", 'y2': "1.15", 'width': "0", 'layer': "20"},
+        {'x1': "2.3", 'y1': "1.15", 'x2': "2.55", 'y2': "0.9", 'width': "0", 'layer': "20", 'curve': "-90"},
+        {'x1': "2.55", 'y1': "0.9", 'x2': "2.55", 'y2': "-2.7", 'width': "0", 'layer': "20"},
+        {'x1': "2.55", 'y1': "-2.7", 'x2': "2.3", 'y2': "-2.95", 'width': "0", 'layer': "20", 'curve': "-90"},
+    ]
 }
 devices = {
     'PLAIN': {
-        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS', 'MXHSPCB'],
+        'switch_types': ['ALPS', 'ALPSMX', 'CHOC', 'CHOCX', 'MX', 'MXHS', 'MXHSPCB', 'X'],
         'led': None,
         'diode': False,
         'symbol': {
@@ -490,11 +583,14 @@ for package in packages:
         'labels': []
     })
     label_offset = '-2.8'
-    if pkg['led'] in ['rgb-smd']:
+    if pkg['switch_type'] in ['CHOC', 'CHOCX', 'X']:
+        template['packages'][-1]['labels'].append({'value': 'LED', 'x': '0', 'y': '-4.8', 'size': '1', 'layer': '47', 'align': 'center'})
+        label_offset = '-6.215'
+    elif pkg['led'] in ['rgb-smd']:
         label_offset = '-7'
     elif pkg['led'] in ['hole']:
         label_offset = '-3.215'
-    template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': label_offset, 'size': '1', 'layer': '21', 'align': 'center'}),
+    template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': label_offset, 'size': '1', 'layer': '21', 'align': 'center'})
     template['packages'][-1]['labels'].append({'value': '&gt;NAME', 'x': '0', 'y': label_offset, 'size': '1', 'layer': '22', 'align': 'center', 'rot': 'MR0'})
 
     if pkg['diode']:
@@ -605,8 +701,8 @@ if __name__ == '__main__':
         fd.seek(0, 0)
         fd.write(t.render(**template))
 
-    print('*** You can use this script to add every single footprint to a schematic:')
-    print('\n'.join(schematic_script))
-    print('\n\n\n\n\n')
-    print('*** You can use this script to place every single footprint on a board:')
-    print('\n'.join(board_script))
+    #print('*** You can use this script to add every single footprint to a schematic:')
+    #print('\n'.join(schematic_script))
+    #print('\n\n\n\n\n')
+    #print('*** You can use this script to place every single footprint on a board:')
+    #print('\n'.join(board_script))
