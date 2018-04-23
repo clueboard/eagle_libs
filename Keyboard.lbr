@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.125" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -31897,111 +31897,111 @@
 <symbols>
 <symbol name="KEYSWITCH-DIODE">
 <description>A keyboard key switch with LED support.</description>
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.254" layer="94"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.254" layer="94"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
-<text x="-4.27" y="2.778" size="1" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" swaplevel="1" rot="R270"/>
-<pin name="D-" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="D+" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<wire x1="-7.54" y1="7.54" x2="7.54" y2="7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="7.54" x2="7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="-7.54" x2="-7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="-7.54" y1="-7.54" x2="-7.54" y2="7.54" width="0.254" layer="94"/>
+<text x="-6.81" y="5.318" size="1" layer="95">&gt;NAME</text>
+<pin name="P0" x="-10.16" y="2.54" visible="both" length="short" swaplevel="1"/>
+<pin name="P1" x="2.54" y="10.16" visible="both" length="short" rot="R270" swaplevel="1"/>
+<pin name="D+" x="10.16" y="0" visible="both" length="short" rot="R180"/>
+<pin name="D-" x="-5.08" y="-10.16" visible="both" length="short" rot="R90"/>
 </symbol>
 <symbol name="KEYSWITCH-LED">
 <description>A keyboard key switch with LED support.</description>
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.254" layer="94"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.254" layer="94"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
-<text x="-4.27" y="2.778" size="1" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" swaplevel="1" rot="R270"/>
-<pin name="LED-" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="LED+" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<wire x1="-7.54" y1="7.54" x2="7.54" y2="7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="7.54" x2="7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="-7.54" x2="-7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="-7.54" y1="-7.54" x2="-7.54" y2="7.54" width="0.254" layer="94"/>
+<text x="-6.81" y="5.318" size="1" layer="95">&gt;NAME</text>
+<pin name="P0" x="-10.16" y="2.54" visible="both" length="short" swaplevel="1"/>
+<pin name="P1" x="2.54" y="10.16" visible="both" length="short" rot="R270" swaplevel="1"/>
+<pin name="LED+" x="10.16" y="0" visible="both" length="short" rot="R180"/>
+<pin name="LED-" x="-2.54" y="-10.16" visible="both" length="short" rot="R90"/>
 </symbol>
 <symbol name="KEYSWITCH-LEDHOLE">
 <description>A keyboard key switch with a hole for an LED to shine through.</description>
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.254" layer="94"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.254" layer="94"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
-<text x="-4.27" y="2.778" size="1" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" swaplevel="1" rot="R270"/>
+<wire x1="-7.54" y1="7.54" x2="7.54" y2="7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="7.54" x2="7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="-7.54" x2="-7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="-7.54" y1="-7.54" x2="-7.54" y2="7.54" width="0.254" layer="94"/>
+<text x="-6.81" y="5.318" size="1" layer="95">&gt;NAME</text>
+<pin name="P0" x="-10.16" y="2.54" visible="both" length="short" swaplevel="1"/>
+<pin name="P1" x="2.54" y="10.16" visible="both" length="short" rot="R270" swaplevel="1"/>
 </symbol>
 <symbol name="KEYSWITCH-LEDTHTHOLE">
 <description>A keyboard key switch with a hole for an LED to shine through and a slot for shine through.</description>
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.254" layer="94"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.254" layer="94"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
-<text x="-4.27" y="2.778" size="1" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" swaplevel="1" rot="R270"/>
-<pin name="LED-" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="LED+" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<wire x1="-7.54" y1="7.54" x2="7.54" y2="7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="7.54" x2="7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="-7.54" x2="-7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="-7.54" y1="-7.54" x2="-7.54" y2="7.54" width="0.254" layer="94"/>
+<text x="-6.81" y="5.318" size="1" layer="95">&gt;NAME</text>
+<pin name="P0" x="-10.16" y="2.54" visible="both" length="short" swaplevel="1"/>
+<pin name="P1" x="2.54" y="10.16" visible="both" length="short" rot="R270" swaplevel="1"/>
+<pin name="LED+" x="10.16" y="0" visible="both" length="short" rot="R180"/>
+<pin name="LED-" x="-2.54" y="-10.16" visible="both" length="short" rot="R90"/>
 </symbol>
 <symbol name="KEYSWITCH-PLAIN">
 <description>A keyboard key switch.</description>
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.254" layer="94"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.254" layer="94"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
-<text x="-4.27" y="2.778" size="1" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" swaplevel="1" rot="R270"/>
+<wire x1="-7.54" y1="7.54" x2="7.54" y2="7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="7.54" x2="7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="-7.54" x2="-7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="-7.54" y1="-7.54" x2="-7.54" y2="7.54" width="0.254" layer="94"/>
+<text x="-6.81" y="5.318" size="1" layer="95">&gt;NAME</text>
+<pin name="P0" x="-10.16" y="2.54" visible="both" length="short" swaplevel="1"/>
+<pin name="P1" x="2.54" y="10.16" visible="both" length="short" rot="R270" swaplevel="1"/>
 </symbol>
 <symbol name="KEYSWITCH-RGBLED">
 <description>A keyboard key switch with LED support.</description>
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.254" layer="94"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.254" layer="94"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
-<text x="-4.27" y="2.778" size="1" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" swaplevel="1" rot="R270"/>
-<pin name="LED+" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="R-" x="-2.54" y="-7.62" visible="off" length="short" rot="R90"/>
-<pin name="G-" x="0" y="-7.62" visible="off" length="short" rot="R90"/>
-<pin name="B-" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<wire x1="-7.54" y1="7.54" x2="7.54" y2="7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="7.54" x2="7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="-7.54" x2="-7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="-7.54" y1="-7.54" x2="-7.54" y2="7.54" width="0.254" layer="94"/>
+<text x="-6.81" y="5.318" size="1" layer="95">&gt;NAME</text>
+<pin name="P0" x="-10.16" y="2.54" visible="both" length="short" swaplevel="1"/>
+<pin name="P1" x="2.54" y="10.16" visible="both" length="short" rot="R270" swaplevel="1"/>
+<pin name="LED+" x="10.16" y="0" visible="both" length="short" rot="R180"/>
+<pin name="R-" x="-5.08" y="-10.16" visible="both" length="short" rot="R90"/>
+<pin name="G-" x="-2.54" y="-10.16" visible="both" length="short" rot="R90"/>
+<pin name="B-" x="0" y="-10.16" visible="both" length="short" rot="R90"/>
 </symbol>
 <symbol name="KEYSWITCH-RGBSMDLED">
 <description>A keyboard key switch with SMD RGB LED support.</description>
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.254" layer="94"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.254" layer="94"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
-<text x="-4.27" y="2.778" size="1" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" swaplevel="1" rot="R270"/>
-<pin name="LED+" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="R-" x="-2.54" y="-7.62" visible="off" length="short" rot="R90"/>
-<pin name="G-" x="0" y="-7.62" visible="off" length="short" rot="R90"/>
-<pin name="B-" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<wire x1="-7.54" y1="7.54" x2="7.54" y2="7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="7.54" x2="7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="-7.54" x2="-7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="-7.54" y1="-7.54" x2="-7.54" y2="7.54" width="0.254" layer="94"/>
+<text x="-6.81" y="5.318" size="1" layer="95">&gt;NAME</text>
+<pin name="P0" x="-10.16" y="2.54" visible="both" length="short" swaplevel="1"/>
+<pin name="P1" x="2.54" y="10.16" visible="both" length="short" rot="R270" swaplevel="1"/>
+<pin name="LED+" x="10.16" y="0" visible="both" length="short" rot="R180"/>
+<pin name="R-" x="-5.08" y="-10.16" visible="both" length="short" rot="R90"/>
+<pin name="G-" x="-2.54" y="-10.16" visible="both" length="short" rot="R90"/>
+<pin name="B-" x="0" y="-10.16" visible="both" length="short" rot="R90"/>
 </symbol>
 <symbol name="KEYSWITCH-SMDLED">
 <description>A keyboard key switch with SMD LED support.</description>
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.254" layer="94"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.254" layer="94"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
-<text x="-4.27" y="2.778" size="1" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" swaplevel="1" rot="R270"/>
-<pin name="LED-" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="LED+" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<wire x1="-7.54" y1="7.54" x2="7.54" y2="7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="7.54" x2="7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="-7.54" x2="-7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="-7.54" y1="-7.54" x2="-7.54" y2="7.54" width="0.254" layer="94"/>
+<text x="-6.81" y="5.318" size="1" layer="95">&gt;NAME</text>
+<pin name="P0" x="-10.16" y="2.54" visible="both" length="short" swaplevel="1"/>
+<pin name="P1" x="2.54" y="10.16" visible="both" length="short" rot="R270" swaplevel="1"/>
+<pin name="LED+" x="10.16" y="0" visible="both" length="short" rot="R180"/>
+<pin name="LED-" x="-2.54" y="-10.16" visible="both" length="short" rot="R90"/>
 </symbol>
 <symbol name="KEYSWITCH-THTSMDLED">
 <description>A keyboard key switch with THT and SMD LED support.</description>
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.254" layer="94"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.254" layer="94"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.254" layer="94"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.254" layer="94"/>
-<text x="-4.27" y="2.778" size="1" layer="95">&gt;NAME</text>
-<pin name="P0" x="-7.62" y="2.54" visible="off" length="short" swaplevel="1"/>
-<pin name="P1" x="-2.54" y="7.62" visible="off" length="short" swaplevel="1" rot="R270"/>
-<pin name="LED-" x="7.62" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="LED+" x="2.54" y="-7.62" visible="off" length="short" rot="R90"/>
+<wire x1="-7.54" y1="7.54" x2="7.54" y2="7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="7.54" x2="7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="7.54" y1="-7.54" x2="-7.54" y2="-7.54" width="0.254" layer="94"/>
+<wire x1="-7.54" y1="-7.54" x2="-7.54" y2="7.54" width="0.254" layer="94"/>
+<text x="-6.81" y="5.318" size="1" layer="95">&gt;NAME</text>
+<pin name="P0" x="-10.16" y="2.54" visible="both" length="short" swaplevel="1"/>
+<pin name="P1" x="2.54" y="10.16" visible="both" length="short" rot="R270" swaplevel="1"/>
+<pin name="LED+" x="10.16" y="0" visible="both" length="short" rot="R180"/>
+<pin name="LED-" x="-2.54" y="-10.16" visible="both" length="short" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -38314,9 +38314,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38327,9 +38327,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38340,9 +38340,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38353,9 +38353,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38366,9 +38366,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38379,9 +38379,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38392,9 +38392,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38405,9 +38405,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38418,9 +38418,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38431,9 +38431,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38444,9 +38444,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38457,9 +38457,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38470,9 +38470,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38483,9 +38483,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38496,9 +38496,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38509,9 +38509,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38522,9 +38522,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38535,9 +38535,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38548,9 +38548,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38561,9 +38561,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38574,9 +38574,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38587,9 +38587,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38600,9 +38600,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38613,9 +38613,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38626,9 +38626,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38639,9 +38639,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38652,9 +38652,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38665,9 +38665,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38678,9 +38678,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38691,9 +38691,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38704,9 +38704,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38717,9 +38717,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38730,9 +38730,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38743,9 +38743,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38756,9 +38756,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38769,9 +38769,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38782,9 +38782,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38795,9 +38795,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38808,9 +38808,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38821,9 +38821,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38834,9 +38834,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38847,9 +38847,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38860,9 +38860,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38873,9 +38873,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38886,9 +38886,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38899,9 +38899,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38912,9 +38912,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38925,9 +38925,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38938,9 +38938,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38951,9 +38951,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38964,9 +38964,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38977,9 +38977,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -38990,9 +38990,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39003,9 +39003,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39016,9 +39016,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39029,9 +39029,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39042,9 +39042,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39055,9 +39055,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39075,9 +39075,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39088,9 +39088,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39101,9 +39101,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39114,9 +39114,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39127,9 +39127,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39140,9 +39140,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39153,9 +39153,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39166,9 +39166,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39179,9 +39179,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39192,9 +39192,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39205,9 +39205,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39218,9 +39218,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39231,9 +39231,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39244,9 +39244,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39257,9 +39257,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39270,9 +39270,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39283,9 +39283,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39296,9 +39296,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39309,9 +39309,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39322,9 +39322,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39335,9 +39335,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39348,9 +39348,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39361,9 +39361,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39374,9 +39374,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39387,9 +39387,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39400,9 +39400,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39413,9 +39413,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39426,9 +39426,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39439,9 +39439,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39452,9 +39452,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39465,9 +39465,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39478,9 +39478,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39491,9 +39491,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39504,9 +39504,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39517,9 +39517,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39530,9 +39530,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39543,9 +39543,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39556,9 +39556,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39569,9 +39569,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39582,9 +39582,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39595,9 +39595,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39608,9 +39608,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39621,9 +39621,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39634,9 +39634,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39647,9 +39647,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39660,9 +39660,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39673,9 +39673,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39686,9 +39686,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39699,9 +39699,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39712,9 +39712,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39725,9 +39725,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39738,9 +39738,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39751,9 +39751,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39764,9 +39764,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39777,9 +39777,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39790,9 +39790,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39803,9 +39803,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39816,9 +39816,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="ALPS1 MX1"/>
 <connect gate="G$1" pin="P1" pad="ALPS2 MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39829,9 +39829,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39842,9 +39842,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39855,9 +39855,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39868,9 +39868,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39881,9 +39881,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39894,9 +39894,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39907,9 +39907,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39920,9 +39920,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39933,9 +39933,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39946,9 +39946,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39959,9 +39959,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39972,9 +39972,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39985,9 +39985,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -39998,9 +39998,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40011,9 +40011,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40024,9 +40024,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40037,9 +40037,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40050,9 +40050,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40063,9 +40063,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40076,9 +40076,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40089,9 +40089,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40102,9 +40102,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40115,9 +40115,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40128,9 +40128,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40141,9 +40141,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40154,9 +40154,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40167,9 +40167,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40180,9 +40180,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40193,9 +40193,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40206,9 +40206,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40219,9 +40219,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40232,9 +40232,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40245,9 +40245,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40258,9 +40258,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40271,9 +40271,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40284,9 +40284,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40297,9 +40297,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40310,9 +40310,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40323,9 +40323,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40336,9 +40336,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40349,9 +40349,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40362,9 +40362,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40375,9 +40375,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40388,9 +40388,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40401,9 +40401,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40414,9 +40414,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40427,9 +40427,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40440,9 +40440,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40453,9 +40453,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40466,9 +40466,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40479,9 +40479,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40492,9 +40492,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40505,9 +40505,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40518,9 +40518,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40531,9 +40531,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40544,9 +40544,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40557,9 +40557,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40570,9 +40570,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40583,9 +40583,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40596,9 +40596,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40609,9 +40609,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40622,9 +40622,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40635,9 +40635,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40648,9 +40648,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40661,9 +40661,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40674,9 +40674,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40687,9 +40687,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40700,9 +40700,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40713,9 +40713,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40726,9 +40726,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40739,9 +40739,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40752,9 +40752,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40765,9 +40765,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40778,9 +40778,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40791,9 +40791,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40804,9 +40804,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40817,9 +40817,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40830,9 +40830,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40843,9 +40843,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40856,9 +40856,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40869,9 +40869,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40882,9 +40882,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40895,9 +40895,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40908,9 +40908,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40921,9 +40921,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40934,9 +40934,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -40947,9 +40947,9 @@
 <connect gate="G$1" pin="B-" pad="B-"/>
 <connect gate="G$1" pin="G-" pad="G-"/>
 <connect gate="G$1" pin="LED+" pad="LED+"/>
+<connect gate="G$1" pin="R-" pad="R-"/>
 <connect gate="G$1" pin="P0" pad="MX1"/>
 <connect gate="G$1" pin="P1" pad="MX2"/>
-<connect gate="G$1" pin="R-" pad="R-"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -10,6 +10,35 @@ from copy import copy
 from decimal import Decimal
 from jinja2 import Template
 
+
+switch_pins = [
+    {'name': 'P0', 'x': '-10.16', 'y': '2.54', 'visible': 'both', 'length': 'short', 'swaplevel': '1'},
+    {'name': 'P1', 'x': '2.54', 'y': '10.16', 'visible': 'both', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'}
+]
+switch_led_plus = [
+    {'name': 'LED+', 'x': '10.16', 'y': '0', 'visible': 'both', 'length': 'short', 'rot': 'R180'}
+]
+switch_led_minus = [
+    {'name': 'LED-', 'x': '-2.54', 'y': '-10.16', 'visible': 'both', 'length': 'short', 'rot': 'R90'}
+]
+switch_led_rgb = [
+    {'name': 'R-', 'x': '-5.08', 'y': '-10.16', 'visible': 'both', 'length': 'short', 'rot': 'R90'},
+    {'name': 'G-', 'x': '-2.54', 'y': '-10.16', 'visible': 'both', 'length': 'short', 'rot': 'R90'},
+    {'name': 'B-', 'x': '0', 'y': '-10.16', 'visible': 'both', 'length': 'short', 'rot': 'R90'}
+]
+switch_diode = [
+    {'name': 'D+', 'x': '10.16', 'y': '0', 'visible': 'both', 'length': 'short', 'rot': 'R180'},
+    {'name': 'D-', 'x': '-5.08', 'y': '-10.16', 'visible': 'both', 'length': 'short', 'rot': 'R90'}
+]
+switch_symbol_labels = [
+    {'value': '&gt;NAME', 'x': '-6.81', 'y': '5.318', 'size': '1', 'layer': '95'}
+]
+switch_symbol_outline = [
+    {'x1': '-7.54', 'y1': '7.54', 'x2': '7.54', 'y2': '7.54', 'width': '0.254', 'layer': '94'},
+    {'x1': '7.54', 'y1': '7.54', 'x2': '7.54', 'y2': '-7.54', 'width': '0.254', 'layer': '94'},
+    {'x1': '7.54', 'y1': '-7.54', 'x2': '-7.54', 'y2': '-7.54', 'width': '0.254', 'layer': '94'},
+    {'x1': '-7.54', 'y1': '-7.54', 'x2': '-7.54', 'y2': '7.54', 'width': '0.254', 'layer': '94'},
+]
 switch_sizes = {
     '1': {},
     '2': {'lstab': -11.9, 'rstab': 11.9, 'tstab': 7, 'bstab': -8.24},
@@ -260,19 +289,9 @@ devices = {
         'symbol': {
             'name': 'KEYSWITCH-PLAIN',
             'description': 'A keyboard key switch.',
-            'wires': [
-                {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '-5', 'x2': '-5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-            ],
-            'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
-            ],
-            'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'}
-            ]
+            'wires': switch_symbol_outline,
+            'labels': switch_symbol_labels,
+            'pins': switch_pins,
         },
     },
     'LED': {
@@ -282,21 +301,9 @@ devices = {
         'symbol': {
             'name': 'KEYSWITCH-LED',
             'description': 'A keyboard key switch with LED support.',
-            'wires': [
-                {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '-5', 'x2': '-5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-            ],
-            'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
-            ],
-            'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
-                {'name': 'LED-', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
-                {'name': 'LED+', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
-            ]
+            'wires': switch_symbol_outline,
+            'labels': switch_symbol_labels,
+            'pins': switch_pins+switch_led_plus+switch_led_minus,
         },
     },
     'LEDHOLE': {
@@ -306,19 +313,9 @@ devices = {
         'symbol': {
             'name': 'KEYSWITCH-LEDHOLE',
             'description': 'A keyboard key switch with a hole for an LED to shine through.',
-            'wires': [
-                {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '-5', 'x2': '-5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-            ],
-            'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
-            ],
-            'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'}
-            ]
+            'wires': switch_symbol_outline,
+            'labels': switch_symbol_labels,
+            'pins': switch_pins,
         },
     },
     'LEDTHTHOLE': {
@@ -328,21 +325,9 @@ devices = {
         'symbol': {
             'name': 'KEYSWITCH-LEDTHTHOLE',
             'description': 'A keyboard key switch with a hole for an LED to shine through and a slot for shine through.',
-            'wires': [
-                {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '-5', 'x2': '-5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-            ],
-            'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
-            ],
-            'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
-                {'name': 'LED-', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
-                {'name': 'LED+', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
-            ]
+            'wires': switch_symbol_outline,
+            'labels': switch_symbol_labels,
+            'pins': switch_pins+switch_led_plus+switch_led_minus,
         },
     },
     'RGBLED': {
@@ -352,23 +337,9 @@ devices = {
         'symbol': {
             'name': 'KEYSWITCH-RGBLED',
             'description': 'A keyboard key switch with LED support.',
-            'wires': [
-                {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '-5', 'x2': '-5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-            ],
-            'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
-            ],
-            'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
-                {'name': 'LED+', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
-                {'name': 'R-', 'x': '-2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'},
-                {'name': 'G-', 'x': '0', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'},
-                {'name': 'B-', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
-            ]
+            'wires': switch_symbol_outline,
+            'labels': switch_symbol_labels,
+            'pins': switch_pins+switch_led_plus+switch_led_rgb,
         },
     },
     'RGBSMDLED': {
@@ -378,23 +349,9 @@ devices = {
         'symbol': {
             'name': 'KEYSWITCH-RGBSMDLED',
             'description': 'A keyboard key switch with SMD RGB LED support.',
-            'wires': [
-                {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '-5', 'x2': '-5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-            ],
-            'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
-            ],
-            'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
-                {'name': 'LED+', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
-                {'name': 'R-', 'x': '-2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'},
-                {'name': 'G-', 'x': '0', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'},
-                {'name': 'B-', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
-            ]
+            'wires': switch_symbol_outline,
+            'labels': switch_symbol_labels,
+            'pins': switch_pins+switch_led_plus+switch_led_rgb,
         },
     },
     'SMDLED': {
@@ -404,21 +361,9 @@ devices = {
         'symbol': {
             'name': 'KEYSWITCH-SMDLED',
             'description': 'A keyboard key switch with SMD LED support.',
-            'wires': [
-                {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '-5', 'x2': '-5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-            ],
-            'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
-            ],
-            'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
-                {'name': 'LED-', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
-                {'name': 'LED+', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
-            ]
+            'wires': switch_symbol_outline,
+            'labels': switch_symbol_labels,
+            'pins': switch_pins+switch_led_plus+switch_led_minus,
         },
     },
     'THTSMDLED': {
@@ -428,21 +373,9 @@ devices = {
         'symbol': {
             'name': 'KEYSWITCH-THTSMDLED',
             'description': 'A keyboard key switch with THT and SMD LED support.',
-            'wires': [
-                {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '-5', 'x2': '-5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-            ],
-            'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
-            ],
-            'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
-                {'name': 'LED-', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
-                {'name': 'LED+', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
-            ]
+            'wires': switch_symbol_outline,
+            'labels': switch_symbol_labels,
+            'pins': switch_pins+switch_led_plus+switch_led_minus,
         },
     },
     'DIODE': {
@@ -452,21 +385,9 @@ devices = {
         'symbol': {
             'name': 'KEYSWITCH-DIODE',
             'description': 'A keyboard key switch with LED support.',
-            'wires': [
-                {'x1': '-5', 'y1': '5', 'x2': '5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '5', 'x2': '5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '5', 'y1': '-5', 'x2': '-5', 'y2': '-5', 'width': '0.254', 'layer': '94'},
-                {'x1': '-5', 'y1': '-5', 'x2': '-5', 'y2': '5', 'width': '0.254', 'layer': '94'},
-            ],
-            'labels': [
-                {'value': '&gt;NAME', 'x': '-4.27', 'y': '2.778', 'size': '1', 'layer': '95'}
-            ],
-            'pins': [
-                {'name': 'P0', 'x': '-7.62', 'y': '2.54', 'visible': 'off', 'length': 'short', 'swaplevel': '1'},
-                {'name': 'P1', 'x': '-2.54', 'y': '7.62', 'visible': 'off', 'length': 'short', 'rot': 'R270', 'swaplevel': '1'},
-                {'name': 'D-', 'x': '7.62', 'y': '-2.54', 'visible': 'off', 'length': 'short', 'rot': 'R180'},
-                {'name': 'D+', 'x': '2.54', 'y': '-7.62', 'visible': 'off', 'length': 'short', 'rot': 'R90'}
-            ]
+            'wires': switch_symbol_outline,
+            'labels': switch_symbol_labels,
+            'pins': switch_pins+switch_diode,
         },
     }
 }
