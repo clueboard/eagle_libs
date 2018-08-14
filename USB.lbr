@@ -705,8 +705,8 @@ Note- Available clearance varies from computer to computer. This distance has be
 </device>
 <device name="-12401598E4#2A" package="12401598E4#2A">
 <connects>
-<connect gate="G$1" pin="CC" pad="B5"/>
-<connect gate="G$1" pin="CC2" pad="A5"/>
+<connect gate="G$1" pin="CC" pad="A5"/>
+<connect gate="G$1" pin="CC2" pad="B5"/>
 <connect gate="G$1" pin="D_M" pad="A7 B7"/>
 <connect gate="G$1" pin="D_P" pad="A6 B6"/>
 <connect gate="G$1" pin="GND" pad="A1 A12 B1 B12"/>

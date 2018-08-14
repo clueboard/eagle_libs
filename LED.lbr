@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -735,53 +735,53 @@
 </symbol>
 <symbol name="IS31FL3737">
 <description>IS31FL3737 - 12×12 DOTS MATRIX LED DRIVER WITH INDIVIDUAL AUTO BREATH FUNCTION</description>
-<pin name="SW1" x="20.32" y="30.48" length="middle" rot="R180"/>
-<pin name="SW2" x="20.32" y="27.94" length="middle" rot="R180"/>
-<pin name="SW3" x="20.32" y="25.4" length="middle" rot="R180"/>
-<pin name="PGND1" x="-20.32" y="-22.86" length="middle"/>
-<pin name="SW4" x="20.32" y="22.86" length="middle" rot="R180"/>
-<pin name="SW5" x="20.32" y="20.32" length="middle" rot="R180"/>
-<pin name="SW6" x="20.32" y="17.78" length="middle" rot="R180"/>
-<pin name="SW7" x="20.32" y="15.24" length="middle" rot="R180"/>
-<pin name="SW8" x="20.32" y="12.7" length="middle" rot="R180"/>
-<pin name="SW9" x="20.32" y="10.16" length="middle" rot="R180"/>
-<pin name="PGND2" x="-20.32" y="-25.4" length="middle"/>
-<pin name="SW10" x="20.32" y="7.62" length="middle" rot="R180"/>
-<pin name="SW11" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="SW12" x="20.32" y="2.54" length="middle" rot="R180"/>
-<pin name="CS1" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="CS2" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="CS3" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="CS4" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="PVCC1" x="-20.32" y="30.48" length="middle"/>
-<pin name="CS5" x="20.32" y="-12.7" length="middle" rot="R180"/>
-<pin name="CS6" x="20.32" y="-15.24" length="middle" rot="R180"/>
-<pin name="CS7" x="20.32" y="-17.78" length="middle" rot="R180"/>
-<pin name="CS8" x="20.32" y="-20.32" length="middle" rot="R180"/>
-<pin name="CS9" x="20.32" y="-22.86" length="middle" rot="R180"/>
-<pin name="CS10" x="20.32" y="-25.4" length="middle" rot="R180"/>
-<pin name="PVCC2" x="-20.32" y="25.4" length="middle"/>
-<pin name="CS11" x="20.32" y="-27.94" length="middle" rot="R180"/>
-<pin name="CS12" x="20.32" y="-30.48" length="middle" rot="R180"/>
-<pin name="AGND" x="-20.32" y="-27.94" length="middle"/>
-<pin name="RSET" x="-20.32" y="-12.7" length="middle"/>
+<pin name="SW1" x="20.32" y="45.72" length="middle" rot="R180"/>
+<pin name="SW2" x="20.32" y="43.18" length="middle" rot="R180"/>
+<pin name="SW3" x="20.32" y="40.64" length="middle" rot="R180"/>
+<pin name="PGND1" x="-20.32" y="-35.56" length="middle"/>
+<pin name="SW4" x="20.32" y="38.1" length="middle" rot="R180"/>
+<pin name="SW5" x="20.32" y="35.56" length="middle" rot="R180"/>
+<pin name="SW6" x="20.32" y="33.02" length="middle" rot="R180"/>
+<pin name="SW7" x="20.32" y="30.48" length="middle" rot="R180"/>
+<pin name="SW8" x="20.32" y="27.94" length="middle" rot="R180"/>
+<pin name="SW9" x="20.32" y="25.4" length="middle" rot="R180"/>
+<pin name="PGND2" x="-20.32" y="-38.1" length="middle"/>
+<pin name="SW10" x="20.32" y="22.86" length="middle" rot="R180"/>
+<pin name="SW11" x="20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="SW12" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="CS1" x="20.32" y="-15.24" length="middle" rot="R180"/>
+<pin name="CS2" x="20.32" y="-17.78" length="middle" rot="R180"/>
+<pin name="CS3" x="20.32" y="-20.32" length="middle" rot="R180"/>
+<pin name="CS4" x="20.32" y="-22.86" length="middle" rot="R180"/>
+<pin name="PVCC1" x="-20.32" y="45.72" length="middle"/>
+<pin name="CS5" x="20.32" y="-25.4" length="middle" rot="R180"/>
+<pin name="CS6" x="20.32" y="-27.94" length="middle" rot="R180"/>
+<pin name="CS7" x="20.32" y="-30.48" length="middle" rot="R180"/>
+<pin name="CS8" x="20.32" y="-33.02" length="middle" rot="R180"/>
+<pin name="CS9" x="20.32" y="-35.56" length="middle" rot="R180"/>
+<pin name="CS10" x="20.32" y="-38.1" length="middle" rot="R180"/>
+<pin name="PVCC2" x="-20.32" y="33.02" length="middle"/>
+<pin name="CS11" x="20.32" y="-40.64" length="middle" rot="R180"/>
+<pin name="CS12" x="20.32" y="-43.18" length="middle" rot="R180"/>
+<pin name="AGND" x="-20.32" y="-40.64" length="middle"/>
+<pin name="RSET" x="-20.32" y="-25.4" length="middle"/>
 <pin name="VCC" x="-20.32" y="20.32" length="middle"/>
-<pin name="VIO" x="-20.32" y="15.24" length="middle"/>
-<pin name="SYNC" x="-20.32" y="-7.62" length="middle"/>
-<pin name="SDA" x="-20.32" y="7.62" length="middle"/>
-<pin name="SCL" x="-20.32" y="5.08" length="middle"/>
-<pin name="ADDR" x="-20.32" y="-17.78" length="middle"/>
-<pin name="INTB" x="-20.32" y="2.54" length="middle"/>
-<pin name="SDB" x="-20.32" y="0" length="middle"/>
-<pin name="IICRST" x="-20.32" y="-2.54" length="middle"/>
-<pin name="GND" x="-20.32" y="-30.48" length="middle"/>
-<wire x1="-15.24" y1="33.02" x2="15.24" y2="33.02" width="0.254" layer="94"/>
-<wire x1="15.24" y1="33.02" x2="15.24" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-33.02" x2="-15.24" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-33.02" x2="-15.24" y2="33.02" width="0.254" layer="94"/>
-<text x="0" y="33.02" size="2.54" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-35.56" size="2.54" layer="95" font="vector" align="bottom-center">&gt;VALUE</text>
-<text x="0" y="-35.56" size="2.54" layer="95" font="vector" align="bottom-center">&gt;VALUE</text>
+<pin name="VIO" x="-20.32" y="7.62" length="middle"/>
+<pin name="SYNC" x="-20.32" y="-20.32" length="middle"/>
+<pin name="SDA" x="-20.32" y="-5.08" length="middle"/>
+<pin name="SCL" x="-20.32" y="-7.62" length="middle"/>
+<pin name="ADDR" x="-20.32" y="-30.48" length="middle"/>
+<pin name="INTB" x="-20.32" y="-10.16" length="middle"/>
+<pin name="SDB" x="-20.32" y="-12.7" length="middle"/>
+<pin name="IICRST" x="-20.32" y="-15.24" length="middle"/>
+<pin name="GND" x="-20.32" y="-43.18" length="middle"/>
+<wire x1="-15.24" y1="48.26" x2="15.24" y2="48.26" width="0.254" layer="94"/>
+<wire x1="15.24" y1="48.26" x2="15.24" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-45.72" x2="-15.24" y2="-45.72" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-45.72" x2="-15.24" y2="48.26" width="0.254" layer="94"/>
+<text x="0" y="50.8" size="2.54" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-48.26" size="2.54" layer="95" font="vector" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="-48.26" size="2.54" layer="95" font="vector" align="bottom-center">&gt;VALUE</text>
 </symbol>
 <symbol name="LED">
 <pin name="PLUS" x="-5.08" y="0" visible="off" length="short" swaplevel="1"/>
@@ -997,6 +997,74 @@
 <wire x1="-5.08" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="IS31FL3741">
+<description>IS31FL3737 - 12×12 DOTS MATRIX LED DRIVER WITH INDIVIDUAL AUTO BREATH FUNCTION</description>
+<pin name="SW1" x="20.32" y="45.72" length="middle" rot="R180"/>
+<pin name="SW2" x="20.32" y="43.18" length="middle" rot="R180"/>
+<pin name="SW3" x="20.32" y="40.64" length="middle" rot="R180"/>
+<pin name="SW4" x="20.32" y="38.1" length="middle" rot="R180"/>
+<pin name="SW5" x="20.32" y="35.56" length="middle" rot="R180"/>
+<pin name="SW6" x="20.32" y="33.02" length="middle" rot="R180"/>
+<pin name="SW7" x="20.32" y="30.48" length="middle" rot="R180"/>
+<pin name="SW8" x="20.32" y="27.94" length="middle" rot="R180"/>
+<pin name="SW9" x="20.32" y="25.4" length="middle" rot="R180"/>
+<pin name="CS1" x="20.32" y="22.86" length="middle" rot="R180"/>
+<pin name="CS2" x="20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="CS3" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="CS4" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="PVCC1" x="-20.32" y="45.72" length="middle"/>
+<pin name="CS5" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="CS6" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="CS7" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="CS8" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="CS9" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="CS10" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="PVCC2" x="-20.32" y="33.02" length="middle"/>
+<pin name="CS11" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="CS12" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="R_EXT" x="-20.32" y="-58.42" length="middle"/>
+<pin name="VCC" x="-20.32" y="20.32" length="middle"/>
+<pin name="VIO" x="-20.32" y="7.62" length="middle"/>
+<pin name="SDA" x="-20.32" y="-5.08" length="middle"/>
+<pin name="SCL" x="-20.32" y="-17.78" length="middle"/>
+<pin name="ADDR" x="-20.32" y="-66.04" length="middle"/>
+<pin name="INTB" x="-20.32" y="-30.48" length="middle"/>
+<pin name="SDB" x="-20.32" y="-43.18" length="middle"/>
+<pin name="GND" x="-20.32" y="-73.66" length="middle"/>
+<wire x1="-15.24" y1="48.26" x2="15.24" y2="48.26" width="0.254" layer="94"/>
+<wire x1="15.24" y1="48.26" x2="15.24" y2="-76.2" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-76.2" x2="-15.24" y2="-76.2" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-76.2" x2="-15.24" y2="48.26" width="0.254" layer="94"/>
+<text x="0" y="50.8" size="2.54" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-78.74" size="2.54" layer="95" font="vector" align="bottom-center">&gt;VALUE</text>
+<pin name="CS13" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="CS14" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="CS15" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="CS16" x="20.32" y="-15.24" length="middle" rot="R180"/>
+<pin name="CS17" x="20.32" y="-17.78" length="middle" rot="R180"/>
+<pin name="CS18" x="20.32" y="-20.32" length="middle" rot="R180"/>
+<pin name="CS19" x="20.32" y="-22.86" length="middle" rot="R180"/>
+<pin name="CS20" x="20.32" y="-25.4" length="middle" rot="R180"/>
+<pin name="CS21" x="20.32" y="-27.94" length="middle" rot="R180"/>
+<pin name="CS22" x="20.32" y="-30.48" length="middle" rot="R180"/>
+<pin name="CS23" x="20.32" y="-33.02" length="middle" rot="R180"/>
+<pin name="CS24" x="20.32" y="-35.56" length="middle" rot="R180"/>
+<pin name="CS25" x="20.32" y="-38.1" length="middle" rot="R180"/>
+<pin name="CS26" x="20.32" y="-40.64" length="middle" rot="R180"/>
+<pin name="CS27" x="20.32" y="-43.18" length="middle" rot="R180"/>
+<pin name="CS28" x="20.32" y="-45.72" length="middle" rot="R180"/>
+<pin name="CS29" x="20.32" y="-48.26" length="middle" rot="R180"/>
+<pin name="CS30" x="20.32" y="-50.8" length="middle" rot="R180"/>
+<pin name="CS31" x="20.32" y="-53.34" length="middle" rot="R180"/>
+<pin name="CS32" x="20.32" y="-55.88" length="middle" rot="R180"/>
+<pin name="CS33" x="20.32" y="-58.42" length="middle" rot="R180"/>
+<pin name="CS34" x="20.32" y="-60.96" length="middle" rot="R180"/>
+<pin name="CS35" x="20.32" y="-63.5" length="middle" rot="R180"/>
+<pin name="CS36" x="20.32" y="-66.04" length="middle" rot="R180"/>
+<pin name="CS37" x="20.32" y="-68.58" length="middle" rot="R180"/>
+<pin name="CS38" x="20.32" y="-71.12" length="middle" rot="R180"/>
+<pin name="CS39" x="20.32" y="-73.66" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>

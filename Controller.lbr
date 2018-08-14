@@ -1720,31 +1720,31 @@ Note- Available clearance varies from computer to computer. This distance has be
 <wire x1="1.6" y1="-1.5" x2="1.6" y2="1.5" width="0" layer="20"/>
 <wire x1="1.6" y1="1.5" x2="-1.6" y2="1.5" width="0" layer="20"/>
 <wire x1="-1.6" y1="1.5" x2="-1.6" y2="-1.5" width="0" layer="20"/>
-<polygon width="0" layer="39">
+<polygon width="0.001" layer="39">
 <vertex x="1.6" y="1.5"/>
 <vertex x="-1.6" y="1.5"/>
 <vertex x="-1.6" y="-1.5"/>
 <vertex x="1.6" y="-1.5"/>
 </polygon>
-<polygon width="0" layer="40">
+<polygon width="0.001" layer="40">
 <vertex x="-1.6" y="-1.5"/>
 <vertex x="1.6" y="-1.5"/>
 <vertex x="1.6" y="1.5"/>
 <vertex x="-1.6" y="1.5"/>
 </polygon>
-<polygon width="0" layer="41">
+<polygon width="0.001" layer="41">
 <vertex x="1.6" y="1.5"/>
 <vertex x="-1.6" y="1.5"/>
 <vertex x="-1.6" y="-1.5"/>
 <vertex x="1.6" y="-1.5"/>
 </polygon>
-<polygon width="0" layer="42">
+<polygon width="0.001" layer="42">
 <vertex x="-1.6" y="-1.5"/>
 <vertex x="1.6" y="-1.5"/>
 <vertex x="1.6" y="1.5"/>
 <vertex x="-1.6" y="1.5"/>
 </polygon>
-<polygon width="0" layer="43">
+<polygon width="0.001" layer="43">
 <vertex x="1.6" y="1.5"/>
 <vertex x="-1.6" y="1.5"/>
 <vertex x="-1.6" y="-1.5"/>
@@ -2167,31 +2167,31 @@ Note- Available clearance varies from computer to computer. This distance has be
 <wire x1="-4" y1="3" x2="-3" y2="4" width="0.127" layer="21"/>
 <wire x1="-3" y1="4" x2="-2.5" y2="4.5" width="0.127" layer="21"/>
 <wire x1="-4" y1="3" x2="-4.5" y2="2.5" width="0.127" layer="21"/>
-<pad name="P$1" x="-2" y="0" drill="0.4" diameter="0.5"/>
-<pad name="P$2" x="0" y="0" drill="0.4" diameter="0.5"/>
-<pad name="P$3" x="2" y="0" drill="0.4" diameter="0.5"/>
-<pad name="P$4" x="2" y="2" drill="0.4" diameter="0.5"/>
-<pad name="P$5" x="0" y="2" drill="0.4" diameter="0.5"/>
-<pad name="P$6" x="-2" y="2" drill="0.4" diameter="0.5"/>
-<pad name="P$7" x="-2" y="-2" drill="0.4" diameter="0.5"/>
-<pad name="P$8" x="0" y="-2" drill="0.4" diameter="0.5"/>
-<pad name="P$9" x="2" y="-2" drill="0.4" diameter="0.5"/>
-<pad name="P$10" x="1" y="-2" drill="0.4" diameter="0.5"/>
-<pad name="P$11" x="-1" y="-2" drill="0.4" diameter="0.5"/>
-<pad name="P$12" x="-2" y="-1" drill="0.4" diameter="0.5"/>
-<pad name="P$13" x="-1" y="-1" drill="0.4" diameter="0.5"/>
-<pad name="P$14" x="0" y="-1" drill="0.4" diameter="0.5"/>
-<pad name="P$15" x="1" y="-1" drill="0.4" diameter="0.5"/>
-<pad name="P$16" x="2" y="-1" drill="0.4" diameter="0.5"/>
-<pad name="P$17" x="1" y="0" drill="0.4" diameter="0.5"/>
-<pad name="P$18" x="-1" y="0" drill="0.4" diameter="0.5"/>
-<pad name="P$19" x="-2" y="1" drill="0.4" diameter="0.5"/>
-<pad name="P$20" x="-1" y="1" drill="0.4" diameter="0.5"/>
-<pad name="P$21" x="0" y="1" drill="0.4" diameter="0.5"/>
-<pad name="P$22" x="1" y="1" drill="0.4" diameter="0.5"/>
-<pad name="P$23" x="2" y="1" drill="0.4" diameter="0.5"/>
-<pad name="P$24" x="1" y="2" drill="0.4" diameter="0.5"/>
-<pad name="P$25" x="-1" y="2" drill="0.4" diameter="0.5"/>
+<pad name="P$1" x="-2" y="0" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$2" x="0" y="0" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$3" x="2" y="0" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$4" x="2" y="2" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$5" x="0" y="2" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$6" x="-2" y="2" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$7" x="-2" y="-2" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$8" x="0" y="-2" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$9" x="2" y="-2" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$10" x="1" y="-2" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$11" x="-1" y="-2" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$12" x="-2" y="-1" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$13" x="-1" y="-1" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$14" x="0" y="-1" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$15" x="1" y="-1" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$16" x="2" y="-1" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$17" x="1" y="0" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$18" x="-1" y="0" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$19" x="-2" y="1" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$20" x="-1" y="1" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$21" x="0" y="1" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$22" x="1" y="1" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$23" x="2" y="1" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$24" x="1" y="2" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
+<pad name="P$25" x="-1" y="2" drill="0.4" diameter="0.5" stop="no" thermals="no"/>
 </package>
 <package name="HEADER-1X1-2.54">
 <description>5 pin 0.1" header</description>
