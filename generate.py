@@ -58,6 +58,10 @@ connects = {
         {'gate': 'G$1', 'pin': 'P0', 'pad': 'ALPS1 MX1'},
         {'gate': 'G$1', 'pin': 'P1', 'pad': 'ALPS2 MX2'}
     ],
+    'ALPSMXMIR': [
+        {'gate': 'G$1', 'pin': 'P0', 'pad': 'ALPS1 ALPS3 MX1 MX3'},
+        {'gate': 'G$1', 'pin': 'P1', 'pad': 'ALPS2 ALPS4 MX2 MX4'}
+    ],
     'CHOC': [
         {'gate': 'G$1', 'pin': 'P0', 'pad': 'CHOC1'},
         {'gate': 'G$1', 'pin': 'P1', 'pad': 'CHOC2'}
@@ -86,6 +90,11 @@ connects = {
 package_holes = {
     'ALPS': [],
     'ALPSMX': [
+        {'x': '0', 'y': '0', 'diameter': '4'},
+        {'x': '-5.08', 'y': '0', 'diameter': '1.7'},
+        {'x': '5.08', 'y': '0', 'diameter': '1.7'},
+    ],
+    'ALPSMXMIR': [
         {'x': '0', 'y': '0', 'diameter': '4'},
         {'x': '-5.08', 'y': '0', 'diameter': '1.7'},
         {'x': '5.08', 'y': '0', 'diameter': '1.7'},
@@ -136,6 +145,16 @@ package_pads = {
         {'name': 'ALPS1', 'x': '-2.5', 'y': '4', 'drill': '1.3', 'diameter': '2.54'},
         {'name': 'ALPS2', 'x': '2.5', 'y': '4.5', 'drill': '1.3', 'diameter': '2.54'}
     ],
+    'ALPSMXMIR': [
+        {'name': 'MX1', 'x': '-3.81', 'y': '2.54', 'drill': '1.3', 'diameter': '2.54'},
+        {'name': 'MX2', 'x': '2.54', 'y': '5.08', 'drill': '1.3', 'diameter': '2.54'},
+        {'name': 'MX3', 'x': '-2.54', 'y': '5.08', 'drill': '1.3', 'diameter': '2.54'},
+        {'name': 'MX4', 'x': '3.81', 'y': '2.54', 'drill': '1.3', 'diameter': '2.54'},
+        {'name': 'ALPS1', 'x': '-2.5', 'y': '4', 'drill': '1.3', 'diameter': '2.54'},
+        {'name': 'ALPS2', 'x': '2.5', 'y': '4.5', 'drill': '1.3', 'diameter': '2.54'},
+        {'name': 'ALPS3', 'x': '-2.5', 'y': '4.5', 'drill': '1.3', 'diameter': '2.54'},
+        {'name': 'ALPS4', 'x': '2.5', 'y': '4', 'drill': '1.3', 'diameter': '2.54'}
+    ],
     'CHOC': [
         {'name': 'CHOC1', 'x': '0', 'y': '5.9', 'drill': '1.2', 'diameter': '2.54'},
         {'name': 'CHOC2', 'x': '5', 'y': '3.8', 'drill': '1.2', 'diameter': '2.54'}
@@ -160,6 +179,7 @@ package_pads = {
 package_smds = {
     'ALPS': [],
     'ALPSMX': [],
+    'ALPSMXMIR': [],
     'CHOC': [],
     'CHOCX': [],
     'MX': [],
@@ -181,6 +201,20 @@ package_wires = {
         {'x1': '-7.75', 'y1': '7', 'x2': '7.75', 'y2': '7', 'width': '0.127', 'layer': '47'},
     ],
     'ALPSMX': [
+        {'x1': '-7', 'y1': '8', 'x2': '7', 'y2': '8', 'width': '0.127', 'layer': '47'},
+        {'x1': '7.75', 'y1': '7', 'x2': '7.75', 'y2': '-7', 'width': '0.127', 'layer': '47'},
+        {'x1': '7', 'y1': '-8', 'x2': '-7', 'y2': '-8', 'width': '0.127', 'layer': '47'},
+        {'x1': '-7.75', 'y1': '-7', 'x2': '-7.75', 'y2': '7', 'width': '0.127', 'layer': '47'},
+        {'x1': '-7.75', 'y1': '7', 'x2': '-7', 'y2': '7', 'width': '0.127', 'layer': '47'},
+        {'x1': '-7', 'y1': '7', 'x2': '-7', 'y2': '8', 'width': '0.127', 'layer': '47'},
+        {'x1': '7', 'y1': '8', 'x2': '7', 'y2': '7', 'width': '0.127', 'layer': '47'},
+        {'x1': '7', 'y1': '7', 'x2': '7.75', 'y2': '7', 'width': '0.127', 'layer': '47'},
+        {'x1': '7.75', 'y1': '-7', 'x2': '7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
+        {'x1': '7', 'y1': '-7', 'x2': '7', 'y2': '-8', 'width': '0.127', 'layer': '47'},
+        {'x1': '-7', 'y1': '-8', 'x2': '-7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
+        {'x1': '-7', 'y1': '-7', 'x2': '-7.75', 'y2': '-7', 'width': '0.127', 'layer': '47'}
+    ],
+    'ALPSMXMIR': [
         {'x1': '-7', 'y1': '8', 'x2': '7', 'y2': '8', 'width': '0.127', 'layer': '47'},
         {'x1': '7.75', 'y1': '7', 'x2': '7.75', 'y2': '-7', 'width': '0.127', 'layer': '47'},
         {'x1': '7', 'y1': '-8', 'x2': '-7', 'y2': '-8', 'width': '0.127', 'layer': '47'},
@@ -283,7 +317,7 @@ package_wires = {
 }
 devices = {
     'PLAIN': {
-        'switch_types': ['ALPS', 'ALPSMX', 'CHOC', 'CHOCX', 'MX', 'MXHS', 'MXHSPCB', 'X'],
+        'switch_types': ['ALPS', 'ALPSMX', 'ALPSMXMIR', 'CHOC', 'CHOCX', 'MX', 'MXHS', 'MXHSPCB', 'X'],
         'led': None,
         'diode': False,
         'symbol': {
@@ -295,7 +329,7 @@ devices = {
         },
     },
     'LED': {
-        'switch_types': ['ALPSMX', 'MX'],
+        'switch_types': ['ALPSMX', 'ALPSMXMIR', 'MX'],
         'led': 'single',  # 2 pins, single color LED
         'diode': False,
         'symbol': {
@@ -307,7 +341,7 @@ devices = {
         },
     },
     'LEDHOLE': {
-        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS', 'MXHSPCB'],
+        'switch_types': ['ALPS', 'ALPSMX', 'ALPSMXMIR', 'MX', 'MXHS', 'MXHSPCB'],
         'led': 'hole',  # A single slot for an add-on board to shine through
         'diode': False,
         'symbol': {
@@ -319,7 +353,7 @@ devices = {
         },
     },
     'LEDTHTHOLE': {
-        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS', 'MXHSPCB'],
+        'switch_types': ['ALPS', 'ALPSMX', 'ALPSMXMIR', 'MX', 'MXHS', 'MXHSPCB'],
         'led': 'tht-hole',  # A single slot for an add-on board to shine through
         'diode': False,
         'symbol': {
@@ -331,7 +365,7 @@ devices = {
         },
     },
     'RGBLED': {
-        'switch_types': ['ALPSMX', 'MX'],
+        'switch_types': ['ALPSMX', 'ALPSMXMIR', 'MX'],
         'led': 'rgb',  # 4 pins, RGB LED
         'diode': False,
         'symbol': {
@@ -343,7 +377,7 @@ devices = {
         },
     },
     'RGBSMDLED': {
-        'switch_types': ['ALPS', 'ALPSMX', 'MX', 'MXHS', 'MXHSPCB'],
+        'switch_types': ['ALPS', 'ALPSMX', 'ALPSMXMIR', 'MX', 'MXHS', 'MXHSPCB'],
         'led': 'rgb-smd',  # 4 pins, RGB LED, SMD shining through PCB
         'diode': False,
         'symbol': {
@@ -355,7 +389,7 @@ devices = {
         },
     },
     'SMDLED': {
-        'switch_types': ['ALPSMX', 'MX', 'MXHS', 'MXHSPCB'],
+        'switch_types': ['ALPSMX', 'ALPSMXMIR', 'MX', 'MXHS', 'MXHSPCB'],
         'led': 'single-smd',  # 2 pins, single color SMD LED
         'diode': False,
         'symbol': {
@@ -367,7 +401,7 @@ devices = {
         },
     },
     'THTSMDLED': {
-        'switch_types': ['ALPSMX', 'MX'],
+        'switch_types': ['ALPSMX', 'ALPSMXMIR', 'MX'],
         'led': 'single-tht-smd',  # 2 pins, single color LED, THT or SMD
         'diode': False,
         'symbol': {
@@ -379,7 +413,7 @@ devices = {
         },
     },
     'DIODE': {
-        'switch_types': ['ALPSMX', 'MX'],
+        'switch_types': ['ALPSMX', 'ALPSMXMIR', 'MX'],
         'led': None,
         'diode': True,
         'symbol': {
