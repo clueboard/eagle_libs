@@ -54,9 +54,13 @@ connects = {
         {'gate': 'G$1', 'pin': 'P0', 'pad': 'ALPS1'},
         {'gate': 'G$1', 'pin': 'P1', 'pad': 'ALPS2'}
     ],
+    'ALPSPLATE': [
+    ],
     'ALPSMX': [
         {'gate': 'G$1', 'pin': 'P0', 'pad': 'ALPS1 MX1'},
         {'gate': 'G$1', 'pin': 'P1', 'pad': 'ALPS2 MX2'}
+    ],
+    'ALPSMXPLATE': [
     ],
     'ALPSMXMIR': [
         {'gate': 'G$1', 'pin': 'P0', 'pad': 'ALPS1 ALPS3 MX1 MX3'},
@@ -74,6 +78,8 @@ connects = {
         {'gate': 'G$1', 'pin': 'P0', 'pad': 'MX1'},
         {'gate': 'G$1', 'pin': 'P1', 'pad': 'MX2'}
     ],
+    'MXPLATE': [
+    ],
     'MXHS': [
         {'gate': 'G$1', 'pin': 'P0', 'pad': 'MX1'},
         {'gate': 'G$1', 'pin': 'P1', 'pad': 'MX2'}
@@ -89,6 +95,7 @@ connects = {
 }
 package_holes = {
     'ALPS': [],
+    'ALPSPLATE': [],
     'ALPSMX': [
         {'x': '0', 'y': '0', 'diameter': '4'},
         {'x': '-5.08', 'y': '0', 'diameter': '1.7'},
@@ -99,6 +106,7 @@ package_holes = {
         {'x': '-5.08', 'y': '0', 'diameter': '1.7'},
         {'x': '5.08', 'y': '0', 'diameter': '1.7'},
     ],
+    'ALPSMXPLATE': [],
     'CHOC': [
         {'x': '0', 'y': '0', 'diameter': '3.4'},
         {'x': '-5.22', 'y': '-4.2', 'diameter': '0.6'},
@@ -129,6 +137,7 @@ package_holes = {
         {'x': '3.81', 'y': '2.54', 'diameter': '3'},
         {'x': '-2.54', 'y': '5.08', 'diameter': '3'},
     ],
+    'MXPLATE': [],
     'X': [
         {'x': '-5.5', 'y': '0', 'diameter': '1.85'},
         {'x': '5.5', 'y': '0', 'diameter': '1.85'}
@@ -138,6 +147,8 @@ package_pads = {
     'ALPS': [
         {'name': 'ALPS1', 'x': '-2.5', 'y': '4', 'drill': '1.3', 'diameter': '2.54'},
         {'name': 'ALPS2', 'x': '2.5', 'y': '4.5', 'drill': '1.3', 'diameter': '2.54'}
+    ],
+    'ALPSPLATE': [
     ],
     'ALPSMX': [
         {'name': 'MX1', 'x': '-3.81', 'y': '2.54', 'drill': '1.3', 'diameter': '2.54'},
@@ -155,6 +166,8 @@ package_pads = {
         {'name': 'ALPS3', 'x': '-2.5', 'y': '4.5', 'drill': '1.3', 'diameter': '2.54'},
         {'name': 'ALPS4', 'x': '2.5', 'y': '4', 'drill': '1.3', 'diameter': '2.54'}
     ],
+    'ALPSMXPLATE': [
+    ],
     'CHOC': [
         {'name': 'CHOC1', 'x': '0', 'y': '5.9', 'drill': '1.2', 'diameter': '2.54'},
         {'name': 'CHOC2', 'x': '5', 'y': '3.8', 'drill': '1.2', 'diameter': '2.54'}
@@ -169,6 +182,8 @@ package_pads = {
         {'name': 'MX1', 'x': '-3.81', 'y': '2.54', 'drill': '1.3', 'diameter': '2.54'},
         {'name': 'MX2', 'x': '2.54', 'y': '5.08', 'drill': '1.3', 'diameter': '2.54'}
     ],
+    'MXPLATE': [
+    ],
     'MXHS': [],
     'MXHSPCB': [],
     'X': [
@@ -178,11 +193,14 @@ package_pads = {
 }
 package_smds = {
     'ALPS': [],
+    'ALPSPLATE': [],
     'ALPSMX': [],
     'ALPSMXMIR': [],
+    'ALPSMXPLATE': [],
     'CHOC': [],
     'CHOCX': [],
     'MX': [],
+    'MXPLATE': [],
     'MXHS': [
         {'name': 'MX1', 'x': '7.36', 'y': '2.54', 'dx': '2.55', 'dy': '2.5', 'layer': '1'},
         {'name': 'MX2', 'x': '-6.09', 'y': '5.08', 'dx': '2.55', 'dy': '2.5', 'layer': '1'}
@@ -195,54 +213,74 @@ package_smds = {
 }
 package_wires = {
     'ALPS': [
-        {'x1': '7.75', 'y1': '7', 'x2': '7.75', 'y2': '-7', 'width': '0.127', 'layer': '47'},
-        {'x1': '7.75', 'y1': '-7', 'x2': '-7.75', 'y2': '-7', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7.75', 'y1': '-7', 'x2': '-7.75', 'y2': '7', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7.75', 'y1': '7', 'x2': '7.75', 'y2': '7', 'width': '0.127', 'layer': '47'},
+        {'x1': '7.75', 'y1': '7', 'x2': '7.75', 'y2': '-7', 'width': '0.125', 'layer': '47'},
+        {'x1': '7.75', 'y1': '-7', 'x2': '-7.75', 'y2': '-7', 'width': '0.125', 'layer': '47'},
+        {'x1': '-7.75', 'y1': '-7', 'x2': '-7.75', 'y2': '7', 'width': '0.125', 'layer': '47'},
+        {'x1': '-7.75', 'y1': '7', 'x2': '7.75', 'y2': '7', 'width': '0.125', 'layer': '47'},
+    ],
+    'ALPSPLATE': [
+        {'x1': '7.75', 'y1': '7', 'x2': '7.75', 'y2': '-7', 'width': '0', 'layer': '20'},
+        {'x1': '7.75', 'y1': '-7', 'x2': '-7.75', 'y2': '-7', 'width': '0', 'layer': '20'},
+        {'x1': '-7.75', 'y1': '-7', 'x2': '-7.75', 'y2': '7', 'width': '0', 'layer': '20'},
+        {'x1': '-7.75', 'y1': '7', 'x2': '7.75', 'y2': '7', 'width': '0', 'layer': '20'},
     ],
     'ALPSMX': [
-        {'x1': '-7', 'y1': '8', 'x2': '7', 'y2': '8', 'width': '0.127', 'layer': '47'},
-        {'x1': '7.75', 'y1': '7', 'x2': '7.75', 'y2': '-7', 'width': '0.127', 'layer': '47'},
-        {'x1': '7', 'y1': '-8', 'x2': '-7', 'y2': '-8', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7.75', 'y1': '-7', 'x2': '-7.75', 'y2': '7', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7.75', 'y1': '7', 'x2': '-7', 'y2': '7', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7', 'y1': '7', 'x2': '-7', 'y2': '8', 'width': '0.127', 'layer': '47'},
-        {'x1': '7', 'y1': '8', 'x2': '7', 'y2': '7', 'width': '0.127', 'layer': '47'},
-        {'x1': '7', 'y1': '7', 'x2': '7.75', 'y2': '7', 'width': '0.127', 'layer': '47'},
-        {'x1': '7.75', 'y1': '-7', 'x2': '7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
-        {'x1': '7', 'y1': '-7', 'x2': '7', 'y2': '-8', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7', 'y1': '-8', 'x2': '-7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7', 'y1': '-7', 'x2': '-7.75', 'y2': '-7', 'width': '0.127', 'layer': '47'}
+        {'x1': '-7', 'y1': '8', 'x2': '7', 'y2': '8', 'width': '0.125', 'layer': '47'},
+        {'x1': '7.75', 'y1': '7', 'x2': '7.75', 'y2': '-7', 'width': '0.125', 'layer': '47'},
+        {'x1': '7', 'y1': '-8', 'x2': '-7', 'y2': '-8', 'width': '0.125', 'layer': '47'},
+        {'x1': '-7.75', 'y1': '-7', 'x2': '-7.75', 'y2': '7', 'width': '0.125', 'layer': '47'},
+        {'x1': '-7.75', 'y1': '7', 'x2': '-7', 'y2': '7', 'width': '0.125', 'layer': '47'},
+        {'x1': '-7', 'y1': '7', 'x2': '-7', 'y2': '8', 'width': '0.125', 'layer': '47'},
+        {'x1': '7', 'y1': '8', 'x2': '7', 'y2': '7', 'width': '0.125', 'layer': '47'},
+        {'x1': '7', 'y1': '7', 'x2': '7.75', 'y2': '7', 'width': '0.125', 'layer': '47'},
+        {'x1': '7.75', 'y1': '-7', 'x2': '7', 'y2': '-7', 'width': '0.125', 'layer': '47'},
+        {'x1': '7', 'y1': '-7', 'x2': '7', 'y2': '-8', 'width': '0.125', 'layer': '47'},
+        {'x1': '-7', 'y1': '-8', 'x2': '-7', 'y2': '-7', 'width': '0.125', 'layer': '47'},
+        {'x1': '-7', 'y1': '-7', 'x2': '-7.75', 'y2': '-7', 'width': '0.125', 'layer': '47'}
     ],
     'ALPSMXMIR': [
-        {'x1': '-7', 'y1': '8', 'x2': '7', 'y2': '8', 'width': '0.127', 'layer': '47'},
-        {'x1': '7.75', 'y1': '7', 'x2': '7.75', 'y2': '-7', 'width': '0.127', 'layer': '47'},
-        {'x1': '7', 'y1': '-8', 'x2': '-7', 'y2': '-8', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7.75', 'y1': '-7', 'x2': '-7.75', 'y2': '7', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7.75', 'y1': '7', 'x2': '-7', 'y2': '7', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7', 'y1': '7', 'x2': '-7', 'y2': '8', 'width': '0.127', 'layer': '47'},
-        {'x1': '7', 'y1': '8', 'x2': '7', 'y2': '7', 'width': '0.127', 'layer': '47'},
-        {'x1': '7', 'y1': '7', 'x2': '7.75', 'y2': '7', 'width': '0.127', 'layer': '47'},
-        {'x1': '7.75', 'y1': '-7', 'x2': '7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
-        {'x1': '7', 'y1': '-7', 'x2': '7', 'y2': '-8', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7', 'y1': '-8', 'x2': '-7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7', 'y1': '-7', 'x2': '-7.75', 'y2': '-7', 'width': '0.127', 'layer': '47'}
+        {'x1': '-7', 'y1': '8', 'x2': '7', 'y2': '8', 'width': '0.125', 'layer': '47'},
+        {'x1': '7.75', 'y1': '7', 'x2': '7.75', 'y2': '-7', 'width': '0.125', 'layer': '47'},
+        {'x1': '7', 'y1': '-8', 'x2': '-7', 'y2': '-8', 'width': '0.125', 'layer': '47'},
+        {'x1': '-7.75', 'y1': '-7', 'x2': '-7.75', 'y2': '7', 'width': '0.125', 'layer': '47'},
+        {'x1': '-7.75', 'y1': '7', 'x2': '-7', 'y2': '7', 'width': '0.125', 'layer': '47'},
+        {'x1': '-7', 'y1': '7', 'x2': '-7', 'y2': '8', 'width': '0.125', 'layer': '47'},
+        {'x1': '7', 'y1': '8', 'x2': '7', 'y2': '7', 'width': '0.125', 'layer': '47'},
+        {'x1': '7', 'y1': '7', 'x2': '7.75', 'y2': '7', 'width': '0.125', 'layer': '47'},
+        {'x1': '7.75', 'y1': '-7', 'x2': '7', 'y2': '-7', 'width': '0.125', 'layer': '47'},
+        {'x1': '7', 'y1': '-7', 'x2': '7', 'y2': '-8', 'width': '0.125', 'layer': '47'},
+        {'x1': '-7', 'y1': '-8', 'x2': '-7', 'y2': '-7', 'width': '0.125', 'layer': '47'},
+        {'x1': '-7', 'y1': '-7', 'x2': '-7.75', 'y2': '-7', 'width': '0.125', 'layer': '47'}
+    ],
+    'ALPSMXPLATE': [
+        {'x1': '-7', 'y1': '8', 'x2': '7', 'y2': '8', 'width': '0', 'layer': '20'},
+        {'x1': '7.75', 'y1': '7', 'x2': '7.75', 'y2': '-7', 'width': '0', 'layer': '20'},
+        {'x1': '7', 'y1': '-8', 'x2': '-7', 'y2': '-8', 'width': '0', 'layer': '20'},
+        {'x1': '-7.75', 'y1': '-7', 'x2': '-7.75', 'y2': '7', 'width': '0', 'layer': '20'},
+        {'x1': '-7.75', 'y1': '7', 'x2': '-7', 'y2': '7', 'width': '0', 'layer': '20'},
+        {'x1': '-7', 'y1': '7', 'x2': '-7', 'y2': '8', 'width': '0', 'layer': '20'},
+        {'x1': '7', 'y1': '8', 'x2': '7', 'y2': '7', 'width': '0', 'layer': '20'},
+        {'x1': '7', 'y1': '7', 'x2': '7.75', 'y2': '7', 'width': '0', 'layer': '20'},
+        {'x1': '7.75', 'y1': '-7', 'x2': '7', 'y2': '-7', 'width': '0', 'layer': '20'},
+        {'x1': '7', 'y1': '-7', 'x2': '7', 'y2': '-8', 'width': '0', 'layer': '20'},
+        {'x1': '-7', 'y1': '-8', 'x2': '-7', 'y2': '-7', 'width': '0', 'layer': '20'},
+        {'x1': '-7', 'y1': '-7', 'x2': '-7.75', 'y2': '-7', 'width': '0', 'layer': '20'}
     ],
     'CHOC': [
-        {'x1': "-7", 'y1': "7", 'x2': "7", 'y2': "7", 'width': "0.127", 'layer': "47"},
-        {'x1': "7", 'y1': "7", 'x2': "7", 'y2': "-7", 'width': "0.127", 'layer': "47"},
-        {'x1': "7", 'y1': "-7", 'x2': "-7", 'y2': "-7", 'width': "0.127", 'layer': "47"},
-        {'x1': "-7", 'y1': "-7", 'x2': "-7", 'y2': "7", 'width': "0.127", 'layer': "47"},
+        {'x1': "-7", 'y1': "7", 'x2': "7", 'y2': "7", 'width': "0.125", 'layer': "47"},
+        {'x1': "7", 'y1': "7", 'x2': "7", 'y2': "-7", 'width': "0.125", 'layer': "47"},
+        {'x1': "7", 'y1': "-7", 'x2': "-7", 'y2': "-7", 'width': "0.125", 'layer': "47"},
+        {'x1': "-7", 'y1': "-7", 'x2': "-7", 'y2': "7", 'width': "0.125", 'layer': "47"},
         {'x1': "-1.7", 'y1': "-4.05", 'x2': "1.7", 'y2': "-4.05", 'width': "0.1", 'layer': "47"},
         {'x1': "1.7", 'y1': "-4.05", 'x2': "1.7", 'y2': "-5.55", 'width': "0.1", 'layer': "47"},
         {'x1': "1.7", 'y1': "-5.55", 'x2': "-1.7", 'y2': "-5.55", 'width': "0.1", 'layer': "47"},
         {'x1': "-1.7", 'y1': "-5.55", 'x2': "-1.7", 'y2': "-4.05", 'width': "0.1", 'layer': "47"}
     ],
     'CHOCX': [
-        {'x1': "-7", 'y1': "7", 'x2': "7", 'y2': "7", 'width': "0.127", 'layer': "47"},
-        {'x1': "7", 'y1': "7", 'x2': "7", 'y2': "-7", 'width': "0.127", 'layer': "47"},
-        {'x1': "7", 'y1': "-7", 'x2': "-7", 'y2': "-7", 'width': "0.127", 'layer': "47"},
-        {'x1': "-7", 'y1': "-7", 'x2': "-7", 'y2': "7", 'width': "0.127", 'layer': "47"},
+        {'x1': "-7", 'y1': "7", 'x2': "7", 'y2': "7", 'width': "0.125", 'layer': "47"},
+        {'x1': "7", 'y1': "7", 'x2': "7", 'y2': "-7", 'width': "0.125", 'layer': "47"},
+        {'x1': "7", 'y1': "-7", 'x2': "-7", 'y2': "-7", 'width': "0.125", 'layer': "47"},
+        {'x1': "-7", 'y1': "-7", 'x2': "-7", 'y2': "7", 'width': "0.125", 'layer': "47"},
         {'x1': "-1.7", 'y1': "-4.05", 'x2': "1.7", 'y2': "-4.05", 'width': "0.1", 'layer': "47"},
         {'x1': "1.7", 'y1': "-4.05", 'x2': "1.7", 'y2': "-5.55", 'width': "0.1", 'layer': "47"},
         {'x1': "1.7", 'y1': "-5.55", 'x2': "-1.7", 'y2': "-5.55", 'width': "0.1", 'layer': "47"},
@@ -259,10 +297,10 @@ package_wires = {
         {'x1': "-1.39", 'y1': "1.15", 'x2': "1.39", 'y2': "1.15", 'width': "0", 'layer': "20", 'curve': "-100.795498"}
     ],
     'MX': [
-        {'x1': '-7', 'y1': '7', 'x2': '7', 'y2': '7', 'width': '0.127', 'layer': '47'},
-        {'x1': '7', 'y1': '7', 'x2': '7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
-        {'x1': '7', 'y1': '-7', 'x2': '-7', 'y2': '-7', 'width': '0.127', 'layer': '47'},
-        {'x1': '-7', 'y1': '-7', 'x2': '-7', 'y2': '7', 'width': '0.127', 'layer': '47'},
+        {'x1': '-7', 'y1': '7', 'x2': '7', 'y2': '7', 'width': '0.125', 'layer': '47'},
+        {'x1': '7', 'y1': '7', 'x2': '7', 'y2': '-7', 'width': '0.125', 'layer': '47'},
+        {'x1': '7', 'y1': '-7', 'x2': '-7', 'y2': '-7', 'width': '0.125', 'layer': '47'},
+        {'x1': '-7', 'y1': '-7', 'x2': '-7', 'y2': '7', 'width': '0.125', 'layer': '47'},
     ],
     'MXHS': [
         {'x1': '-7', 'y1': '7', 'x2': '7', 'y2': '7', 'width': '0.15', 'layer': '47'},
@@ -296,11 +334,17 @@ package_wires = {
         {'x1': '2.3', 'y1': '1.35', 'x2': '2.65', 'y2': '0.8', 'width': '0.15', 'layer': '21', 'curve': '90'},
         {'x1': '2.65', 'y1': '0.8', 'x2': '5.5', 'y2': '0.8', 'width': '0.15', 'layer': '21'},
     ],
+    'MXPLATE': [
+        {'x1': '-7', 'y1': '7', 'x2': '7', 'y2': '7', 'width': '0', 'layer': '20'},
+        {'x1': '7', 'y1': '7', 'x2': '7', 'y2': '-7', 'width': '0', 'layer': '20'},
+        {'x1': '7', 'y1': '-7', 'x2': '-7', 'y2': '-7', 'width': '0', 'layer': '20'},
+        {'x1': '-7', 'y1': '-7', 'x2': '-7', 'y2': '7', 'width': '0', 'layer': '20'},
+    ],
     'X': [
-        {'x1': "-7", 'y1': "7", 'x2': "7", 'y2': "7", 'width': "0.127", 'layer': "47"},
-        {'x1': "7", 'y1': "7", 'x2': "7", 'y2': "-7", 'width': "0.127", 'layer': "47"},
-        {'x1': "7", 'y1': "-7", 'x2': "-7", 'y2': "-7", 'width': "0.127", 'layer': "47"},
-        {'x1': "-7", 'y1': "-7", 'x2': "-7", 'y2': "7", 'width': "0.127", 'layer': "47"},
+        {'x1': "-7", 'y1': "7", 'x2': "7", 'y2': "7", 'width': "0.125", 'layer': "47"},
+        {'x1': "7", 'y1': "7", 'x2': "7", 'y2': "-7", 'width': "0.125", 'layer': "47"},
+        {'x1': "7", 'y1': "-7", 'x2': "-7", 'y2': "-7", 'width': "0.125", 'layer': "47"},
+        {'x1': "-7", 'y1': "-7", 'x2': "-7", 'y2': "7", 'width': "0.125", 'layer': "47"},
         {'x1': "-1.7", 'y1': "-4.05", 'x2': "1.7", 'y2': "-4.05", 'width': "0.1", 'layer': "47"},
         {'x1': "1.7", 'y1': "-4.05", 'x2': "1.7", 'y2': "-5.55", 'width': "0.1", 'layer': "47"},
         {'x1': "1.7", 'y1': "-5.55", 'x2': "-1.7", 'y2': "-5.55", 'width': "0.1", 'layer': "47"},
@@ -322,10 +366,22 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-PLAIN',
-            'description': 'A keyboard key switch.',
+            'description': 'Keyboard switch without LEDs.',
             'wires': switch_symbol_outline,
             'labels': switch_symbol_labels,
             'pins': switch_pins,
+        },
+    },
+    'PLATE': {
+        'switch_types': ['ALPSPLATE', 'ALPSMXPLATE', 'MXPLATE'],
+        'led': None,
+        'diode': False,
+        'symbol': {
+            'name': 'KEYSWITCH-PLATE',
+            'description': 'Keyboard switch cutout for FR4 plates.',
+            'wires': switch_symbol_outline,
+            'labels': switch_symbol_labels,
+            'pins': [],
         },
     },
     'LED': {
@@ -334,7 +390,7 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-LED',
-            'description': 'A keyboard key switch with LED support.',
+            'description': 'Keyboard switch with 2 pin LED.',
             'wires': switch_symbol_outline,
             'labels': switch_symbol_labels,
             'pins': switch_pins+switch_led_plus+switch_led_minus,
@@ -346,7 +402,7 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-LEDHOLE',
-            'description': 'A keyboard key switch with a hole for an LED to shine through.',
+            'description': 'Keyboard switch with hole for LED to shine through.',
             'wires': switch_symbol_outline,
             'labels': switch_symbol_labels,
             'pins': switch_pins,
@@ -358,7 +414,7 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-LEDTHTHOLE',
-            'description': 'A keyboard key switch with a hole for an LED to shine through and a slot for shine through.',
+            'description': 'Keyboard switch with 2 pin LED and a slot for LED to shine through.',
             'wires': switch_symbol_outline,
             'labels': switch_symbol_labels,
             'pins': switch_pins+switch_led_plus+switch_led_minus,
@@ -370,7 +426,7 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-RGBLED',
-            'description': 'A keyboard key switch with LED support.',
+            'description': 'Keyboard switch with 4-pin RGB LED support.',
             'wires': switch_symbol_outline,
             'labels': switch_symbol_labels,
             'pins': switch_pins+switch_led_plus+switch_led_rgb,
@@ -382,7 +438,7 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-RGBSMDLED',
-            'description': 'A keyboard key switch with SMD RGB LED support.',
+            'description': 'Keyboard switch with 4 pin SMD RGB LED support.',
             'wires': switch_symbol_outline,
             'labels': switch_symbol_labels,
             'pins': switch_pins+switch_led_plus+switch_led_rgb,
@@ -394,7 +450,7 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-SMDLED',
-            'description': 'A keyboard key switch with SMD LED support.',
+            'description': 'Keyboard switch with 2 pin SMD LED support.',
             'wires': switch_symbol_outline,
             'labels': switch_symbol_labels,
             'pins': switch_pins+switch_led_plus+switch_led_minus,
@@ -406,7 +462,7 @@ devices = {
         'diode': False,
         'symbol': {
             'name': 'KEYSWITCH-THTSMDLED',
-            'description': 'A keyboard key switch with THT and SMD LED support.',
+            'description': 'Keyboard switch with 2 pin THT and SMD LED support.',
             'wires': switch_symbol_outline,
             'labels': switch_symbol_labels,
             'pins': switch_pins+switch_led_plus+switch_led_minus,
@@ -418,7 +474,7 @@ devices = {
         'diode': True,
         'symbol': {
             'name': 'KEYSWITCH-DIODE',
-            'description': 'A keyboard key switch with LED support.',
+            'description': 'Keyboard key switch with 2 pin diode support.',
             'wires': switch_symbol_outline,
             'labels': switch_symbol_labels,
             'pins': switch_pins+switch_diode,
@@ -584,11 +640,11 @@ for package in packages:
         template['packages'][-1]['smds'].append({'name': 'R-', 'x': '-2.1', 'y': '-3.775', 'dx': '1', 'dy': '0.75', 'layer': '16'})
         template['packages'][-1]['smds'].append({'name': 'G-', 'x': '-2.1', 'y': '-5.225', 'dx': '1', 'dy': '0.75', 'layer': '16'})
         template['packages'][-1]['smds'].append({'name': 'B-', 'x': '2.1', 'y': '-5.225', 'dx': '1', 'dy': '0.75', 'layer': '16'})
-        template['packages'][-1]['wires'].append({'x1': '-1.6', 'y1': '-5.9', 'x2': '-1.6', 'y2': '-3.9', 'width': '0.127', 'layer': '22'})
-        template['packages'][-1]['wires'].append({'x1': '-0.8', 'y1': '-3.1', 'x2': '-1.6', 'y2': '-3.9', 'width': '0.127', 'layer': '22'})
-        template['packages'][-1]['wires'].append({'x1': '-0.8', 'y1': '-3.1', 'x2': '1.6', 'y2': '-3.1', 'width': '0.127', 'layer': '22'})
-        template['packages'][-1]['wires'].append({'x1': '1.6', 'y1': '-3.1', 'x2': '1.6', 'y2': '-5.9', 'width': '0.127', 'layer': '22'})
-        template['packages'][-1]['wires'].append({'x1': '1.6', 'y1': '-5.9', 'x2': '-1.6', 'y2': '-5.9', 'width': '0.127', 'layer': '22'})
+        template['packages'][-1]['wires'].append({'x1': '-1.6', 'y1': '-5.9', 'x2': '-1.6', 'y2': '-3.9', 'width': '0.125', 'layer': '22'})
+        template['packages'][-1]['wires'].append({'x1': '-0.8', 'y1': '-3.1', 'x2': '-1.6', 'y2': '-3.9', 'width': '0.125', 'layer': '22'})
+        template['packages'][-1]['wires'].append({'x1': '-0.8', 'y1': '-3.1', 'x2': '1.6', 'y2': '-3.1', 'width': '0.125', 'layer': '22'})
+        template['packages'][-1]['wires'].append({'x1': '1.6', 'y1': '-3.1', 'x2': '1.6', 'y2': '-5.9', 'width': '0.125', 'layer': '22'})
+        template['packages'][-1]['wires'].append({'x1': '1.6', 'y1': '-5.9', 'x2': '-1.6', 'y2': '-5.9', 'width': '0.125', 'layer': '22'})
     elif pkg['led'] == 'rgb':
         template['packages'][-1]['pads'].append({'name': 'R-', 'x': '-3.81', 'y': '-5.08', 'drill': '1', 'diameter': '2'})
         template['packages'][-1]['labels'].append({'value': 'R-', 'x': '-3.955', 'y': '-6.985', 'size': '1', 'layer': '21', 'align': 'center'})
