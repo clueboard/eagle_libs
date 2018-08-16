@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.635" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.125" altunitdist="mm" altunit="mm"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.125" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -870,7 +870,7 @@ This has holes cut out to accomodate the USB connector and to allow you to press
 <wire x1="4.58" y1="10.16" x2="5.08" y2="10.66" width="0" layer="20" curve="90"/>
 <wire x1="5.08" y1="10.66" x2="5.08" y2="19.75" width="0" layer="20"/>
 <wire x1="5.08" y1="19.75" x2="-5.08" y2="19.75" width="0" layer="20"/>
-<text x="0" y="-2.54" size="1.27" layer="20" font="vector" ratio="13" align="center">FLASH</text>
+<text x="0" y="-2.54" size="1.27" layer="21" font="vector" ratio="13" align="center">FLASH</text>
 <wire x1="8.89" y1="17.244" x2="8.89" y2="-13.97" width="0.5" layer="22"/>
 <wire x1="8.89" y1="-13.97" x2="7.62" y2="-15.24" width="0.5" layer="22" curve="-90"/>
 <wire x1="7.62" y1="-15.24" x2="6.35" y2="-16.51" width="0.5" layer="22" curve="90"/>
